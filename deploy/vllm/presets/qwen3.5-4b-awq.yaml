@@ -1,0 +1,12 @@
+# Candidate A — hybrid Qwen3.5-4B, community AWQ W4A16 (see docs/ARCHITECTURE.md §2.2).
+model: /models/qwen3.5-4b-awq
+served-model-name: qwen3.5-4b-awq
+max-model-len: 16384
+# 0.85: under WSL2 only ~6.8 of 7.96 GiB are free at startup (WDDM + CUDA context).
+gpu-memory-utilization: 0.85
+max-num-seqs: 8
+# Qwen3.5 is multimodal; we only send text: skip the vision encoder and its memory.
+language-model-only: true
+# Extraction does not benefit from reasoning traces: disable Qwen thinking by default.
+default-chat-template-kwargs: '{"enable_thinking": false}'
+disable-access-log-for-endpoints: /health,/metrics

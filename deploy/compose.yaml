@@ -1,5 +1,8 @@
 name: llm-platform
 
+# Profiles: (none) = api with mock LLM · gpu = vLLM · observability = Phoenix.
+# Services on `backend` only (vllm) have no route to the internet; see docs/ARCHITECTURE.md §2.8.
+
 services:
   api:
     build:
@@ -7,12 +10,72 @@ services:
       dockerfile: deploy/api.Dockerfile
     environment:
       LLMP_LLM_BACKEND: ${LLMP_LLM_BACKEND:-mock}
-      LLMP_LLM_MODEL: ${LLMP_LLM_MODEL:-default}
+      LLMP_LLM_MODEL: ${VLLM_PRESET:-default}
+      LLMP_VLLM_BASE_URL: http://vllm:8000
+      LLMP_OTLP_TRACES_ENDPOINT: ${LLMP_OTLP_TRACES_ENDPOINT:-}
       LLMP_LOG_LEVEL: ${LLMP_LOG_LEVEL:-INFO}
     ports:
       - "127.0.0.1:${LLMP_API_PORT:-8080}:8000"
+    networks: [edge, backend]
+    depends_on:
+      vllm:
+        condition: service_healthy
+        required: false
+      phoenix:
+        condition: service_started
+        required: false
     healthcheck:
       test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
       interval: 10s
       timeout: 3s
       retries: 3
+
+  vllm:
+    profiles: [gpu]
+    image: vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90
+    command: ["--config", "/presets/${VLLM_PRESET:-qwen3.5-4b-awq}.yaml"]
+    environment:
+      HF_HUB_OFFLINE: "1"
+      TRANSFORMERS_OFFLINE: "1"
+      VLLM_NO_USAGE_STATS: "1"
+      DO_NOT_TRACK: "1"
+    volumes:
+      - ${LLMP_MODELS_DIR:-../models}:/models:ro
+      - ./vllm/presets:/presets:ro
+      - vllm-cache:/root/.cache  # torch.compile / CUDA graph caches: faster restarts
+    shm_size: 2gb
+    networks: [backend]
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    healthcheck:
+      test: ["CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+      start_period: 15m
+
+  phoenix:
+    profiles: [observability]
+    image: arizephoenix/phoenix:version-20.16.0@sha256:d55a4ffac8c670e2d0bf72e44e81e32a73e832b7ce449e6e4567487adfa9d8d6
+    environment:
+      PHOENIX_TELEMETRY_ENABLED: "false"
+      PHOENIX_WORKING_DIR: /data
+    volumes:
+      - phoenix-data:/data
+    ports:
+      - "127.0.0.1:${PHOENIX_PORT:-6006}:6006"
+    networks: [edge, backend]
+
+networks:
+  edge: {}
+  backend:
+    internal: true
+
+volumes:
+  vllm-cache: {}
+  phoenix-data: {}

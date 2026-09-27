@@ -39,16 +39,16 @@ tuning of candidates A and B (see ARCHITECTURE §2.2), Phoenix in `observability
 tracing decorator on `LLMClient`, `/health` reporting upstream readiness.
 
 Acceptance:
-- [ ] `vllm/vllm-openai:v0.30.0` starts on the RTX 5070 with model A and with model B; startup
+- [x] `vllm/vllm-openai:v0.30.0` starts on the RTX 5070 with model A and with model B; startup
       log numbers (weights GiB, KV blocks, max concurrency at `max_model_len`) recorded in
       `docs/benchmarks/serving.md`, replacing the estimates in ARCHITECTURE §2.2.
-- [ ] A request with `response_format: json_schema` returns output valid against the schema
+- [x] A request with `response_format: json_schema` returns output valid against the schema
       (proves structured outputs work on sm_120 with the chosen quantization).
-- [ ] `make up` then `make smoke`: an API call hits vLLM and produces a Phoenix trace with model,
+- [x] `make up` then `make smoke`: an API call hits vLLM and produces a Phoenix trace with model,
       prompt id/version/hash, input/output tokens, latency; the API log line carries the same
       `trace_id`.
-- [ ] `/health` returns 503 while vLLM is loading and 200 once ready.
-- [ ] Egress check: `docker compose exec vllm python -c "<connect to 1.1.1.1:443>"` fails;
+- [x] `/health` returns 503 while vLLM is loading and 200 once ready.
+- [x] Egress check: `docker compose exec vllm python -c "<connect to 1.1.1.1:443>"` fails;
       `HF_HUB_OFFLINE=1` set and startup succeeds without network.
 - [ ] Phase review includes a go/no-go on the primary model.
 
@@ -108,7 +108,31 @@ Acceptance:
 - [ ] Hidden-text detector for native PDFs with its own P/R.
 - [ ] Injection suite runs in CI (replay) and locally (real vLLM).
 
-## Phase 5 — Observability dashboard, load test, benchmark report
+## Phase 5 — Demo UI
+
+A small web page to show the extraction module end to end without curl: the thing a reviewer or
+a prospective customer actually looks at. Demo-grade, not a product UI: no auth, bound to
+`127.0.0.1` like the rest of the dev stack.
+
+Approach (confirm at phase start): server-rendered pages from the `doc_extraction` module
+(FastAPI + Jinja2 templates + htmx, vendored as a static file). No Node build, no separate
+container, no CDN — it must work on an offline customer server. Alternative considered: a
+React/TypeScript SPA (showcases frontend skills, but adds a build toolchain and a second
+container for a portfolio whose focus is ML systems).
+
+Acceptance:
+- [ ] `GET /doc-extraction/ui`: upload an order, a DDT and an invoice (XML, PDF or scan), or
+      pick a ready-made synthetic set from the `ci` dataset.
+- [ ] Extracted fields shown per document with their confidence; low-confidence fields and
+      failed validators (P.IVA, arithmetic) highlighted.
+- [ ] Reconciliation shown as a table of typed discrepancies linked to the lines involved.
+- [ ] Each document links to its Phoenix trace (trace id from the response).
+- [ ] Works fully offline: a test asserts rendered pages reference no external URLs; all
+      static assets are served by the api.
+- [ ] Upload limits enforced (size, count, content type); tested.
+- [ ] Endpoint tests with the mock LLM; a screenshot/GIF committed for the README.
+
+## Phase 6 — Observability dashboard, load test, benchmark report
 
 - [ ] Grafana dashboard provisioned from repo: tokens/s, TTFT p50/p95, e2e latency p50/p95,
       KV-cache usage, running/waiting requests, API documents/s, stage latency. Metric names
@@ -119,7 +143,7 @@ Acceptance:
 - [ ] README "Benchmarks" section: model A vs B quality (per-field F1), latency, throughput,
       €/document, hardware and exact versions — all reproducible by one documented command.
 
-## Phase 6 — Retrieval + RAG module (outline, detailed after Phase 5)
+## Phase 7 — Retrieval + RAG module (outline, detailed after Phase 6)
 
 pgvector + TEI CPU services under a `rag` profile; `rag_circolari` module with citation-grounded
 answers, retrieval eval (recall@k, MRR), answer faithfulness eval; first agent loop with the

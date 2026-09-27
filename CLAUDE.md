@@ -36,10 +36,17 @@ before changing anything non-trivial.
 | `make imports` | import-linter contracts (platform must not import modules) |
 | `make test` | pytest (mock LLM; no GPU, no network) |
 | `make check` | lint + typecheck + imports + test (what CI runs) |
-| `make up-dev` / `make down` | compose: api only with mock LLM, on `127.0.0.1:${LLMP_API_PORT:-8080}` |
+| `make models` | one-time download of pinned model snapshots into `./models` (needs network) |
+| `make up` | api + vLLM (`VLLM_PRESET`, default `qwen3.5-4b-awq`) + Phoenix; waits until healthy |
+| `make up-dev` | api only with mock LLM, on `127.0.0.1:${LLMP_API_PORT:-8080}` |
+| `make down` | stop everything (all profiles) |
+| `make smoke` | one traced, schema-constrained request through the api container; prints trace id |
+| `make check-egress` | asserts the vLLM container cannot reach the internet |
 
-Targets planned in `docs/ROADMAP.md` (`models`, `up`, `smoke`, `synth`, `eval`, `eval-record`,
-`eval-compare`, `loadtest`) are added in the phase that introduces them; keep this table in sync.
+Phoenix UI: `http://127.0.0.1:${PHOENIX_PORT:-6006}`. vLLM presets: `deploy/vllm/presets/*.yaml`.
+
+Targets planned in `docs/ROADMAP.md` (`synth`, `eval`, `eval-record`, `eval-compare`,
+`loadtest`) are added in the phase that introduces them; keep this table in sync.
 
 ## Conventions
 

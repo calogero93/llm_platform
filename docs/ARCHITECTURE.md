@@ -26,7 +26,7 @@ flowchart LR
         phoenix["phoenix<br/>trace store + UI<br/>(OTLP receiver)"]
         prom["prometheus"]
         graf["grafana<br/>provisioned dashboards"]
-        subgraph later["Phase 6 (RAG module)"]
+        subgraph later["Phase 7 (RAG module)"]
             pg[("postgres + pgvector")]
             tei["tei-embed / tei-rerank<br/>(CPU)"]
         end
@@ -148,8 +148,9 @@ Rejected: **Qwen3.5-9B** — 4-bit checkpoints are 9–12 GB on disk (unquantize
 (the published "AWQ" is 14 GB). **Granite 4.x 8B** — Apache-2.0 but no official 4-bit build and
 weaker Italian evidence. FP8 weights (native on Blackwell) — an 8B in FP8 is ~9 GB: does not fit.
 
-All numbers above are estimates from `config.json`; Phase 1 replaces them with measured values
-from vLLM's startup log (`# GPU blocks`, max concurrency).
+All numbers above are estimates from `config.json`. **Measured values (Phase 1) are in
+`docs/benchmarks/serving.md`**: under WSL2 only ~6.8 GiB are usable, so presets use
+`gpu-memory-utilization: 0.85`; A fits with 56k KV tokens, B only with a fixed 0.5 GiB KV budget.
 
 ### 2.3 Platform/module boundary
 
@@ -230,14 +231,14 @@ endpoint. We do not use Phoenix's SDK or auto-instrumentors.
 
 **Cost model** (on-prem has no per-token price): configured `gpu_hour_cost_eur` (amortized
 hardware + power), converted to €/1M input and output tokens using throughput measured by the
-Phase 5 load test and stored in config. Cost per document = Σ tokens × price. Documented as an
+Phase 6 load test and stored in config. Cost per document = Σ tokens × price. Documented as an
 estimate; lets the README compare against cloud API pricing.
 
 **Metrics**: Prometheus scrapes vLLM `/metrics` and API `/metrics` (`prometheus-client`).
 Grafana is provisioned from files (datasource + dashboard JSON in the repo): throughput
 (prompt/generation tokens/s), TTFT p50/p95, e2e latency p50/p95, KV-cache usage %, running vs
 waiting requests, plus API-level documents/s and per-stage latency. Metric names are verified
-against the pinned vLLM version in Phase 5 (they changed across the V0→V1 engine transition).
+against the pinned vLLM version in Phase 6 (they changed across the V0→V1 engine transition).
 
 **Logs**: stdlib `logging` with a ~30-line JSON formatter (no structlog: not needed). A middleware
 sets a correlation id (from `X-Request-ID` or generated) in a `contextvar`; every log line carries
@@ -269,7 +270,7 @@ sets a correlation id (from `X-Request-ID` or generated) in a `contextvar`; ever
   metadata, instructions inside FatturaPA free-text fields such as `Causale`/`Descrizione`, OCR-
   visible instructions on scans) measures **attack success rate** per attack type. For native
   PDFs, a hidden-text detector compares the text layer to what is visible on the rendered page.
-- **Tool allowlist**: implemented with the first agentic component (RAG module, Phase 6): tools
+- **Tool allowlist**: implemented with the first agentic component (RAG module, Phase 7): tools
   are registered per module and an agent loop can only call tools on its module's allowlist,
   with argument schemas validated. Not built before there is a consumer.
 - **Secrets**: none in the repo. `pydantic-settings` reads env / `.env` (gitignored,
@@ -329,7 +330,7 @@ flowchart LR
   cents, P.IVA without `IT`), line items aligned by optimal assignment before scoring;
   discrepancy detection P/R/F1 per type; latency and € per document; batch throughput.
 
-### 2.10 Retrieval (designed now, built in Phase 6 with the RAG module)
+### 2.10 Retrieval (designed now, built in Phase 7 with the RAG module)
 
 - **pgvector over Qdrant**: the RAG module needs Postgres anyway (documents, chunks, metadata,
   citations), and Postgres gives Italian full-text search (`tsvector` with `italian` config) for
@@ -341,6 +342,13 @@ flowchart LR
   reserved for the generator.
 - Not built earlier because the extraction module has no retrieval need; building it first would
   be speculative infrastructure.
+
+### 2.11 Demo UI (Phase 5)
+
+Server-rendered pages owned by the `doc_extraction` module (Jinja2 + htmx served as a vendored
+static file): upload documents, see extracted fields with confidence, discrepancies, and links
+to Phoenix traces. Chosen over a SPA because it needs no build toolchain or extra container and
+works offline; it is a demo surface, not a product UI (no auth, localhost only).
 
 ---
 
@@ -379,6 +387,7 @@ pytest-asyncio, import-linter, locust, gitleaks-in-CI.)
 | prometheus-client | platform | API metrics endpoint |
 | lxml | doc_extraction | FatturaPA parsing + XSD validation |
 | docling | doc_extraction | PDF layout/table/OCR (§2.9) |
+| jinja2 | doc_extraction (UI) | server-rendered demo pages (§2.11) |
 | reportlab | doc_extraction (synth) | PDF generation (BSD) |
 | pypdfium2, Pillow, numpy | doc_extraction (synth) | rasterize + degrade (already transitive via docling) |
 | scipy | doc_extraction (eval) | `linear_sum_assignment` for line alignment — *or* hand-written, decide in Phase 2 |

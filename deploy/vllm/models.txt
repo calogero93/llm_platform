@@ -1,0 +1,4 @@
+# preset-name  hf-repo  revision
+# Downloaded by `make models` into $(MODELS_DIR)/<preset-name>. Revisions are pinned: bump deliberately.
+qwen3.5-4b-awq  cyankiwi/Qwen3.5-4B-AWQ-4bit  ef85d23bebaba87b3c4672ba11c449c79dbdb23e
+qwen3-8b-awq    Qwen/Qwen3-8B-AWQ             4da05a8edb55c6046cce958586c33b61da07bb79
