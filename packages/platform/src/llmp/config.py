@@ -8,7 +8,10 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class Settings(BaseSettings):
     """Platform configuration, read from `LLMP_*` environment variables or `.env`."""
 
-    model_config = SettingsConfigDict(env_prefix="LLMP_", env_file=".env", extra="ignore")
+    # env_ignore_empty: compose passes unset optional values as "" (e.g. no OTLP endpoint).
+    model_config = SettingsConfigDict(
+        env_prefix="LLMP_", env_file=".env", extra="ignore", env_ignore_empty=True
+    )
 
     llm_backend: Literal["vllm", "mock"]
     llm_model: str = "default"
@@ -17,3 +20,6 @@ class Settings(BaseSettings):
     mock_mode: Literal["schema", "replay"] = "schema"
     cassette_dir: Path = Path("cassettes")
     log_level: str = "INFO"
+    service_name: str = "llmp-api"
+    # OTLP/HTTP traces endpoint, e.g. http://phoenix:6006/v1/traces. None = spans not exported.
+    otlp_traces_endpoint: HttpUrl | None = None

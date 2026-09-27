@@ -52,5 +52,13 @@ class VLLMClient:
             latency_s=latency,
         )
 
+    async def ready(self) -> bool:
+        # A readiness probe: any failure to reach vLLM means "not ready", not an error.
+        try:
+            resp = await self._http.get("/health")
+        except httpx.HTTPError:
+            return False
+        return resp.status_code == 200
+
     async def aclose(self) -> None:
         await self._http.aclose()

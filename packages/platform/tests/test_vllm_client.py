@@ -82,3 +82,16 @@ async def test_timeout_raises_llm_error() -> None:
 
     with pytest.raises(LLMError, match="ReadTimeout"):
         await client_with(handler).complete(REQUEST)
+
+
+@pytest.mark.parametrize(("status", "ready"), [(200, True), (503, False)])
+async def test_ready_reflects_vllm_health(status: int, ready: bool) -> None:
+    client = client_with(lambda _: httpx.Response(status))
+    assert await client.ready() is ready
+
+
+async def test_ready_is_false_when_vllm_unreachable() -> None:
+    def handler(req: httpx.Request) -> httpx.Response:
+        raise httpx.ConnectError("refused", request=req)
+
+    assert await client_with(handler).ready() is False

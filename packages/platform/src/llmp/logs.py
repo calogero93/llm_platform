@@ -6,6 +6,8 @@ from contextvars import ContextVar
 from datetime import UTC, datetime
 from typing import Any
 
+from opentelemetry import trace
+
 correlation_id: ContextVar[str | None] = ContextVar("correlation_id", default=None)
 
 # Attributes every LogRecord has; anything else was passed via `extra=` and is emitted as a field.
@@ -20,11 +22,17 @@ class JsonFormatter(logging.Formatter):
             "logger": record.name,
             "message": record.getMessage(),
             "correlation_id": correlation_id.get(),
+            "trace_id": _current_trace_id(),
         }
         entry.update({k: v for k, v in vars(record).items() if k not in _RESERVED})
         if record.exc_info:
             entry["exception"] = self.formatException(record.exc_info)
         return json.dumps(entry, default=str, ensure_ascii=False)
+
+
+def _current_trace_id() -> str | None:
+    ctx = trace.get_current_span().get_span_context()
+    return format(ctx.trace_id, "032x") if ctx.is_valid else None
 
 
 def configure_logging(level: str) -> None:

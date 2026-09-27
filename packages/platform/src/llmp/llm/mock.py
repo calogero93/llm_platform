@@ -84,6 +84,9 @@ class MockLLMClient:
             latency_s=0.0,
         )
 
+    async def ready(self) -> bool:
+        return True
+
     async def aclose(self) -> None:
         return None
 
