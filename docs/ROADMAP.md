@@ -30,7 +30,7 @@ Acceptance:
       incl. `response_format.json_schema`, usage parsing, timeout and 5xx handling.
 - [x] `docker compose --profile dev up` → `curl /health` returns 200; every log line is valid
       JSON containing `correlation_id`; `X-Request-ID` is echoed.
-- [ ] GitHub Actions runs lint, typecheck, tests, import contract, gitleaks on push/PR — green.
+- [x] GitHub Actions runs lint, typecheck, tests, import contract, gitleaks on push/PR — green.
 
 ## Phase 1 — vLLM on the local GPU, first traced call end to end
 
