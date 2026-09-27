@@ -47,7 +47,7 @@ cache volume ~40 s. B spends ~110 s loading weights (AWQ → Marlin repacking).
 - Qwen3.5 Gated-DeltaNet Triton kernels, FlashInfer attention, CUDA graphs, fp8 KV cache.
 - Structured outputs (`response_format: json_schema`, xgrammar backend): valid, correct output.
 
-## Decision (proposed): model A is primary
+## Decision: model A is primary (confirmed 2026-09-27)
 
 A leaves ~4× the KV capacity of B at 2.7× the context length and is ~2× faster on long prompts. B
 runs only with a hand-fixed KV budget and effectively one request at a time. B stays as the

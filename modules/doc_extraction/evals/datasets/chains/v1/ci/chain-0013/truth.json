@@ -1,0 +1,154 @@
+{
+  "chain": {
+    "chain_id": "chain-0013",
+    "order": {
+      "kind": "order",
+      "number": "14/2026",
+      "date": "2026-05-12",
+      "supplier": {
+        "name": "Distribuzione Galli S.a.s.",
+        "vat_number": "69900700696",
+        "address": "Via Roma, 173",
+        "postal_code": "25121",
+        "city": "Brescia",
+        "province": "BS"
+      },
+      "customer": {
+        "name": "Edil Sud S.a.s.",
+        "vat_number": "58141950780",
+        "address": "Corso Italia, 38",
+        "postal_code": "43121",
+        "city": "Parma",
+        "province": "PR"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "TB-20",
+          "description": "Tubo corrugato flessibile diametro 20 mm",
+          "quantity": "25",
+          "unit": "m",
+          "unit_price": "0.33",
+          "total": "8.25",
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "VT-4X40",
+          "description": "Viti autofilettanti 4x40 zincate",
+          "quantity": "7",
+          "unit": "conf",
+          "unit_price": "5.93",
+          "total": "41.51",
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": "49.76",
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "ddt": {
+      "kind": "ddt",
+      "number": "B00014",
+      "date": "2026-05-22",
+      "supplier": {
+        "name": "Distribuzione Galli S.a.s.",
+        "vat_number": "69900700696",
+        "address": "Via Roma, 173",
+        "postal_code": "25121",
+        "city": "Brescia",
+        "province": "BS"
+      },
+      "customer": {
+        "name": "Edil Sud S.a.s.",
+        "vat_number": "58141950780",
+        "address": "Corso Italia, 38",
+        "postal_code": "43121",
+        "city": "Parma",
+        "province": "PR"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "VT-4X40",
+          "description": "Viti autofilettanti 4x40 zincate",
+          "quantity": "7",
+          "unit": "conf",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [
+        "14/2026"
+      ],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": null,
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "invoice": {
+      "kind": "invoice",
+      "number": "46/A",
+      "date": "2026-05-25",
+      "supplier": {
+        "name": "Distribuzione Galli S.a.s.",
+        "vat_number": "69900700696",
+        "address": "Via Roma, 173",
+        "postal_code": "25121",
+        "city": "Brescia",
+        "province": "BS"
+      },
+      "customer": {
+        "name": "Edil Sud S.a.s.",
+        "vat_number": "58141950780",
+        "address": "Corso Italia, 38",
+        "postal_code": "43121",
+        "city": "Parma",
+        "province": "PR"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "VT-4X40",
+          "description": "Viti autofilettanti 4x40 zincate",
+          "quantity": "7",
+          "unit": "conf",
+          "unit_price": "5.93",
+          "total": "41.51",
+          "vat_rate": "22"
+        }
+      ],
+      "order_refs": [
+        "14/2026"
+      ],
+      "ddt_refs": [
+        "B00014"
+      ],
+      "vat_summary": [
+        {
+          "vat_rate": "22",
+          "taxable_amount": "41.51",
+          "vat_amount": "9.13"
+        }
+      ],
+      "taxable_amount": "41.51",
+      "vat_amount": "9.13",
+      "total_amount": "50.64"
+    },
+    "discrepancies": [
+      {
+        "type": "missing_line",
+        "item_code": "TB-20",
+        "expected": "25",
+        "actual": null
+      }
+    ]
+  },
+  "layout_variant": 1,
+  "scan_level": "light"
+}

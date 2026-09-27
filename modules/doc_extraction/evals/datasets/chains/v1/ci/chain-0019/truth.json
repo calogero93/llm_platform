@@ -1,0 +1,202 @@
+{
+  "chain": {
+    "chain_id": "chain-0019",
+    "order": {
+      "kind": "order",
+      "number": "ORD-120",
+      "date": "2026-06-03",
+      "supplier": {
+        "name": "Tecno Padana S.p.A.",
+        "vat_number": "30855390867",
+        "address": "Via dell'Artigianato, 118",
+        "postal_code": "20121",
+        "city": "Milano",
+        "province": "MI"
+      },
+      "customer": {
+        "name": "Ufficio Tirrena S.a.s.",
+        "vat_number": "06856810947",
+        "address": "Corso Italia, 69",
+        "postal_code": "10121",
+        "city": "Torino",
+        "province": "TO"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "BS-1KG",
+          "description": "Biscotti frollini confezione 1 kg",
+          "quantity": "3",
+          "unit": "conf",
+          "unit_price": "4.87",
+          "total": "14.61",
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "IN-16A",
+          "description": "Interruttore magnetotermico 1P+N 16A 4,5kA",
+          "quantity": "7",
+          "unit": "pz",
+          "unit_price": "12.23",
+          "total": "85.61",
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "SC-503",
+          "description": "Scatola da incasso 503 per 3 moduli",
+          "quantity": "16",
+          "unit": "pz",
+          "unit_price": "0.38",
+          "total": "6.08",
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": "106.30",
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "ddt": {
+      "kind": "ddt",
+      "number": "36/2026",
+      "date": "2026-06-09",
+      "supplier": {
+        "name": "Tecno Padana S.p.A.",
+        "vat_number": "30855390867",
+        "address": "Via dell'Artigianato, 118",
+        "postal_code": "20121",
+        "city": "Milano",
+        "province": "MI"
+      },
+      "customer": {
+        "name": "Ufficio Tirrena S.a.s.",
+        "vat_number": "06856810947",
+        "address": "Corso Italia, 69",
+        "postal_code": "10121",
+        "city": "Torino",
+        "province": "TO"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "BS-1KG",
+          "description": "Biscotti frollini confezione 1 kg",
+          "quantity": "3",
+          "unit": "conf",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "IN-16A",
+          "description": "Interruttore magnetotermico 1P+N 16A 4,5kA",
+          "quantity": "7",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "SC-503",
+          "description": "Scatola da incasso 503 per 3 moduli",
+          "quantity": "16",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [
+        "ORD-120"
+      ],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": null,
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "invoice": {
+      "kind": "invoice",
+      "number": "FT2026-00020",
+      "date": "2026-06-28",
+      "supplier": {
+        "name": "Tecno Padana S.p.A.",
+        "vat_number": "30855390867",
+        "address": "Via dell'Artigianato, 118",
+        "postal_code": "20121",
+        "city": "Milano",
+        "province": "MI"
+      },
+      "customer": {
+        "name": "Ufficio Tirrena S.a.s.",
+        "vat_number": "06856810947",
+        "address": "Corso Italia, 69",
+        "postal_code": "10121",
+        "city": "Torino",
+        "province": "TO"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "BS-1KG",
+          "description": "Biscotti frollini confezione 1 kg",
+          "quantity": "3",
+          "unit": "conf",
+          "unit_price": "4.87",
+          "total": "14.61",
+          "vat_rate": "10"
+        },
+        {
+          "line_number": 2,
+          "code": "IN-16A",
+          "description": "Interruttore magnetotermico 1P+N 16A 4,5kA",
+          "quantity": "7",
+          "unit": "pz",
+          "unit_price": "12.23",
+          "total": "85.61",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 3,
+          "code": "SC-503",
+          "description": "Scatola da incasso 503 per 3 moduli",
+          "quantity": "16",
+          "unit": "pz",
+          "unit_price": "0.38",
+          "total": "6.08",
+          "vat_rate": "22"
+        }
+      ],
+      "order_refs": [
+        "ORD-120"
+      ],
+      "ddt_refs": [
+        "36/2026"
+      ],
+      "vat_summary": [
+        {
+          "vat_rate": "22",
+          "taxable_amount": "91.69",
+          "vat_amount": "20.17"
+        },
+        {
+          "vat_rate": "10",
+          "taxable_amount": "14.61",
+          "vat_amount": "1.46"
+        }
+      ],
+      "taxable_amount": "106.30",
+      "vat_amount": "21.63",
+      "total_amount": "127.93"
+    },
+    "discrepancies": []
+  },
+  "layout_variant": 1,
+  "scan_level": "light"
+}

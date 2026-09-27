@@ -1,0 +1,225 @@
+{
+  "chain": {
+    "chain_id": "chain-0004",
+    "order": {
+      "kind": "order",
+      "number": "5/2026",
+      "date": "2026-05-17",
+      "supplier": {
+        "name": "Ufficio Conti S.p.A.",
+        "vat_number": "74075990098",
+        "address": "Via dell'Industria, 46",
+        "postal_code": "35122",
+        "city": "Padova",
+        "province": "PD"
+      },
+      "customer": {
+        "name": "Commerciale Lombarda S.n.c.",
+        "vat_number": "53280480921",
+        "address": "Via Dante Alighieri, 84",
+        "postal_code": "60121",
+        "city": "Ancona",
+        "province": "AN"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "QD-12M",
+          "description": "Quadro elettrico da parete 12 moduli IP40",
+          "quantity": "19",
+          "unit": "pz",
+          "unit_price": "22.22",
+          "total": "422.18",
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "NR-CEI",
+          "description": "Guida alle norme CEI 64-8 edizione 2026",
+          "quantity": "37",
+          "unit": "pz",
+          "unit_price": "57.93",
+          "total": "2143.41",
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "GU-NIT",
+          "description": "Guanti da lavoro in nitrile taglia L",
+          "quantity": "5",
+          "unit": "conf",
+          "unit_price": "5.68",
+          "total": "28.40",
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "TB-20",
+          "description": "Tubo corrugato flessibile diametro 20 mm",
+          "quantity": "50",
+          "unit": "m",
+          "unit_price": "0.42",
+          "total": "21.00",
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": "2614.99",
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "ddt": {
+      "kind": "ddt",
+      "number": "DDT-505",
+      "date": "2026-05-19",
+      "supplier": {
+        "name": "Ufficio Conti S.p.A.",
+        "vat_number": "74075990098",
+        "address": "Via dell'Industria, 46",
+        "postal_code": "35122",
+        "city": "Padova",
+        "province": "PD"
+      },
+      "customer": {
+        "name": "Commerciale Lombarda S.n.c.",
+        "vat_number": "53280480921",
+        "address": "Via Dante Alighieri, 84",
+        "postal_code": "60121",
+        "city": "Ancona",
+        "province": "AN"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "QD-12M",
+          "description": "Quadro elettrico da parete 12 moduli IP40",
+          "quantity": "19",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "NR-CEI",
+          "description": "Guida alle norme CEI 64-8 edizione 2026",
+          "quantity": "37",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "TB-20",
+          "description": "Tubo corrugato flessibile diametro 20 mm",
+          "quantity": "50",
+          "unit": "m",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [
+        "5/2026"
+      ],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": null,
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "invoice": {
+      "kind": "invoice",
+      "number": "FT2026-00005",
+      "date": "2026-06-01",
+      "supplier": {
+        "name": "Ufficio Conti S.p.A.",
+        "vat_number": "74075990098",
+        "address": "Via dell'Industria, 46",
+        "postal_code": "35122",
+        "city": "Padova",
+        "province": "PD"
+      },
+      "customer": {
+        "name": "Commerciale Lombarda S.n.c.",
+        "vat_number": "53280480921",
+        "address": "Via Dante Alighieri, 84",
+        "postal_code": "60121",
+        "city": "Ancona",
+        "province": "AN"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "QD-12M",
+          "description": "Quadro elettrico da parete 12 moduli IP40",
+          "quantity": "17",
+          "unit": "pz",
+          "unit_price": "22.22",
+          "total": "377.74",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 2,
+          "code": "NR-CEI",
+          "description": "Guida alle norme CEI 64-8 edizione 2026",
+          "quantity": "37",
+          "unit": "pz",
+          "unit_price": "57.93",
+          "total": "2143.41",
+          "vat_rate": "4"
+        },
+        {
+          "line_number": 3,
+          "code": "TB-20",
+          "description": "Tubo corrugato flessibile diametro 20 mm",
+          "quantity": "50",
+          "unit": "m",
+          "unit_price": "0.42",
+          "total": "21.00",
+          "vat_rate": "22"
+        }
+      ],
+      "order_refs": [
+        "5/2026"
+      ],
+      "ddt_refs": [
+        "DDT-505"
+      ],
+      "vat_summary": [
+        {
+          "vat_rate": "22",
+          "taxable_amount": "398.74",
+          "vat_amount": "87.72"
+        },
+        {
+          "vat_rate": "4",
+          "taxable_amount": "2143.41",
+          "vat_amount": "85.74"
+        }
+      ],
+      "taxable_amount": "2542.15",
+      "vat_amount": "173.46",
+      "total_amount": "2715.61"
+    },
+    "discrepancies": [
+      {
+        "type": "qty_mismatch",
+        "item_code": "QD-12M",
+        "expected": "19",
+        "actual": "17"
+      },
+      {
+        "type": "missing_line",
+        "item_code": "GU-NIT",
+        "expected": "5",
+        "actual": null
+      }
+    ]
+  },
+  "layout_variant": 0,
+  "scan_level": "light"
+}

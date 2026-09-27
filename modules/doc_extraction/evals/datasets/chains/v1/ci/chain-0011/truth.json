@@ -1,0 +1,285 @@
+{
+  "chain": {
+    "chain_id": "chain-0011",
+    "order": {
+      "kind": "order",
+      "number": "ORD-112",
+      "date": "2026-07-29",
+      "supplier": {
+        "name": "Tecno Nord Est S.p.A.",
+        "vat_number": "42932950092",
+        "address": "Via dell'Artigianato, 121",
+        "postal_code": "25121",
+        "city": "Brescia",
+        "province": "BS"
+      },
+      "customer": {
+        "name": "Elettro Ferri S.r.l.",
+        "vat_number": "56758320776",
+        "address": "Via Garibaldi, 172",
+        "postal_code": "41121",
+        "city": "Modena",
+        "province": "MO"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "CV-325",
+          "description": "Cavo elettrico FG16OR16 3x2,5 mm²",
+          "quantity": "200",
+          "unit": "m",
+          "unit_price": "1.47",
+          "total": "294.00",
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "VT-4X40",
+          "description": "Viti autofilettanti 4x40 zincate",
+          "quantity": "10",
+          "unit": "conf",
+          "unit_price": "6.35",
+          "total": "63.50",
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "PR-S10",
+          "description": "Presa schuko 10/16A bianca serie civile",
+          "quantity": "2",
+          "unit": "pz",
+          "unit_price": "3.52",
+          "total": "7.04",
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "CV-315",
+          "description": "Cavo elettrico FS17 1x1,5 mm² blu",
+          "quantity": "50",
+          "unit": "m",
+          "unit_price": "0.22",
+          "total": "11.00",
+          "vat_rate": null
+        },
+        {
+          "line_number": 5,
+          "code": "ZU-1KG",
+          "description": "Zucchero semolato 1 kg",
+          "quantity": "39",
+          "unit": "pz",
+          "unit_price": "0.97",
+          "total": "37.83",
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": "413.37",
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "ddt": {
+      "kind": "ddt",
+      "number": "DDT-512",
+      "date": "2026-08-02",
+      "supplier": {
+        "name": "Tecno Nord Est S.p.A.",
+        "vat_number": "42932950092",
+        "address": "Via dell'Artigianato, 121",
+        "postal_code": "25121",
+        "city": "Brescia",
+        "province": "BS"
+      },
+      "customer": {
+        "name": "Elettro Ferri S.r.l.",
+        "vat_number": "56758320776",
+        "address": "Via Garibaldi, 172",
+        "postal_code": "41121",
+        "city": "Modena",
+        "province": "MO"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "CV-325",
+          "description": "Cavo elettrico FG16OR16 3x2,5 mm²",
+          "quantity": "200",
+          "unit": "m",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "VT-4X40",
+          "description": "Viti autofilettanti 4x40 zincate",
+          "quantity": "10",
+          "unit": "conf",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "PR-S10",
+          "description": "Presa schuko 10/16A bianca serie civile",
+          "quantity": "2",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "CV-315",
+          "description": "Cavo elettrico FS17 1x1,5 mm² blu",
+          "quantity": "50",
+          "unit": "m",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 5,
+          "code": "ZU-1KG",
+          "description": "Zucchero semolato 1 kg",
+          "quantity": "39",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [
+        "ORD-112"
+      ],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": null,
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "invoice": {
+      "kind": "invoice",
+      "number": "44/A",
+      "date": "2026-08-14",
+      "supplier": {
+        "name": "Tecno Nord Est S.p.A.",
+        "vat_number": "42932950092",
+        "address": "Via dell'Artigianato, 121",
+        "postal_code": "25121",
+        "city": "Brescia",
+        "province": "BS"
+      },
+      "customer": {
+        "name": "Elettro Ferri S.r.l.",
+        "vat_number": "56758320776",
+        "address": "Via Garibaldi, 172",
+        "postal_code": "41121",
+        "city": "Modena",
+        "province": "MO"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "CV-325",
+          "description": "Cavo elettrico FG16OR16 3x2,5 mm²",
+          "quantity": "200",
+          "unit": "m",
+          "unit_price": "1.47",
+          "total": "294.00",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 2,
+          "code": "VT-4X40",
+          "description": "Viti autofilettanti 4x40 zincate",
+          "quantity": "10",
+          "unit": "conf",
+          "unit_price": "6.35",
+          "total": "63.50",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 3,
+          "code": "PR-S10",
+          "description": "Presa schuko 10/16A bianca serie civile",
+          "quantity": "2",
+          "unit": "pz",
+          "unit_price": "3.52",
+          "total": "7.04",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 4,
+          "code": "CV-315",
+          "description": "Cavo elettrico FS17 1x1,5 mm² blu",
+          "quantity": "50",
+          "unit": "m",
+          "unit_price": "0.22",
+          "total": "11.00",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 5,
+          "code": "ZU-1KG",
+          "description": "Zucchero semolato 1 kg",
+          "quantity": "43",
+          "unit": "pz",
+          "unit_price": "0.97",
+          "total": "41.71",
+          "vat_rate": "10"
+        },
+        {
+          "line_number": 6,
+          "code": "QD-12M",
+          "description": "Quadro elettrico da parete 12 moduli IP40",
+          "quantity": "24",
+          "unit": "pz",
+          "unit_price": "31.03",
+          "total": "744.72",
+          "vat_rate": "22"
+        }
+      ],
+      "order_refs": [
+        "ORD-112"
+      ],
+      "ddt_refs": [
+        "DDT-512"
+      ],
+      "vat_summary": [
+        {
+          "vat_rate": "22",
+          "taxable_amount": "1120.26",
+          "vat_amount": "246.46"
+        },
+        {
+          "vat_rate": "10",
+          "taxable_amount": "41.71",
+          "vat_amount": "4.17"
+        }
+      ],
+      "taxable_amount": "1161.97",
+      "vat_amount": "250.63",
+      "total_amount": "1412.60"
+    },
+    "discrepancies": [
+      {
+        "type": "qty_mismatch",
+        "item_code": "ZU-1KG",
+        "expected": "39",
+        "actual": "43"
+      },
+      {
+        "type": "extra_line",
+        "item_code": "QD-12M",
+        "expected": null,
+        "actual": "24"
+      }
+    ]
+  },
+  "layout_variant": 1,
+  "scan_level": "heavy"
+}

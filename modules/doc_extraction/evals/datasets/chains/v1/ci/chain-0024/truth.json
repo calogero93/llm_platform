@@ -1,0 +1,204 @@
+{
+  "chain": {
+    "chain_id": "chain-0024",
+    "order": {
+      "kind": "order",
+      "number": "OA/2026/0025",
+      "date": "2026-04-29",
+      "supplier": {
+        "name": "Idro Nord Est S.r.l.",
+        "vat_number": "58166070472",
+        "address": "Via Garibaldi, 103",
+        "postal_code": "80133",
+        "city": "Napoli",
+        "province": "NA"
+      },
+      "customer": {
+        "name": "Ufficio Sud S.n.c.",
+        "vat_number": "75177950500",
+        "address": "Corso Italia, 157",
+        "postal_code": "00184",
+        "city": "Roma",
+        "province": "RM"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "CA-A4",
+          "description": "Carta per fotocopie A4 80 g/m² risma 500 fogli",
+          "quantity": "3",
+          "unit": "pz",
+          "unit_price": "3.64",
+          "total": "10.92",
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "MR-TP",
+          "description": "Morsetto a leva 3 poli 0,2-4 mm²",
+          "quantity": "9",
+          "unit": "conf",
+          "unit_price": "9.72",
+          "total": "87.48",
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "NS-CAV",
+          "description": "Nastro isolante PVC 19 mm x 25 m nero",
+          "quantity": "38",
+          "unit": "pz",
+          "unit_price": "1.63",
+          "total": "61.94",
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": "160.34",
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "ddt": {
+      "kind": "ddt",
+      "number": "41/2026",
+      "date": "2026-05-07",
+      "supplier": {
+        "name": "Idro Nord Est S.r.l.",
+        "vat_number": "58166070472",
+        "address": "Via Garibaldi, 103",
+        "postal_code": "80133",
+        "city": "Napoli",
+        "province": "NA"
+      },
+      "customer": {
+        "name": "Ufficio Sud S.n.c.",
+        "vat_number": "75177950500",
+        "address": "Corso Italia, 157",
+        "postal_code": "00184",
+        "city": "Roma",
+        "province": "RM"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "CA-A4",
+          "description": "Carta per fotocopie A4 80 g/m² risma 500 fogli",
+          "quantity": "3",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "MR-TP",
+          "description": "Morsetto a leva 3 poli 0,2-4 mm²",
+          "quantity": "9",
+          "unit": "conf",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "NS-CAV",
+          "description": "Nastro isolante PVC 19 mm x 25 m nero",
+          "quantity": "38",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [
+        "OA/2026/0025"
+      ],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": null,
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "invoice": {
+      "kind": "invoice",
+      "number": "2026/25",
+      "date": "2026-05-12",
+      "supplier": {
+        "name": "Idro Nord Est S.r.l.",
+        "vat_number": "58166070472",
+        "address": "Via Garibaldi, 103",
+        "postal_code": "80133",
+        "city": "Napoli",
+        "province": "NA"
+      },
+      "customer": {
+        "name": "Ufficio Sud S.n.c.",
+        "vat_number": "75177950500",
+        "address": "Corso Italia, 157",
+        "postal_code": "00184",
+        "city": "Roma",
+        "province": "RM"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "CA-A4",
+          "description": "Carta per fotocopie A4 80 g/m² risma 500 fogli",
+          "quantity": "2",
+          "unit": "pz",
+          "unit_price": "3.64",
+          "total": "7.28",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 2,
+          "code": "MR-TP",
+          "description": "Morsetto a leva 3 poli 0,2-4 mm²",
+          "quantity": "9",
+          "unit": "conf",
+          "unit_price": "9.72",
+          "total": "87.48",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 3,
+          "code": "NS-CAV",
+          "description": "Nastro isolante PVC 19 mm x 25 m nero",
+          "quantity": "38",
+          "unit": "pz",
+          "unit_price": "1.63",
+          "total": "61.94",
+          "vat_rate": "22"
+        }
+      ],
+      "order_refs": [
+        "OA/2026/0025"
+      ],
+      "ddt_refs": [
+        "41/2026"
+      ],
+      "vat_summary": [
+        {
+          "vat_rate": "22",
+          "taxable_amount": "156.70",
+          "vat_amount": "34.47"
+        }
+      ],
+      "taxable_amount": "156.70",
+      "vat_amount": "34.47",
+      "total_amount": "191.17"
+    },
+    "discrepancies": [
+      {
+        "type": "qty_mismatch",
+        "item_code": "CA-A4",
+        "expected": "3",
+        "actual": "2"
+      }
+    ]
+  },
+  "layout_variant": 0,
+  "scan_level": "clean"
+}

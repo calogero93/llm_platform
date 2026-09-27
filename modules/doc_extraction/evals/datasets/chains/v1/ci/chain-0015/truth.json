@@ -1,0 +1,355 @@
+{
+  "chain": {
+    "chain_id": "chain-0015",
+    "order": {
+      "kind": "order",
+      "number": "ORD-116",
+      "date": "2026-06-25",
+      "supplier": {
+        "name": "Ufficio Lombarda S.a.s.",
+        "vat_number": "63943510329",
+        "address": "Via dei Mille, 23",
+        "postal_code": "10121",
+        "city": "Torino",
+        "province": "TO"
+      },
+      "customer": {
+        "name": "Idro Sud S.n.c.",
+        "vat_number": "88046270307",
+        "address": "Piazza Cavour, 173",
+        "postal_code": "31100",
+        "city": "Treviso",
+        "province": "TV"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "LD-18W",
+          "description": "Plafoniera LED 18W 4000K IP65",
+          "quantity": "9",
+          "unit": "pz",
+          "unit_price": "12.78",
+          "total": "115.02",
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "CA-A4",
+          "description": "Carta per fotocopie A4 80 g/m² risma 500 fogli",
+          "quantity": "25",
+          "unit": "pz",
+          "unit_price": "3.48",
+          "total": "87.00",
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "TS-F6",
+          "description": "Tassello in nylon 6 mm",
+          "quantity": "4",
+          "unit": "conf",
+          "unit_price": "3.08",
+          "total": "12.32",
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "MN-TEC",
+          "description": "Manuale tecnico impianti elettrici civili",
+          "quantity": "36",
+          "unit": "pz",
+          "unit_price": "27.31",
+          "total": "983.16",
+          "vat_rate": null
+        },
+        {
+          "line_number": 5,
+          "code": "CV-315",
+          "description": "Cavo elettrico FS17 1x1,5 mm² blu",
+          "quantity": "200",
+          "unit": "m",
+          "unit_price": "0.18",
+          "total": "36.00",
+          "vat_rate": null
+        },
+        {
+          "line_number": 6,
+          "code": "VT-4X40",
+          "description": "Viti autofilettanti 4x40 zincate",
+          "quantity": "8",
+          "unit": "conf",
+          "unit_price": "3.7",
+          "total": "29.60",
+          "vat_rate": null
+        },
+        {
+          "line_number": 7,
+          "code": "NR-CEI",
+          "description": "Guida alle norme CEI 64-8 edizione 2026",
+          "quantity": "30",
+          "unit": "pz",
+          "unit_price": "50.84",
+          "total": "1525.20",
+          "vat_rate": null
+        },
+        {
+          "line_number": 8,
+          "code": "MR-TP",
+          "description": "Morsetto a leva 3 poli 0,2-4 mm²",
+          "quantity": "11",
+          "unit": "conf",
+          "unit_price": "9.77",
+          "total": "107.47",
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": "2895.77",
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "ddt": {
+      "kind": "ddt",
+      "number": "DDT-516",
+      "date": "2026-06-27",
+      "supplier": {
+        "name": "Ufficio Lombarda S.a.s.",
+        "vat_number": "63943510329",
+        "address": "Via dei Mille, 23",
+        "postal_code": "10121",
+        "city": "Torino",
+        "province": "TO"
+      },
+      "customer": {
+        "name": "Idro Sud S.n.c.",
+        "vat_number": "88046270307",
+        "address": "Piazza Cavour, 173",
+        "postal_code": "31100",
+        "city": "Treviso",
+        "province": "TV"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "LD-18W",
+          "description": "Plafoniera LED 18W 4000K IP65",
+          "quantity": "9",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "CA-A4",
+          "description": "Carta per fotocopie A4 80 g/m² risma 500 fogli",
+          "quantity": "25",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "TS-F6",
+          "description": "Tassello in nylon 6 mm",
+          "quantity": "4",
+          "unit": "conf",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "CV-315",
+          "description": "Cavo elettrico FS17 1x1,5 mm² blu",
+          "quantity": "200",
+          "unit": "m",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 5,
+          "code": "VT-4X40",
+          "description": "Viti autofilettanti 4x40 zincate",
+          "quantity": "8",
+          "unit": "conf",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 6,
+          "code": "NR-CEI",
+          "description": "Guida alle norme CEI 64-8 edizione 2026",
+          "quantity": "30",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 7,
+          "code": "MR-TP",
+          "description": "Morsetto a leva 3 poli 0,2-4 mm²",
+          "quantity": "11",
+          "unit": "conf",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [
+        "ORD-116"
+      ],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": null,
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "invoice": {
+      "kind": "invoice",
+      "number": "48/A",
+      "date": "2026-07-02",
+      "supplier": {
+        "name": "Ufficio Lombarda S.a.s.",
+        "vat_number": "63943510329",
+        "address": "Via dei Mille, 23",
+        "postal_code": "10121",
+        "city": "Torino",
+        "province": "TO"
+      },
+      "customer": {
+        "name": "Idro Sud S.n.c.",
+        "vat_number": "88046270307",
+        "address": "Piazza Cavour, 173",
+        "postal_code": "31100",
+        "city": "Treviso",
+        "province": "TV"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "LD-18W",
+          "description": "Plafoniera LED 18W 4000K IP65",
+          "quantity": "9",
+          "unit": "pz",
+          "unit_price": "12.78",
+          "total": "115.02",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 2,
+          "code": "CA-A4",
+          "description": "Carta per fotocopie A4 80 g/m² risma 500 fogli",
+          "quantity": "25",
+          "unit": "pz",
+          "unit_price": "3.48",
+          "total": "87.00",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 3,
+          "code": "TS-F6",
+          "description": "Tassello in nylon 6 mm",
+          "quantity": "4",
+          "unit": "conf",
+          "unit_price": "3.08",
+          "total": "12.32",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 4,
+          "code": "CV-315",
+          "description": "Cavo elettrico FS17 1x1,5 mm² blu",
+          "quantity": "200",
+          "unit": "m",
+          "unit_price": "0.18",
+          "total": "36.00",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 5,
+          "code": "VT-4X40",
+          "description": "Viti autofilettanti 4x40 zincate",
+          "quantity": "8",
+          "unit": "conf",
+          "unit_price": "3.7",
+          "total": "29.60",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 6,
+          "code": "NR-CEI",
+          "description": "Guida alle norme CEI 64-8 edizione 2026",
+          "quantity": "30",
+          "unit": "pz",
+          "unit_price": "50.84",
+          "total": "1525.20",
+          "vat_rate": "4"
+        },
+        {
+          "line_number": 7,
+          "code": "MR-TP",
+          "description": "Morsetto a leva 3 poli 0,2-4 mm²",
+          "quantity": "11",
+          "unit": "conf",
+          "unit_price": "9.77",
+          "total": "107.47",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 8,
+          "code": "SC-503",
+          "description": "Scatola da incasso 503 per 3 moduli",
+          "quantity": "20",
+          "unit": "pz",
+          "unit_price": "0.65",
+          "total": "13.00",
+          "vat_rate": "22"
+        }
+      ],
+      "order_refs": [
+        "ORD-116"
+      ],
+      "ddt_refs": [
+        "DDT-516"
+      ],
+      "vat_summary": [
+        {
+          "vat_rate": "22",
+          "taxable_amount": "400.41",
+          "vat_amount": "88.09"
+        },
+        {
+          "vat_rate": "4",
+          "taxable_amount": "1525.20",
+          "vat_amount": "61.01"
+        }
+      ],
+      "taxable_amount": "1925.61",
+      "vat_amount": "149.10",
+      "total_amount": "2074.71"
+    },
+    "discrepancies": [
+      {
+        "type": "missing_line",
+        "item_code": "MN-TEC",
+        "expected": "36",
+        "actual": null
+      },
+      {
+        "type": "extra_line",
+        "item_code": "SC-503",
+        "expected": null,
+        "actual": "20"
+      }
+    ]
+  },
+  "layout_variant": 1,
+  "scan_level": "clean"
+}

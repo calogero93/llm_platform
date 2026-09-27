@@ -1,0 +1,215 @@
+{
+  "chain": {
+    "chain_id": "chain-0012",
+    "order": {
+      "kind": "order",
+      "number": "OA/2026/0013",
+      "date": "2026-04-14",
+      "supplier": {
+        "name": "Tecno Sud S.r.l.",
+        "vat_number": "49421520823",
+        "address": "Viale della Repubblica, 164",
+        "postal_code": "24122",
+        "city": "Bergamo",
+        "province": "BG"
+      },
+      "customer": {
+        "name": "Impianti Bianchi S.a.s.",
+        "vat_number": "13963100295",
+        "address": "Via dei Mille, 91",
+        "postal_code": "31100",
+        "city": "Treviso",
+        "province": "TV"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "MN-TEC",
+          "description": "Manuale tecnico impianti elettrici civili",
+          "quantity": "30",
+          "unit": "pz",
+          "unit_price": "31.93",
+          "total": "957.90",
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "CA-A4",
+          "description": "Carta per fotocopie A4 80 g/m² risma 500 fogli",
+          "quantity": "39",
+          "unit": "pz",
+          "unit_price": "4.22",
+          "total": "164.58",
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "PR-S10",
+          "description": "Presa schuko 10/16A bianca serie civile",
+          "quantity": "38",
+          "unit": "pz",
+          "unit_price": "4.11",
+          "total": "156.18",
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": "1278.66",
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "ddt": {
+      "kind": "ddt",
+      "number": "DDT-513",
+      "date": "2026-04-20",
+      "supplier": {
+        "name": "Tecno Sud S.r.l.",
+        "vat_number": "49421520823",
+        "address": "Viale della Repubblica, 164",
+        "postal_code": "24122",
+        "city": "Bergamo",
+        "province": "BG"
+      },
+      "customer": {
+        "name": "Impianti Bianchi S.a.s.",
+        "vat_number": "13963100295",
+        "address": "Via dei Mille, 91",
+        "postal_code": "31100",
+        "city": "Treviso",
+        "province": "TV"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "MN-TEC",
+          "description": "Manuale tecnico impianti elettrici civili",
+          "quantity": "30",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "CA-A4",
+          "description": "Carta per fotocopie A4 80 g/m² risma 500 fogli",
+          "quantity": "39",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "PR-S10",
+          "description": "Presa schuko 10/16A bianca serie civile",
+          "quantity": "38",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [
+        "OA/2026/0013"
+      ],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": null,
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "invoice": {
+      "kind": "invoice",
+      "number": "FT2026-00013",
+      "date": "2026-04-22",
+      "supplier": {
+        "name": "Tecno Sud S.r.l.",
+        "vat_number": "49421520823",
+        "address": "Viale della Repubblica, 164",
+        "postal_code": "24122",
+        "city": "Bergamo",
+        "province": "BG"
+      },
+      "customer": {
+        "name": "Impianti Bianchi S.a.s.",
+        "vat_number": "13963100295",
+        "address": "Via dei Mille, 91",
+        "postal_code": "31100",
+        "city": "Treviso",
+        "province": "TV"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "MN-TEC",
+          "description": "Manuale tecnico impianti elettrici civili",
+          "quantity": "30",
+          "unit": "pz",
+          "unit_price": "35.12",
+          "total": "1053.60",
+          "vat_rate": "4"
+        },
+        {
+          "line_number": 2,
+          "code": "CA-A4",
+          "description": "Carta per fotocopie A4 80 g/m² risma 500 fogli",
+          "quantity": "39",
+          "unit": "pz",
+          "unit_price": "4.22",
+          "total": "164.58",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 3,
+          "code": "PR-S10",
+          "description": "Presa schuko 10/16A bianca serie civile",
+          "quantity": "34",
+          "unit": "pz",
+          "unit_price": "4.11",
+          "total": "139.74",
+          "vat_rate": "22"
+        }
+      ],
+      "order_refs": [
+        "OA/2026/0013"
+      ],
+      "ddt_refs": [
+        "DDT-513"
+      ],
+      "vat_summary": [
+        {
+          "vat_rate": "22",
+          "taxable_amount": "304.32",
+          "vat_amount": "66.95"
+        },
+        {
+          "vat_rate": "4",
+          "taxable_amount": "1053.60",
+          "vat_amount": "42.14"
+        }
+      ],
+      "taxable_amount": "1357.92",
+      "vat_amount": "109.09",
+      "total_amount": "1467.01"
+    },
+    "discrepancies": [
+      {
+        "type": "price_mismatch",
+        "item_code": "MN-TEC",
+        "expected": "31.93",
+        "actual": "35.12"
+      },
+      {
+        "type": "qty_mismatch",
+        "item_code": "PR-S10",
+        "expected": "38",
+        "actual": "34"
+      }
+    ]
+  },
+  "layout_variant": 0,
+  "scan_level": "clean"
+}

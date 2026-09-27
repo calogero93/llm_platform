@@ -246,12 +246,16 @@ sets a correlation id (from `X-Request-ID` or generated) in a `contextvar`; ever
 
 ### 2.7 Evaluation harness (platform-level)
 
-- A module declares `EvalSuite`s: dataset path, a `predict(item) -> prediction` function (runs the
-  real pipeline), and metric functions `(prediction, ground_truth) -> dict[str, float]`.
-- Datasets live in the repo, versioned by directory (`evals/datasets/<suite>/v<N>/`) with a
-  `manifest.json` (generator version, seed, file hashes). Small `ci` split committed with its files;
-  larger `full` split regenerated deterministically from the seed (generator + seed are the
-  source of truth; manifest hashes prove reproducibility).
+- A module declares `EvalSuite`s (`llmp.eval.suite`): a dataset split and
+  `run_case(split, case_id, ctx) -> CaseResult`, which runs the real pipeline and scores it as
+  per-field TP/FP/FN counts plus per-case scores. The platform runner handles concurrency,
+  latency, errors (recorded, and scored as 0), micro/per-field P/R/F1 and report metadata.
+- Datasets live in the repo, versioned by directory (`evals/datasets/<name>/v<N>/<split>/`) with a
+  `manifest.json` (seed, SHA-256 of every generated file). **Committed: ground truth
+  (`truth.json`), manifests and a contact sheet — not the documents.** PDFs, scans and XML are
+  regenerated deterministically (`make synth`); CI regenerates the `ci` split and fails on any
+  byte difference, so a generator change forces a new dataset version. (Committing the scans
+  would have meant ~18 MB of binaries per version.)
 - A run writes `evals/runs/<ts>_<suite>/report.json`: git sha, model, vLLM params, prompt
   versions+hashes, dataset version, per-item results, aggregates, latency/cost. `runs/` is
   gitignored; chosen runs are promoted to `evals/baselines/`.
@@ -299,9 +303,11 @@ flowchart LR
 
 - **FatturaPA XML is parsed deterministically**, not by the LLM. It is already structured data;
   using an LLM there would add cost, latency and error for zero benefit, and a reviewer would
-  rightly flag it. The XML path still produces the same `ExtractedDocument` (confidence 1.0) so
-  reconciliation and eval treat all sources uniformly. Target: FatturaPA **1.2.3** (XSD valid
-  since 2025-04-01, spec v1.4), vendored with its `xmldsig` import rewritten to a local path.
+  rightly flag it. The XML path still produces the same `Document` (confidence 1.0) so
+  reconciliation and eval treat all sources uniformly. Target: FatturaPA **FPR12 1.2.3** (B2B
+  schema, valid since 2025-04-01, spec v1.4), vendored with its `xmldsig` import rewritten to a
+  local path. The parser never loads DTDs or entities and rejects any document declaring a
+  DOCTYPE (FatturaPA has none; a DTD only serves XXE / entity-expansion attacks).
 - **Docling** (MIT, IBM) for PDFs: one tool for native and scanned PDFs, layout analysis and
   TableFormer table structure (invoice line items *are* tables), runs on CPU, models can be
   pre-fetched for offline use. Alternatives rejected: PyMuPDF (AGPL — problematic for a product
@@ -320,7 +326,8 @@ flowchart LR
   Discrepancy types are an enum (`qty_mismatch`, `price_mismatch`, `missing_line`, `extra_line`,
   `vat_mismatch`, `total_mismatch`, `unlinked_document`). An LLM is added for ambiguous line
   matching **only if** measurement shows the deterministic matcher fails on realistic synthetic
-  descriptions.
+  descriptions. Eval line alignment uses the same idea (code → exact description → most similar
+  description), greedy rather than optimal assignment, so no scipy.
 - **Synthetic data generator**: seeded, produces coherent order → DDT → invoice chains for
   fictitious Italian companies (valid P.IVA check digits, realistic addresses/products/VAT rates),
   FatturaPA XML validated against the XSD, native PDFs (reportlab, `invariant=1` for byte-stable
@@ -389,8 +396,8 @@ pytest-asyncio, import-linter, locust, gitleaks-in-CI.)
 | docling | doc_extraction | PDF layout/table/OCR (§2.9) |
 | jinja2 | doc_extraction (UI) | server-rendered demo pages (§2.11) |
 | reportlab | doc_extraction (synth) | PDF generation (BSD) |
-| pypdfium2, Pillow, numpy | doc_extraction (synth) | rasterize + degrade (already transitive via docling) |
-| scipy | doc_extraction (eval) | `linear_sum_assignment` for line alignment — *or* hand-written, decide in Phase 2 |
+| pypdfium2, Pillow | doc_extraction (synth) | rasterize + degrade scans (also used by docling) |
+| numpy | doc_extraction (synth) | scan noise; already a transitive dependency of the PDF stack |
 
 ## 5. Rejected alternatives (summary)
 

@@ -1,0 +1,190 @@
+{
+  "chain": {
+    "chain_id": "chain-0014",
+    "order": {
+      "kind": "order",
+      "number": "ORD-115",
+      "date": "2026-05-05",
+      "supplier": {
+        "name": "Ferramenta Nord Est S.p.A.",
+        "vat_number": "32706750976",
+        "address": "Via dell'Artigianato, 134",
+        "postal_code": "10121",
+        "city": "Torino",
+        "province": "TO"
+      },
+      "customer": {
+        "name": "Commerciale Bianchi S.r.l.",
+        "vat_number": "64850420924",
+        "address": "Via dell'Industria, 92",
+        "postal_code": "10121",
+        "city": "Torino",
+        "province": "TO"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "MR-TP",
+          "description": "Morsetto a leva 3 poli 0,2-4 mm²",
+          "quantity": "10",
+          "unit": "conf",
+          "unit_price": "7.83",
+          "total": "78.30",
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "DF-25",
+          "description": "Interruttore differenziale puro 2P 25A 30mA",
+          "quantity": "10",
+          "unit": "pz",
+          "unit_price": "31.76",
+          "total": "317.60",
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": "395.90",
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "ddt": {
+      "kind": "ddt",
+      "number": "DDT-515",
+      "date": "2026-05-14",
+      "supplier": {
+        "name": "Ferramenta Nord Est S.p.A.",
+        "vat_number": "32706750976",
+        "address": "Via dell'Artigianato, 134",
+        "postal_code": "10121",
+        "city": "Torino",
+        "province": "TO"
+      },
+      "customer": {
+        "name": "Commerciale Bianchi S.r.l.",
+        "vat_number": "64850420924",
+        "address": "Via dell'Industria, 92",
+        "postal_code": "10121",
+        "city": "Torino",
+        "province": "TO"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "MR-TP",
+          "description": "Morsetto a leva 3 poli 0,2-4 mm²",
+          "quantity": "10",
+          "unit": "conf",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "DF-25",
+          "description": "Interruttore differenziale puro 2P 25A 30mA",
+          "quantity": "10",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [
+        "ORD-115"
+      ],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": null,
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "invoice": {
+      "kind": "invoice",
+      "number": "47/A",
+      "date": "2026-05-29",
+      "supplier": {
+        "name": "Ferramenta Nord Est S.p.A.",
+        "vat_number": "32706750976",
+        "address": "Via dell'Artigianato, 134",
+        "postal_code": "10121",
+        "city": "Torino",
+        "province": "TO"
+      },
+      "customer": {
+        "name": "Commerciale Bianchi S.r.l.",
+        "vat_number": "64850420924",
+        "address": "Via dell'Industria, 92",
+        "postal_code": "10121",
+        "city": "Torino",
+        "province": "TO"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "MR-TP",
+          "description": "Morsetto a leva 3 poli 0,2-4 mm²",
+          "quantity": "10",
+          "unit": "conf",
+          "unit_price": "7.83",
+          "total": "78.30",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 2,
+          "code": "DF-25",
+          "description": "Interruttore differenziale puro 2P 25A 30mA",
+          "quantity": "10",
+          "unit": "pz",
+          "unit_price": "34.30",
+          "total": "343.00",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 3,
+          "code": "LD-E27",
+          "description": "Lampadina LED E27 10W luce calda",
+          "quantity": "16",
+          "unit": "pz",
+          "unit_price": "3.11",
+          "total": "49.76",
+          "vat_rate": "22"
+        }
+      ],
+      "order_refs": [
+        "ORD-115"
+      ],
+      "ddt_refs": [
+        "DDT-515"
+      ],
+      "vat_summary": [
+        {
+          "vat_rate": "22",
+          "taxable_amount": "471.06",
+          "vat_amount": "103.63"
+        }
+      ],
+      "taxable_amount": "471.06",
+      "vat_amount": "103.63",
+      "total_amount": "574.69"
+    },
+    "discrepancies": [
+      {
+        "type": "price_mismatch",
+        "item_code": "DF-25",
+        "expected": "31.76",
+        "actual": "34.30"
+      },
+      {
+        "type": "extra_line",
+        "item_code": "LD-E27",
+        "expected": null,
+        "actual": "16"
+      }
+    ]
+  },
+  "layout_variant": 0,
+  "scan_level": "heavy"
+}

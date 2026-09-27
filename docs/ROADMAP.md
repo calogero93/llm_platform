@@ -50,38 +50,40 @@ Acceptance:
 - [x] `/health` returns 503 while vLLM is loading and 200 once ready.
 - [x] Egress check: `docker compose exec vllm python -c "<connect to 1.1.1.1:443>"` fails;
       `HF_HUB_OFFLINE=1` set and startup succeeds without network.
-- [ ] Phase review includes a go/no-go on the primary model.
+- [x] Phase review includes a go/no-go on the primary model. (2026-09-27: model A confirmed.)
 
-## Phase 2 — Synthetic data generator + evaluation harness
+## Phase 2 — Synthetic data generator + evaluation harness (+ deterministic XML parser)
 
 Scope: generator for order → DDT → invoice chains (XML, native PDF, degraded scan) with
-ground truth; platform eval harness (runner, metrics protocol, reports, compare, baseline
-gating); cassette recording.
+ground truth; platform eval harness (runner, metrics, reports, compare, baseline gating).
+Changes agreed at phase start: the deterministic FatturaPA parser (formerly 3a) moved here so
+`make eval` has a real predictor, whose F1 must be exactly 1.0 (end-to-end check of generator,
+parser and metrics); cassette recording moved to 3b, where the first LLM suite needs it.
 
 Acceptance:
-- [ ] `make synth SEED=42 N=...` is deterministic: two runs produce identical file hashes
-      (checked against `manifest.json`).
-- [ ] 100% of generated FatturaPA XML files validate against the vendored XSD 1.2.3.
-- [ ] Generated P.IVA numbers pass the check-digit algorithm; each invoice satisfies
-      Σ lines = imponibile and imposta = imponibile × aliquota (per VAT bucket, with rounding rule).
-- [ ] Degradation levels (e.g. `clean`, `light`, `heavy`) are parameters; a contact sheet image
-      of samples is committed for visual review.
-- [ ] Datasets `ci` (committed, ~30 chains) and `full` (regenerated, ~300 chains) exist,
-      versioned as `v1`.
-- [ ] Harness unit-tested on toy predictions with hand-computed P/R/F1.
-- [ ] `make eval` writes `report.json` with the metadata listed in ARCHITECTURE §2.7;
+- [x] `make synth` is deterministic: regenerated files match the SHA-256 in `manifest.json`
+      (`make synth-check`; CI regenerates and runs `git diff --exit-code`).
+- [x] 100% of generated FatturaPA XML files validate against the vendored XSD FPR12 1.2.3.
+- [x] Generated P.IVA numbers pass the check digit; each invoice satisfies Σ lines = imponibile
+      and imposta = imponibile × aliquota per VAT bucket (half-up rounding to cents) — tested.
+- [x] Degradation levels (`clean`, `light`, `heavy`) are parameters; contact sheet committed
+      (`evals/datasets/chains/v1/contact_sheet.jpg`).
+- [x] Datasets `ci` (30 chains) and `full` (300 chains) versioned as `chains/v1`; ground truth and
+      manifests committed, documents regenerated.
+- [x] Harness unit-tested on toy predictions with hand-computed P/R/F1.
+- [x] `make eval` writes `report.json` with the metadata of ARCHITECTURE §2.7;
       `make eval-compare A=... B=...` prints a markdown diff table.
-- [ ] CI runs the eval on the mock (replay) and fails on a deliberate metric regression
-      (demonstrated by a test).
+- [x] CI runs the eval and gates it against the committed baseline; a test demonstrates that a
+      deliberate regression fails the gate.
 
 ## Phase 3 — Extraction: XML → native PDF → scans, measured at each step
 
 ### 3a — FatturaPA XML (deterministic)
-- [ ] `POST /doc-extraction/extract` accepts XML and returns `ExtractedDocument`.
-- [ ] Field F1 = 1.00 on `full` XML split (it is deterministic; anything less is a bug).
-- [ ] Handles multi-body files (`FatturaElettronicaBody` repeated) and multiple VAT rates.
+- [x] Parser done in Phase 2 (F1 = 1.00 on `ci` and `full`, multi-body files, DTD rejected).
+- [ ] `POST /doc-extraction/extract` accepts XML and returns the extracted `Document`.
 
 ### 3b — Native PDF (Docling + LLM)
+- [ ] Cassette recording (`make eval-record`) so CI replays real vLLM outputs.
 - [ ] Prompt `extract_invoice/v1` + schema-constrained generation; results for models A and B.
 - [ ] Eval report per field on `full` native-PDF split, committed as baseline.
 - [ ] *Provisional* target: macro field F1 ≥ 0.95 (header fields), ≥ 0.90 (line items).

@@ -1,0 +1,359 @@
+{
+  "chain": {
+    "chain_id": "chain-0029",
+    "order": {
+      "kind": "order",
+      "number": "ORD-130",
+      "date": "2026-08-18",
+      "supplier": {
+        "name": "Ufficio Padana S.p.A.",
+        "vat_number": "64550020917",
+        "address": "Corso Italia, 168",
+        "postal_code": "73100",
+        "city": "Lecce",
+        "province": "LE"
+      },
+      "customer": {
+        "name": "Impianti Galli S.p.A.",
+        "vat_number": "80953640689",
+        "address": "Via Emilia, 138",
+        "postal_code": "20121",
+        "city": "Milano",
+        "province": "MI"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "LD-18W",
+          "description": "Plafoniera LED 18W 4000K IP65",
+          "quantity": "22",
+          "unit": "pz",
+          "unit_price": "18.71",
+          "total": "411.62",
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "CV-325",
+          "description": "Cavo elettrico FG16OR16 3x2,5 mm²",
+          "quantity": "150",
+          "unit": "m",
+          "unit_price": "1.42",
+          "total": "213.00",
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "SC-503",
+          "description": "Scatola da incasso 503 per 3 moduli",
+          "quantity": "23",
+          "unit": "pz",
+          "unit_price": "0.65",
+          "total": "14.95",
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "VT-4X40",
+          "description": "Viti autofilettanti 4x40 zincate",
+          "quantity": "9",
+          "unit": "conf",
+          "unit_price": "6.37",
+          "total": "57.33",
+          "vat_rate": null
+        },
+        {
+          "line_number": 5,
+          "code": "BS-1KG",
+          "description": "Biscotti frollini confezione 1 kg",
+          "quantity": "4",
+          "unit": "conf",
+          "unit_price": "3.85",
+          "total": "15.40",
+          "vat_rate": null
+        },
+        {
+          "line_number": 6,
+          "code": "GU-NIT",
+          "description": "Guanti da lavoro in nitrile taglia L",
+          "quantity": "5",
+          "unit": "conf",
+          "unit_price": "6.6",
+          "total": "33.00",
+          "vat_rate": null
+        },
+        {
+          "line_number": 7,
+          "code": "IN-16A",
+          "description": "Interruttore magnetotermico 1P+N 16A 4,5kA",
+          "quantity": "39",
+          "unit": "pz",
+          "unit_price": "10.58",
+          "total": "412.62",
+          "vat_rate": null
+        },
+        {
+          "line_number": 8,
+          "code": "LD-E27",
+          "description": "Lampadina LED E27 10W luce calda",
+          "quantity": "32",
+          "unit": "pz",
+          "unit_price": "3.06",
+          "total": "97.92",
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": "1255.84",
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "ddt": {
+      "kind": "ddt",
+      "number": "B00030",
+      "date": "2026-08-20",
+      "supplier": {
+        "name": "Ufficio Padana S.p.A.",
+        "vat_number": "64550020917",
+        "address": "Corso Italia, 168",
+        "postal_code": "73100",
+        "city": "Lecce",
+        "province": "LE"
+      },
+      "customer": {
+        "name": "Impianti Galli S.p.A.",
+        "vat_number": "80953640689",
+        "address": "Via Emilia, 138",
+        "postal_code": "20121",
+        "city": "Milano",
+        "province": "MI"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "LD-18W",
+          "description": "Plafoniera LED 18W 4000K IP65",
+          "quantity": "22",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "CV-325",
+          "description": "Cavo elettrico FG16OR16 3x2,5 mm²",
+          "quantity": "150",
+          "unit": "m",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "SC-503",
+          "description": "Scatola da incasso 503 per 3 moduli",
+          "quantity": "23",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "VT-4X40",
+          "description": "Viti autofilettanti 4x40 zincate",
+          "quantity": "9",
+          "unit": "conf",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 5,
+          "code": "BS-1KG",
+          "description": "Biscotti frollini confezione 1 kg",
+          "quantity": "4",
+          "unit": "conf",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 6,
+          "code": "GU-NIT",
+          "description": "Guanti da lavoro in nitrile taglia L",
+          "quantity": "5",
+          "unit": "conf",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 7,
+          "code": "IN-16A",
+          "description": "Interruttore magnetotermico 1P+N 16A 4,5kA",
+          "quantity": "39",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 8,
+          "code": "LD-E27",
+          "description": "Lampadina LED E27 10W luce calda",
+          "quantity": "32",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [
+        "ORD-130"
+      ],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": null,
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "invoice": {
+      "kind": "invoice",
+      "number": "FT2026-00030",
+      "date": "2026-09-01",
+      "supplier": {
+        "name": "Ufficio Padana S.p.A.",
+        "vat_number": "64550020917",
+        "address": "Corso Italia, 168",
+        "postal_code": "73100",
+        "city": "Lecce",
+        "province": "LE"
+      },
+      "customer": {
+        "name": "Impianti Galli S.p.A.",
+        "vat_number": "80953640689",
+        "address": "Via Emilia, 138",
+        "postal_code": "20121",
+        "city": "Milano",
+        "province": "MI"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "LD-18W",
+          "description": "Plafoniera LED 18W 4000K IP65",
+          "quantity": "22",
+          "unit": "pz",
+          "unit_price": "18.71",
+          "total": "411.62",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 2,
+          "code": "CV-325",
+          "description": "Cavo elettrico FG16OR16 3x2,5 mm²",
+          "quantity": "150",
+          "unit": "m",
+          "unit_price": "1.42",
+          "total": "213.00",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 3,
+          "code": "SC-503",
+          "description": "Scatola da incasso 503 per 3 moduli",
+          "quantity": "23",
+          "unit": "pz",
+          "unit_price": "0.65",
+          "total": "14.95",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 4,
+          "code": "VT-4X40",
+          "description": "Viti autofilettanti 4x40 zincate",
+          "quantity": "9",
+          "unit": "conf",
+          "unit_price": "6.37",
+          "total": "57.33",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 5,
+          "code": "BS-1KG",
+          "description": "Biscotti frollini confezione 1 kg",
+          "quantity": "4",
+          "unit": "conf",
+          "unit_price": "4.24",
+          "total": "16.96",
+          "vat_rate": "10"
+        },
+        {
+          "line_number": 6,
+          "code": "GU-NIT",
+          "description": "Guanti da lavoro in nitrile taglia L",
+          "quantity": "5",
+          "unit": "conf",
+          "unit_price": "6.6",
+          "total": "33.00",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 7,
+          "code": "IN-16A",
+          "description": "Interruttore magnetotermico 1P+N 16A 4,5kA",
+          "quantity": "39",
+          "unit": "pz",
+          "unit_price": "10.58",
+          "total": "412.62",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 8,
+          "code": "LD-E27",
+          "description": "Lampadina LED E27 10W luce calda",
+          "quantity": "32",
+          "unit": "pz",
+          "unit_price": "3.06",
+          "total": "97.92",
+          "vat_rate": "22"
+        }
+      ],
+      "order_refs": [
+        "ORD-130"
+      ],
+      "ddt_refs": [
+        "B00030"
+      ],
+      "vat_summary": [
+        {
+          "vat_rate": "22",
+          "taxable_amount": "1240.44",
+          "vat_amount": "272.90"
+        },
+        {
+          "vat_rate": "10",
+          "taxable_amount": "16.96",
+          "vat_amount": "1.70"
+        }
+      ],
+      "taxable_amount": "1257.40",
+      "vat_amount": "274.60",
+      "total_amount": "1532.00"
+    },
+    "discrepancies": [
+      {
+        "type": "price_mismatch",
+        "item_code": "BS-1KG",
+        "expected": "3.85",
+        "actual": "4.24"
+      }
+    ]
+  },
+  "layout_variant": 1,
+  "scan_level": "heavy"
+}

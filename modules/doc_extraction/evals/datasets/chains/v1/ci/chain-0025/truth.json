@@ -1,0 +1,232 @@
+{
+  "chain": {
+    "chain_id": "chain-0025",
+    "order": {
+      "kind": "order",
+      "number": "OA/2026/0026",
+      "date": "2026-08-27",
+      "supplier": {
+        "name": "Impianti Rossi S.a.s.",
+        "vat_number": "27044120569",
+        "address": "Via Emilia, 46",
+        "postal_code": "16121",
+        "city": "Genova",
+        "province": "GE"
+      },
+      "customer": {
+        "name": "Edil Centro Italia S.r.l.s.",
+        "vat_number": "54568260167",
+        "address": "Via dell'Industria, 90",
+        "postal_code": "70121",
+        "city": "Bari",
+        "province": "BA"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "MR-TP",
+          "description": "Morsetto a leva 3 poli 0,2-4 mm²",
+          "quantity": "8",
+          "unit": "conf",
+          "unit_price": "8.96",
+          "total": "71.68",
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "QD-12M",
+          "description": "Quadro elettrico da parete 12 moduli IP40",
+          "quantity": "35",
+          "unit": "pz",
+          "unit_price": "31.98",
+          "total": "1119.30",
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "BS-1KG",
+          "description": "Biscotti frollini confezione 1 kg",
+          "quantity": "8",
+          "unit": "conf",
+          "unit_price": "3.6",
+          "total": "28.80",
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "CA-A4",
+          "description": "Carta per fotocopie A4 80 g/m² risma 500 fogli",
+          "quantity": "8",
+          "unit": "pz",
+          "unit_price": "4.64",
+          "total": "37.12",
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": "1256.90",
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "ddt": {
+      "kind": "ddt",
+      "number": "42/2026",
+      "date": "2026-09-05",
+      "supplier": {
+        "name": "Impianti Rossi S.a.s.",
+        "vat_number": "27044120569",
+        "address": "Via Emilia, 46",
+        "postal_code": "16121",
+        "city": "Genova",
+        "province": "GE"
+      },
+      "customer": {
+        "name": "Edil Centro Italia S.r.l.s.",
+        "vat_number": "54568260167",
+        "address": "Via dell'Industria, 90",
+        "postal_code": "70121",
+        "city": "Bari",
+        "province": "BA"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "MR-TP",
+          "description": "Morsetto a leva 3 poli 0,2-4 mm²",
+          "quantity": "8",
+          "unit": "conf",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "QD-12M",
+          "description": "Quadro elettrico da parete 12 moduli IP40",
+          "quantity": "35",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "BS-1KG",
+          "description": "Biscotti frollini confezione 1 kg",
+          "quantity": "8",
+          "unit": "conf",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "CA-A4",
+          "description": "Carta per fotocopie A4 80 g/m² risma 500 fogli",
+          "quantity": "8",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [
+        "OA/2026/0026"
+      ],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": null,
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "invoice": {
+      "kind": "invoice",
+      "number": "FT2026-00026",
+      "date": "2026-09-12",
+      "supplier": {
+        "name": "Impianti Rossi S.a.s.",
+        "vat_number": "27044120569",
+        "address": "Via Emilia, 46",
+        "postal_code": "16121",
+        "city": "Genova",
+        "province": "GE"
+      },
+      "customer": {
+        "name": "Edil Centro Italia S.r.l.s.",
+        "vat_number": "54568260167",
+        "address": "Via dell'Industria, 90",
+        "postal_code": "70121",
+        "city": "Bari",
+        "province": "BA"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "MR-TP",
+          "description": "Morsetto a leva 3 poli 0,2-4 mm²",
+          "quantity": "8",
+          "unit": "conf",
+          "unit_price": "8.96",
+          "total": "71.68",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 2,
+          "code": "QD-12M",
+          "description": "Quadro elettrico da parete 12 moduli IP40",
+          "quantity": "35",
+          "unit": "pz",
+          "unit_price": "31.98",
+          "total": "1119.30",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 3,
+          "code": "BS-1KG",
+          "description": "Biscotti frollini confezione 1 kg",
+          "quantity": "8",
+          "unit": "conf",
+          "unit_price": "3.6",
+          "total": "28.80",
+          "vat_rate": "10"
+        },
+        {
+          "line_number": 4,
+          "code": "CA-A4",
+          "description": "Carta per fotocopie A4 80 g/m² risma 500 fogli",
+          "quantity": "8",
+          "unit": "pz",
+          "unit_price": "4.64",
+          "total": "37.12",
+          "vat_rate": "22"
+        }
+      ],
+      "order_refs": [
+        "OA/2026/0026"
+      ],
+      "ddt_refs": [
+        "42/2026"
+      ],
+      "vat_summary": [
+        {
+          "vat_rate": "22",
+          "taxable_amount": "1228.10",
+          "vat_amount": "270.18"
+        },
+        {
+          "vat_rate": "10",
+          "taxable_amount": "28.80",
+          "vat_amount": "2.88"
+        }
+      ],
+      "taxable_amount": "1256.90",
+      "vat_amount": "273.06",
+      "total_amount": "1529.96"
+    },
+    "discrepancies": []
+  },
+  "layout_variant": 1,
+  "scan_level": "light"
+}

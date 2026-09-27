@@ -1,0 +1,202 @@
+{
+  "chain": {
+    "chain_id": "chain-0001",
+    "order": {
+      "kind": "order",
+      "number": "2/2026",
+      "date": "2026-05-29",
+      "supplier": {
+        "name": "Ufficio Rossi S.r.l.s.",
+        "vat_number": "84418940742",
+        "address": "Via Nazionale, 165",
+        "postal_code": "50123",
+        "city": "Firenze",
+        "province": "FI"
+      },
+      "customer": {
+        "name": "Forniture Ferri S.n.c.",
+        "vat_number": "40890180140",
+        "address": "Via Roma, 33",
+        "postal_code": "31100",
+        "city": "Treviso",
+        "province": "TV"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "ZU-1KG",
+          "description": "Zucchero semolato 1 kg",
+          "quantity": "8",
+          "unit": "pz",
+          "unit_price": "1.22",
+          "total": "9.76",
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "TS-F6",
+          "description": "Tassello in nylon 6 mm",
+          "quantity": "7",
+          "unit": "conf",
+          "unit_price": "4.11",
+          "total": "28.77",
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "LD-E27",
+          "description": "Lampadina LED E27 10W luce calda",
+          "quantity": "14",
+          "unit": "pz",
+          "unit_price": "2.65",
+          "total": "37.10",
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": "75.63",
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "ddt": {
+      "kind": "ddt",
+      "number": "DDT-502",
+      "date": "2026-06-08",
+      "supplier": {
+        "name": "Ufficio Rossi S.r.l.s.",
+        "vat_number": "84418940742",
+        "address": "Via Nazionale, 165",
+        "postal_code": "50123",
+        "city": "Firenze",
+        "province": "FI"
+      },
+      "customer": {
+        "name": "Forniture Ferri S.n.c.",
+        "vat_number": "40890180140",
+        "address": "Via Roma, 33",
+        "postal_code": "31100",
+        "city": "Treviso",
+        "province": "TV"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "ZU-1KG",
+          "description": "Zucchero semolato 1 kg",
+          "quantity": "8",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "TS-F6",
+          "description": "Tassello in nylon 6 mm",
+          "quantity": "7",
+          "unit": "conf",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "LD-E27",
+          "description": "Lampadina LED E27 10W luce calda",
+          "quantity": "14",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [
+        "2/2026"
+      ],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": null,
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "invoice": {
+      "kind": "invoice",
+      "number": "2026/2",
+      "date": "2026-06-13",
+      "supplier": {
+        "name": "Ufficio Rossi S.r.l.s.",
+        "vat_number": "84418940742",
+        "address": "Via Nazionale, 165",
+        "postal_code": "50123",
+        "city": "Firenze",
+        "province": "FI"
+      },
+      "customer": {
+        "name": "Forniture Ferri S.n.c.",
+        "vat_number": "40890180140",
+        "address": "Via Roma, 33",
+        "postal_code": "31100",
+        "city": "Treviso",
+        "province": "TV"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "ZU-1KG",
+          "description": "Zucchero semolato 1 kg",
+          "quantity": "8",
+          "unit": "pz",
+          "unit_price": "1.22",
+          "total": "9.76",
+          "vat_rate": "10"
+        },
+        {
+          "line_number": 2,
+          "code": "TS-F6",
+          "description": "Tassello in nylon 6 mm",
+          "quantity": "7",
+          "unit": "conf",
+          "unit_price": "4.11",
+          "total": "28.77",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 3,
+          "code": "LD-E27",
+          "description": "Lampadina LED E27 10W luce calda",
+          "quantity": "14",
+          "unit": "pz",
+          "unit_price": "2.65",
+          "total": "37.10",
+          "vat_rate": "22"
+        }
+      ],
+      "order_refs": [
+        "2/2026"
+      ],
+      "ddt_refs": [
+        "DDT-502"
+      ],
+      "vat_summary": [
+        {
+          "vat_rate": "22",
+          "taxable_amount": "65.87",
+          "vat_amount": "14.49"
+        },
+        {
+          "vat_rate": "10",
+          "taxable_amount": "9.76",
+          "vat_amount": "0.98"
+        }
+      ],
+      "taxable_amount": "75.63",
+      "vat_amount": "15.47",
+      "total_amount": "91.10"
+    },
+    "discrepancies": []
+  },
+  "layout_variant": 1,
+  "scan_level": "light"
+}

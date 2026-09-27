@@ -1,0 +1,374 @@
+{
+  "chain": {
+    "chain_id": "chain-0009",
+    "order": {
+      "kind": "order",
+      "number": "10/2026",
+      "date": "2026-05-14",
+      "supplier": {
+        "name": "Distribuzione Bianchi S.r.l.",
+        "vat_number": "80303100129",
+        "address": "Via dell'Artigianato, 152",
+        "postal_code": "41121",
+        "city": "Modena",
+        "province": "MO"
+      },
+      "customer": {
+        "name": "Distribuzione Lombarda S.r.l.s.",
+        "vat_number": "74332370571",
+        "address": "Via Garibaldi, 131",
+        "postal_code": "35122",
+        "city": "Padova",
+        "province": "PD"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "BS-1KG",
+          "description": "Biscotti frollini confezione 1 kg",
+          "quantity": "7",
+          "unit": "conf",
+          "unit_price": "4.87",
+          "total": "34.09",
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "TB-20",
+          "description": "Tubo corrugato flessibile diametro 20 mm",
+          "quantity": "100",
+          "unit": "m",
+          "unit_price": "0.23",
+          "total": "23.00",
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "CA-A4",
+          "description": "Carta per fotocopie A4 80 g/m² risma 500 fogli",
+          "quantity": "25",
+          "unit": "pz",
+          "unit_price": "4.74",
+          "total": "118.50",
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "TS-F6",
+          "description": "Tassello in nylon 6 mm",
+          "quantity": "8",
+          "unit": "conf",
+          "unit_price": "2.53",
+          "total": "20.24",
+          "vat_rate": null
+        },
+        {
+          "line_number": 5,
+          "code": "IN-16A",
+          "description": "Interruttore magnetotermico 1P+N 16A 4,5kA",
+          "quantity": "37",
+          "unit": "pz",
+          "unit_price": "9.74",
+          "total": "360.38",
+          "vat_rate": null
+        },
+        {
+          "line_number": 6,
+          "code": "PR-S10",
+          "description": "Presa schuko 10/16A bianca serie civile",
+          "quantity": "29",
+          "unit": "pz",
+          "unit_price": "2.54",
+          "total": "73.66",
+          "vat_rate": null
+        },
+        {
+          "line_number": 7,
+          "code": "ZU-1KG",
+          "description": "Zucchero semolato 1 kg",
+          "quantity": "27",
+          "unit": "pz",
+          "unit_price": "1.43",
+          "total": "38.61",
+          "vat_rate": null
+        },
+        {
+          "line_number": 8,
+          "code": "CV-315",
+          "description": "Cavo elettrico FS17 1x1,5 mm² blu",
+          "quantity": "500",
+          "unit": "m",
+          "unit_price": "0.25",
+          "total": "125.00",
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": "793.48",
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "ddt": {
+      "kind": "ddt",
+      "number": "DDT-510",
+      "date": "2026-05-22",
+      "supplier": {
+        "name": "Distribuzione Bianchi S.r.l.",
+        "vat_number": "80303100129",
+        "address": "Via dell'Artigianato, 152",
+        "postal_code": "41121",
+        "city": "Modena",
+        "province": "MO"
+      },
+      "customer": {
+        "name": "Distribuzione Lombarda S.r.l.s.",
+        "vat_number": "74332370571",
+        "address": "Via Garibaldi, 131",
+        "postal_code": "35122",
+        "city": "Padova",
+        "province": "PD"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "BS-1KG",
+          "description": "Biscotti frollini confezione 1 kg",
+          "quantity": "7",
+          "unit": "conf",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "TB-20",
+          "description": "Tubo corrugato flessibile diametro 20 mm",
+          "quantity": "100",
+          "unit": "m",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "CA-A4",
+          "description": "Carta per fotocopie A4 80 g/m² risma 500 fogli",
+          "quantity": "25",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "TS-F6",
+          "description": "Tassello in nylon 6 mm",
+          "quantity": "8",
+          "unit": "conf",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 5,
+          "code": "IN-16A",
+          "description": "Interruttore magnetotermico 1P+N 16A 4,5kA",
+          "quantity": "37",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 6,
+          "code": "PR-S10",
+          "description": "Presa schuko 10/16A bianca serie civile",
+          "quantity": "29",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 7,
+          "code": "ZU-1KG",
+          "description": "Zucchero semolato 1 kg",
+          "quantity": "27",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 8,
+          "code": "CV-315",
+          "description": "Cavo elettrico FS17 1x1,5 mm² blu",
+          "quantity": "500",
+          "unit": "m",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [
+        "10/2026"
+      ],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": null,
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "invoice": {
+      "kind": "invoice",
+      "number": "42/A",
+      "date": "2026-05-23",
+      "supplier": {
+        "name": "Distribuzione Bianchi S.r.l.",
+        "vat_number": "80303100129",
+        "address": "Via dell'Artigianato, 152",
+        "postal_code": "41121",
+        "city": "Modena",
+        "province": "MO"
+      },
+      "customer": {
+        "name": "Distribuzione Lombarda S.r.l.s.",
+        "vat_number": "74332370571",
+        "address": "Via Garibaldi, 131",
+        "postal_code": "35122",
+        "city": "Padova",
+        "province": "PD"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "BS-1KG",
+          "description": "Biscotti frollini confezione 1 kg",
+          "quantity": "7",
+          "unit": "conf",
+          "unit_price": "4.87",
+          "total": "34.09",
+          "vat_rate": "10"
+        },
+        {
+          "line_number": 2,
+          "code": "TB-20",
+          "description": "Tubo corrugato flessibile diametro 20 mm",
+          "quantity": "100",
+          "unit": "m",
+          "unit_price": "0.23",
+          "total": "23.00",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 3,
+          "code": "CA-A4",
+          "description": "Carta per fotocopie A4 80 g/m² risma 500 fogli",
+          "quantity": "25",
+          "unit": "pz",
+          "unit_price": "4.74",
+          "total": "118.50",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 4,
+          "code": "TS-F6",
+          "description": "Tassello in nylon 6 mm",
+          "quantity": "8",
+          "unit": "conf",
+          "unit_price": "2.53",
+          "total": "20.24",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 5,
+          "code": "IN-16A",
+          "description": "Interruttore magnetotermico 1P+N 16A 4,5kA",
+          "quantity": "37",
+          "unit": "pz",
+          "unit_price": "9.74",
+          "total": "360.38",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 6,
+          "code": "PR-S10",
+          "description": "Presa schuko 10/16A bianca serie civile",
+          "quantity": "29",
+          "unit": "pz",
+          "unit_price": "2.54",
+          "total": "73.66",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 7,
+          "code": "ZU-1KG",
+          "description": "Zucchero semolato 1 kg",
+          "quantity": "27",
+          "unit": "pz",
+          "unit_price": "1.43",
+          "total": "38.61",
+          "vat_rate": "10"
+        },
+        {
+          "line_number": 8,
+          "code": "CV-315",
+          "description": "Cavo elettrico FS17 1x1,5 mm² blu",
+          "quantity": "500",
+          "unit": "m",
+          "unit_price": "0.25",
+          "total": "125.00",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 9,
+          "code": "NR-CEI",
+          "description": "Guida alle norme CEI 64-8 edizione 2026",
+          "quantity": "12",
+          "unit": "pz",
+          "unit_price": "51.91",
+          "total": "622.92",
+          "vat_rate": "4"
+        }
+      ],
+      "order_refs": [
+        "10/2026"
+      ],
+      "ddt_refs": [
+        "DDT-510"
+      ],
+      "vat_summary": [
+        {
+          "vat_rate": "22",
+          "taxable_amount": "720.78",
+          "vat_amount": "158.57"
+        },
+        {
+          "vat_rate": "10",
+          "taxable_amount": "72.70",
+          "vat_amount": "7.27"
+        },
+        {
+          "vat_rate": "4",
+          "taxable_amount": "622.92",
+          "vat_amount": "24.92"
+        }
+      ],
+      "taxable_amount": "1416.40",
+      "vat_amount": "190.76",
+      "total_amount": "1607.16"
+    },
+    "discrepancies": [
+      {
+        "type": "extra_line",
+        "item_code": "NR-CEI",
+        "expected": null,
+        "actual": "12"
+      }
+    ]
+  },
+  "layout_variant": 1,
+  "scan_level": "clean"
+}

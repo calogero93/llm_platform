@@ -1,0 +1,167 @@
+{
+  "chain": {
+    "chain_id": "chain-0026",
+    "order": {
+      "kind": "order",
+      "number": "OA/2026/0027",
+      "date": "2026-01-06",
+      "supplier": {
+        "name": "Forniture Rossi S.p.A.",
+        "vat_number": "54485580069",
+        "address": "Via Mazzini, 113",
+        "postal_code": "41121",
+        "city": "Modena",
+        "province": "MO"
+      },
+      "customer": {
+        "name": "Forniture Adriatica S.n.c.",
+        "vat_number": "57743280091",
+        "address": "Piazza Cavour, 179",
+        "postal_code": "00184",
+        "city": "Roma",
+        "province": "RM"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "PR-S10",
+          "description": "Presa schuko 10/16A bianca serie civile",
+          "quantity": "1",
+          "unit": "pz",
+          "unit_price": "2.91",
+          "total": "2.91",
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "LD-E27",
+          "description": "Lampadina LED E27 10W luce calda",
+          "quantity": "27",
+          "unit": "pz",
+          "unit_price": "2.18",
+          "total": "58.86",
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": "61.77",
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "ddt": {
+      "kind": "ddt",
+      "number": "DDT-527",
+      "date": "2026-01-12",
+      "supplier": {
+        "name": "Forniture Rossi S.p.A.",
+        "vat_number": "54485580069",
+        "address": "Via Mazzini, 113",
+        "postal_code": "41121",
+        "city": "Modena",
+        "province": "MO"
+      },
+      "customer": {
+        "name": "Forniture Adriatica S.n.c.",
+        "vat_number": "57743280091",
+        "address": "Piazza Cavour, 179",
+        "postal_code": "00184",
+        "city": "Roma",
+        "province": "RM"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "PR-S10",
+          "description": "Presa schuko 10/16A bianca serie civile",
+          "quantity": "1",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "LD-E27",
+          "description": "Lampadina LED E27 10W luce calda",
+          "quantity": "27",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [
+        "OA/2026/0027"
+      ],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": null,
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "invoice": {
+      "kind": "invoice",
+      "number": "59/A",
+      "date": "2026-01-14",
+      "supplier": {
+        "name": "Forniture Rossi S.p.A.",
+        "vat_number": "54485580069",
+        "address": "Via Mazzini, 113",
+        "postal_code": "41121",
+        "city": "Modena",
+        "province": "MO"
+      },
+      "customer": {
+        "name": "Forniture Adriatica S.n.c.",
+        "vat_number": "57743280091",
+        "address": "Piazza Cavour, 179",
+        "postal_code": "00184",
+        "city": "Roma",
+        "province": "RM"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "PR-S10",
+          "description": "Presa schuko 10/16A bianca serie civile",
+          "quantity": "1",
+          "unit": "pz",
+          "unit_price": "2.91",
+          "total": "2.91",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 2,
+          "code": "LD-E27",
+          "description": "Lampadina LED E27 10W luce calda",
+          "quantity": "27",
+          "unit": "pz",
+          "unit_price": "2.18",
+          "total": "58.86",
+          "vat_rate": "22"
+        }
+      ],
+      "order_refs": [
+        "OA/2026/0027"
+      ],
+      "ddt_refs": [
+        "DDT-527"
+      ],
+      "vat_summary": [
+        {
+          "vat_rate": "22",
+          "taxable_amount": "61.77",
+          "vat_amount": "13.59"
+        }
+      ],
+      "taxable_amount": "61.77",
+      "vat_amount": "13.59",
+      "total_amount": "75.36"
+    },
+    "discrepancies": []
+  },
+  "layout_variant": 0,
+  "scan_level": "heavy"
+}

@@ -1,0 +1,202 @@
+{
+  "chain": {
+    "chain_id": "chain-0016",
+    "order": {
+      "kind": "order",
+      "number": "OA/2026/0017",
+      "date": "2026-04-18",
+      "supplier": {
+        "name": "Elettro Centro Italia S.r.l.",
+        "vat_number": "83547810024",
+        "address": "Viale della Repubblica, 17",
+        "postal_code": "35122",
+        "city": "Padova",
+        "province": "PD"
+      },
+      "customer": {
+        "name": "Ferramenta Centro Italia S.p.A.",
+        "vat_number": "40047430455",
+        "address": "Via Mazzini, 79",
+        "postal_code": "06121",
+        "city": "Perugia",
+        "province": "PG"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "BS-1KG",
+          "description": "Biscotti frollini confezione 1 kg",
+          "quantity": "5",
+          "unit": "conf",
+          "unit_price": "4.61",
+          "total": "23.05",
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "LD-E27",
+          "description": "Lampadina LED E27 10W luce calda",
+          "quantity": "23",
+          "unit": "pz",
+          "unit_price": "2.14",
+          "total": "49.22",
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "TS-F6",
+          "description": "Tassello in nylon 6 mm",
+          "quantity": "5",
+          "unit": "conf",
+          "unit_price": "3.73",
+          "total": "18.65",
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": "90.92",
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "ddt": {
+      "kind": "ddt",
+      "number": "B00017",
+      "date": "2026-04-24",
+      "supplier": {
+        "name": "Elettro Centro Italia S.r.l.",
+        "vat_number": "83547810024",
+        "address": "Viale della Repubblica, 17",
+        "postal_code": "35122",
+        "city": "Padova",
+        "province": "PD"
+      },
+      "customer": {
+        "name": "Ferramenta Centro Italia S.p.A.",
+        "vat_number": "40047430455",
+        "address": "Via Mazzini, 79",
+        "postal_code": "06121",
+        "city": "Perugia",
+        "province": "PG"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "BS-1KG",
+          "description": "Biscotti frollini confezione 1 kg",
+          "quantity": "5",
+          "unit": "conf",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "LD-E27",
+          "description": "Lampadina LED E27 10W luce calda",
+          "quantity": "23",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "TS-F6",
+          "description": "Tassello in nylon 6 mm",
+          "quantity": "5",
+          "unit": "conf",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [
+        "OA/2026/0017"
+      ],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": null,
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "invoice": {
+      "kind": "invoice",
+      "number": "2026/17",
+      "date": "2026-05-01",
+      "supplier": {
+        "name": "Elettro Centro Italia S.r.l.",
+        "vat_number": "83547810024",
+        "address": "Viale della Repubblica, 17",
+        "postal_code": "35122",
+        "city": "Padova",
+        "province": "PD"
+      },
+      "customer": {
+        "name": "Ferramenta Centro Italia S.p.A.",
+        "vat_number": "40047430455",
+        "address": "Via Mazzini, 79",
+        "postal_code": "06121",
+        "city": "Perugia",
+        "province": "PG"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "BS-1KG",
+          "description": "Biscotti frollini confezione 1 kg",
+          "quantity": "5",
+          "unit": "conf",
+          "unit_price": "4.61",
+          "total": "23.05",
+          "vat_rate": "10"
+        },
+        {
+          "line_number": 2,
+          "code": "LD-E27",
+          "description": "Lampadina LED E27 10W luce calda",
+          "quantity": "23",
+          "unit": "pz",
+          "unit_price": "2.14",
+          "total": "49.22",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 3,
+          "code": "TS-F6",
+          "description": "Tassello in nylon 6 mm",
+          "quantity": "5",
+          "unit": "conf",
+          "unit_price": "3.73",
+          "total": "18.65",
+          "vat_rate": "22"
+        }
+      ],
+      "order_refs": [
+        "OA/2026/0017"
+      ],
+      "ddt_refs": [
+        "B00017"
+      ],
+      "vat_summary": [
+        {
+          "vat_rate": "22",
+          "taxable_amount": "67.87",
+          "vat_amount": "14.93"
+        },
+        {
+          "vat_rate": "10",
+          "taxable_amount": "23.05",
+          "vat_amount": "2.31"
+        }
+      ],
+      "taxable_amount": "90.92",
+      "vat_amount": "17.24",
+      "total_amount": "108.16"
+    },
+    "discrepancies": []
+  },
+  "layout_variant": 0,
+  "scan_level": "light"
+}

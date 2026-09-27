@@ -1,0 +1,227 @@
+{
+  "chain": {
+    "chain_id": "chain-0021",
+    "order": {
+      "kind": "order",
+      "number": "OA/2026/0022",
+      "date": "2026-04-04",
+      "supplier": {
+        "name": "Elettro Adriatica S.n.c.",
+        "vat_number": "01653300473",
+        "address": "Viale della Repubblica, 147",
+        "postal_code": "41121",
+        "city": "Modena",
+        "province": "MO"
+      },
+      "customer": {
+        "name": "Distribuzione Galli S.a.s.",
+        "vat_number": "15416770038",
+        "address": "Via dell'Industria, 142",
+        "postal_code": "80133",
+        "city": "Napoli",
+        "province": "NA"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "CV-315",
+          "description": "Cavo elettrico FS17 1x1,5 mm² blu",
+          "quantity": "500",
+          "unit": "m",
+          "unit_price": "0.3",
+          "total": "150.00",
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "NS-CAV",
+          "description": "Nastro isolante PVC 19 mm x 25 m nero",
+          "quantity": "4",
+          "unit": "pz",
+          "unit_price": "0.98",
+          "total": "3.92",
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "QD-12M",
+          "description": "Quadro elettrico da parete 12 moduli IP40",
+          "quantity": "19",
+          "unit": "pz",
+          "unit_price": "26.66",
+          "total": "506.54",
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "TB-20",
+          "description": "Tubo corrugato flessibile diametro 20 mm",
+          "quantity": "200",
+          "unit": "m",
+          "unit_price": "0.33",
+          "total": "66.00",
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": "726.46",
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "ddt": {
+      "kind": "ddt",
+      "number": "38/2026",
+      "date": "2026-04-11",
+      "supplier": {
+        "name": "Elettro Adriatica S.n.c.",
+        "vat_number": "01653300473",
+        "address": "Viale della Repubblica, 147",
+        "postal_code": "41121",
+        "city": "Modena",
+        "province": "MO"
+      },
+      "customer": {
+        "name": "Distribuzione Galli S.a.s.",
+        "vat_number": "15416770038",
+        "address": "Via dell'Industria, 142",
+        "postal_code": "80133",
+        "city": "Napoli",
+        "province": "NA"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "CV-315",
+          "description": "Cavo elettrico FS17 1x1,5 mm² blu",
+          "quantity": "500",
+          "unit": "m",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "NS-CAV",
+          "description": "Nastro isolante PVC 19 mm x 25 m nero",
+          "quantity": "4",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "QD-12M",
+          "description": "Quadro elettrico da parete 12 moduli IP40",
+          "quantity": "19",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "TB-20",
+          "description": "Tubo corrugato flessibile diametro 20 mm",
+          "quantity": "200",
+          "unit": "m",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [
+        "OA/2026/0022"
+      ],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": null,
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "invoice": {
+      "kind": "invoice",
+      "number": "FT2026-00022",
+      "date": "2026-04-12",
+      "supplier": {
+        "name": "Elettro Adriatica S.n.c.",
+        "vat_number": "01653300473",
+        "address": "Viale della Repubblica, 147",
+        "postal_code": "41121",
+        "city": "Modena",
+        "province": "MO"
+      },
+      "customer": {
+        "name": "Distribuzione Galli S.a.s.",
+        "vat_number": "15416770038",
+        "address": "Via dell'Industria, 142",
+        "postal_code": "80133",
+        "city": "Napoli",
+        "province": "NA"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "CV-315",
+          "description": "Cavo elettrico FS17 1x1,5 mm² blu",
+          "quantity": "500",
+          "unit": "m",
+          "unit_price": "0.3",
+          "total": "150.00",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 2,
+          "code": "NS-CAV",
+          "description": "Nastro isolante PVC 19 mm x 25 m nero",
+          "quantity": "4",
+          "unit": "pz",
+          "unit_price": "0.98",
+          "total": "3.92",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 3,
+          "code": "QD-12M",
+          "description": "Quadro elettrico da parete 12 moduli IP40",
+          "quantity": "19",
+          "unit": "pz",
+          "unit_price": "26.66",
+          "total": "506.54",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 4,
+          "code": "TB-20",
+          "description": "Tubo corrugato flessibile diametro 20 mm",
+          "quantity": "200",
+          "unit": "m",
+          "unit_price": "0.33",
+          "total": "66.00",
+          "vat_rate": "22"
+        }
+      ],
+      "order_refs": [
+        "OA/2026/0022"
+      ],
+      "ddt_refs": [
+        "38/2026"
+      ],
+      "vat_summary": [
+        {
+          "vat_rate": "22",
+          "taxable_amount": "726.46",
+          "vat_amount": "159.82"
+        }
+      ],
+      "taxable_amount": "726.46",
+      "vat_amount": "159.82",
+      "total_amount": "886.28"
+    },
+    "discrepancies": []
+  },
+  "layout_variant": 1,
+  "scan_level": "clean"
+}

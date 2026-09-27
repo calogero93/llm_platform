@@ -19,6 +19,12 @@ jobs:
           enable-cache: true
       - run: uv sync --locked --all-packages
       - run: make check
+      # Regenerate the ci dataset: committed ground truth, manifest (hashes of every generated
+      # document) and contact sheet must come out byte-identical, i.e. the generator is
+      # deterministic across machines and was not changed without bumping the dataset version.
+      - run: make synth SYNTH_SPLITS=ci
+      - run: git diff --exit-code -- modules/doc_extraction/evals/datasets
+      - run: make eval-gate
 
   secrets:
     runs-on: ubuntu-24.04

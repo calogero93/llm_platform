@@ -1,0 +1,249 @@
+{
+  "chain": {
+    "chain_id": "chain-0005",
+    "order": {
+      "kind": "order",
+      "number": "6/2026",
+      "date": "2026-08-27",
+      "supplier": {
+        "name": "Forniture Rossi S.n.c.",
+        "vat_number": "38309330256",
+        "address": "Via Roma, 47",
+        "postal_code": "73100",
+        "city": "Lecce",
+        "province": "LE"
+      },
+      "customer": {
+        "name": "Ufficio Conti S.p.A.",
+        "vat_number": "21935190922",
+        "address": "Corso Italia, 132",
+        "postal_code": "40121",
+        "city": "Bologna",
+        "province": "BO"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "CV-315",
+          "description": "Cavo elettrico FS17 1x1,5 mm² blu",
+          "quantity": "100",
+          "unit": "m",
+          "unit_price": "0.31",
+          "total": "31.00",
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "LD-18W",
+          "description": "Plafoniera LED 18W 4000K IP65",
+          "quantity": "19",
+          "unit": "pz",
+          "unit_price": "14.08",
+          "total": "267.52",
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "NR-CEI",
+          "description": "Guida alle norme CEI 64-8 edizione 2026",
+          "quantity": "22",
+          "unit": "pz",
+          "unit_price": "52.6",
+          "total": "1157.20",
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "CV-325",
+          "description": "Cavo elettrico FG16OR16 3x2,5 mm²",
+          "quantity": "500",
+          "unit": "m",
+          "unit_price": "1.19",
+          "total": "595.00",
+          "vat_rate": null
+        },
+        {
+          "line_number": 5,
+          "code": "IN-16A",
+          "description": "Interruttore magnetotermico 1P+N 16A 4,5kA",
+          "quantity": "31",
+          "unit": "pz",
+          "unit_price": "14.17",
+          "total": "439.27",
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": "2489.99",
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "ddt": {
+      "kind": "ddt",
+      "number": "22/2026",
+      "date": "2026-08-30",
+      "supplier": {
+        "name": "Forniture Rossi S.n.c.",
+        "vat_number": "38309330256",
+        "address": "Via Roma, 47",
+        "postal_code": "73100",
+        "city": "Lecce",
+        "province": "LE"
+      },
+      "customer": {
+        "name": "Ufficio Conti S.p.A.",
+        "vat_number": "21935190922",
+        "address": "Corso Italia, 132",
+        "postal_code": "40121",
+        "city": "Bologna",
+        "province": "BO"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "CV-315",
+          "description": "Cavo elettrico FS17 1x1,5 mm² blu",
+          "quantity": "100",
+          "unit": "m",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "LD-18W",
+          "description": "Plafoniera LED 18W 4000K IP65",
+          "quantity": "19",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "NR-CEI",
+          "description": "Guida alle norme CEI 64-8 edizione 2026",
+          "quantity": "22",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "IN-16A",
+          "description": "Interruttore magnetotermico 1P+N 16A 4,5kA",
+          "quantity": "31",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [
+        "6/2026"
+      ],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": null,
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "invoice": {
+      "kind": "invoice",
+      "number": "FT2026-00006",
+      "date": "2026-09-12",
+      "supplier": {
+        "name": "Forniture Rossi S.n.c.",
+        "vat_number": "38309330256",
+        "address": "Via Roma, 47",
+        "postal_code": "73100",
+        "city": "Lecce",
+        "province": "LE"
+      },
+      "customer": {
+        "name": "Ufficio Conti S.p.A.",
+        "vat_number": "21935190922",
+        "address": "Corso Italia, 132",
+        "postal_code": "40121",
+        "city": "Bologna",
+        "province": "BO"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "CV-315",
+          "description": "Cavo elettrico FS17 1x1,5 mm² blu",
+          "quantity": "100",
+          "unit": "m",
+          "unit_price": "0.31",
+          "total": "31.00",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 2,
+          "code": "LD-18W",
+          "description": "Plafoniera LED 18W 4000K IP65",
+          "quantity": "19",
+          "unit": "pz",
+          "unit_price": "14.08",
+          "total": "267.52",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 3,
+          "code": "NR-CEI",
+          "description": "Guida alle norme CEI 64-8 edizione 2026",
+          "quantity": "22",
+          "unit": "pz",
+          "unit_price": "52.6",
+          "total": "1157.20",
+          "vat_rate": "4"
+        },
+        {
+          "line_number": 4,
+          "code": "IN-16A",
+          "description": "Interruttore magnetotermico 1P+N 16A 4,5kA",
+          "quantity": "31",
+          "unit": "pz",
+          "unit_price": "14.17",
+          "total": "439.27",
+          "vat_rate": "22"
+        }
+      ],
+      "order_refs": [
+        "6/2026"
+      ],
+      "ddt_refs": [
+        "22/2026"
+      ],
+      "vat_summary": [
+        {
+          "vat_rate": "22",
+          "taxable_amount": "737.79",
+          "vat_amount": "162.31"
+        },
+        {
+          "vat_rate": "4",
+          "taxable_amount": "1157.20",
+          "vat_amount": "46.29"
+        }
+      ],
+      "taxable_amount": "1894.99",
+      "vat_amount": "208.60",
+      "total_amount": "2103.59"
+    },
+    "discrepancies": [
+      {
+        "type": "missing_line",
+        "item_code": "CV-325",
+        "expected": "500",
+        "actual": null
+      }
+    ]
+  },
+  "layout_variant": 1,
+  "scan_level": "heavy"
+}

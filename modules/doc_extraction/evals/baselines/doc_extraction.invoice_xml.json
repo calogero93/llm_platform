@@ -1,0 +1,3212 @@
+{
+  "run_id": "20260927T130132Z_doc_extraction.invoice_xml_ci",
+  "suite": "doc_extraction.invoice_xml",
+  "created_at": "2026-09-27T13:01:32.216986+00:00",
+  "git_sha": "2ce34a8-dirty",
+  "dataset": {
+    "name": "chains",
+    "version": 1,
+    "split": "ci",
+    "manifest_sha256": "f521e6726f742057b9e6d47eb7ea052ee8b11aa96719673595d67fb12fcd8b9a"
+  },
+  "llm_backend": "mock",
+  "llm_model": "default",
+  "prompts": [],
+  "gated_metrics": [
+    "micro.f1",
+    "scores.exact_match"
+  ],
+  "fields": {
+    "customer.name": {
+      "tp": 30,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "customer.vat_number": {
+      "tp": 30,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "date": {
+      "tp": 30,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "ddt_refs": {
+      "tp": 30,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "line.code": {
+      "tp": 131,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "line.description": {
+      "tp": 131,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "line.quantity": {
+      "tp": 131,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "line.total": {
+      "tp": 131,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "line.unit": {
+      "tp": 131,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "line.unit_price": {
+      "tp": 131,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "line.vat_rate": {
+      "tp": 131,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "number": {
+      "tp": 30,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "order_refs": {
+      "tp": 30,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "supplier.name": {
+      "tp": 30,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "supplier.vat_number": {
+      "tp": 30,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "taxable_amount": {
+      "tp": 30,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "total_amount": {
+      "tp": 30,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "vat_amount": {
+      "tp": 30,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "micro": {
+    "tp": 1247,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  "scores": {
+    "exact_match": 1.0
+  },
+  "latency_p50_s": 0.00048442600018461235,
+  "latency_p95_s": 0.0007524609991378384,
+  "n_cases": 30,
+  "n_errors": 0,
+  "cases": [
+    {
+      "case_id": "chain-0000",
+      "counts": {
+        "number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "date": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "order_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ddt_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "taxable_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "vat_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "total_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.code": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.description": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.quantity": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit_price": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.total": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.vat_rate": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "scores": {
+        "exact_match": 1.0
+      },
+      "prompts": [],
+      "latency_s": 0.001648332001423114,
+      "error": null
+    },
+    {
+      "case_id": "chain-0001",
+      "counts": {
+        "number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "date": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "order_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ddt_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "taxable_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "vat_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "total_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.code": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.description": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.quantity": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit_price": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.total": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.vat_rate": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "scores": {
+        "exact_match": 1.0
+      },
+      "prompts": [],
+      "latency_s": 0.0006256579999899259,
+      "error": null
+    },
+    {
+      "case_id": "chain-0002",
+      "counts": {
+        "number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "date": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "order_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ddt_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "taxable_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "vat_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "total_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.code": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.description": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.quantity": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit_price": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.total": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.vat_rate": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "scores": {
+        "exact_match": 1.0
+      },
+      "prompts": [],
+      "latency_s": 0.00045597499956784304,
+      "error": null
+    },
+    {
+      "case_id": "chain-0003",
+      "counts": {
+        "number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "date": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "order_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ddt_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "taxable_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "vat_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "total_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.code": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.description": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.quantity": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit_price": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.total": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.vat_rate": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "scores": {
+        "exact_match": 1.0
+      },
+      "prompts": [],
+      "latency_s": 0.0004450190008356003,
+      "error": null
+    },
+    {
+      "case_id": "chain-0004",
+      "counts": {
+        "number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "date": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "order_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ddt_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "taxable_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "vat_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "total_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.code": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.description": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.quantity": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit_price": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.total": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.vat_rate": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "scores": {
+        "exact_match": 1.0
+      },
+      "prompts": [],
+      "latency_s": 0.0004680170004576212,
+      "error": null
+    },
+    {
+      "case_id": "chain-0005",
+      "counts": {
+        "number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "date": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "order_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ddt_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "taxable_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "vat_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "total_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.code": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.description": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.quantity": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit_price": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.total": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.vat_rate": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "scores": {
+        "exact_match": 1.0
+      },
+      "prompts": [],
+      "latency_s": 0.0007524609991378384,
+      "error": null
+    },
+    {
+      "case_id": "chain-0006",
+      "counts": {
+        "number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "date": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "order_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ddt_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "taxable_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "vat_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "total_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.code": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.description": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.quantity": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit_price": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.total": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.vat_rate": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "scores": {
+        "exact_match": 1.0
+      },
+      "prompts": [],
+      "latency_s": 0.0005655179993482307,
+      "error": null
+    },
+    {
+      "case_id": "chain-0007",
+      "counts": {
+        "number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "date": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "order_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ddt_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "taxable_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "vat_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "total_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.code": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.description": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.quantity": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit_price": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.total": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.vat_rate": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "scores": {
+        "exact_match": 1.0
+      },
+      "prompts": [],
+      "latency_s": 0.0005008349999116035,
+      "error": null
+    },
+    {
+      "case_id": "chain-0008",
+      "counts": {
+        "number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "date": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "order_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ddt_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "taxable_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "vat_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "total_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.code": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.description": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.quantity": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit_price": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.total": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.vat_rate": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "scores": {
+        "exact_match": 1.0
+      },
+      "prompts": [],
+      "latency_s": 0.0006005720006214688,
+      "error": null
+    },
+    {
+      "case_id": "chain-0009",
+      "counts": {
+        "number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "date": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "order_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ddt_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "taxable_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "vat_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "total_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.code": {
+          "tp": 9,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.description": {
+          "tp": 9,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.quantity": {
+          "tp": 9,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit": {
+          "tp": 9,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit_price": {
+          "tp": 9,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.total": {
+          "tp": 9,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.vat_rate": {
+          "tp": 9,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "scores": {
+        "exact_match": 1.0
+      },
+      "prompts": [],
+      "latency_s": 0.0007237860008899588,
+      "error": null
+    },
+    {
+      "case_id": "chain-0010",
+      "counts": {
+        "number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "date": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "order_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ddt_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "taxable_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "vat_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "total_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.code": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.description": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.quantity": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit_price": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.total": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.vat_rate": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "scores": {
+        "exact_match": 1.0
+      },
+      "prompts": [],
+      "latency_s": 0.0005130540012032725,
+      "error": null
+    },
+    {
+      "case_id": "chain-0011",
+      "counts": {
+        "number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "date": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "order_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ddt_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "taxable_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "vat_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "total_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.code": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.description": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.quantity": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit_price": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.total": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.vat_rate": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "scores": {
+        "exact_match": 1.0
+      },
+      "prompts": [],
+      "latency_s": 0.0005616589987766929,
+      "error": null
+    },
+    {
+      "case_id": "chain-0012",
+      "counts": {
+        "number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "date": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "order_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ddt_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "taxable_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "vat_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "total_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.code": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.description": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.quantity": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit_price": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.total": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.vat_rate": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "scores": {
+        "exact_match": 1.0
+      },
+      "prompts": [],
+      "latency_s": 0.0003797370009124279,
+      "error": null
+    },
+    {
+      "case_id": "chain-0013",
+      "counts": {
+        "number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "date": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "order_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ddt_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "taxable_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "vat_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "total_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.code": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.description": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.quantity": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit_price": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.total": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.vat_rate": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "scores": {
+        "exact_match": 1.0
+      },
+      "prompts": [],
+      "latency_s": 0.0003166390015394427,
+      "error": null
+    },
+    {
+      "case_id": "chain-0014",
+      "counts": {
+        "number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "date": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "order_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ddt_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "taxable_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "vat_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "total_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.code": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.description": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.quantity": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit_price": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.total": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.vat_rate": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "scores": {
+        "exact_match": 1.0
+      },
+      "prompts": [],
+      "latency_s": 0.0003879669984598877,
+      "error": null
+    },
+    {
+      "case_id": "chain-0015",
+      "counts": {
+        "number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "date": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "order_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ddt_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "taxable_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "vat_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "total_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.code": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.description": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.quantity": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit_price": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.total": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.vat_rate": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "scores": {
+        "exact_match": 1.0
+      },
+      "prompts": [],
+      "latency_s": 0.0006851800008007558,
+      "error": null
+    },
+    {
+      "case_id": "chain-0016",
+      "counts": {
+        "number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "date": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "order_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ddt_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "taxable_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "vat_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "total_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.code": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.description": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.quantity": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit_price": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.total": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.vat_rate": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "scores": {
+        "exact_match": 1.0
+      },
+      "prompts": [],
+      "latency_s": 0.00037651599996024743,
+      "error": null
+    },
+    {
+      "case_id": "chain-0017",
+      "counts": {
+        "number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "date": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "order_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ddt_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "taxable_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "vat_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "total_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.code": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.description": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.quantity": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit_price": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.total": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.vat_rate": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "scores": {
+        "exact_match": 1.0
+      },
+      "prompts": [],
+      "latency_s": 0.0004189259998383932,
+      "error": null
+    },
+    {
+      "case_id": "chain-0018",
+      "counts": {
+        "number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "date": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "order_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ddt_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "taxable_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "vat_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "total_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.code": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.description": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.quantity": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit_price": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.total": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.vat_rate": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "scores": {
+        "exact_match": 1.0
+      },
+      "prompts": [],
+      "latency_s": 0.00042837700129894074,
+      "error": null
+    },
+    {
+      "case_id": "chain-0019",
+      "counts": {
+        "number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "date": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "order_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ddt_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "taxable_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "vat_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "total_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.code": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.description": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.quantity": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit_price": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.total": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.vat_rate": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "scores": {
+        "exact_match": 1.0
+      },
+      "prompts": [],
+      "latency_s": 0.0004352630003268132,
+      "error": null
+    },
+    {
+      "case_id": "chain-0020",
+      "counts": {
+        "number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "date": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "order_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ddt_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "taxable_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "vat_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "total_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.code": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.description": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.quantity": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit_price": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.total": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.vat_rate": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "scores": {
+        "exact_match": 1.0
+      },
+      "prompts": [],
+      "latency_s": 0.00046058499901846517,
+      "error": null
+    },
+    {
+      "case_id": "chain-0021",
+      "counts": {
+        "number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "date": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "order_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ddt_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "taxable_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "vat_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "total_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.code": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.description": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.quantity": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit_price": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.total": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.vat_rate": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "scores": {
+        "exact_match": 1.0
+      },
+      "prompts": [],
+      "latency_s": 0.0003959799996664515,
+      "error": null
+    },
+    {
+      "case_id": "chain-0022",
+      "counts": {
+        "number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "date": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "order_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ddt_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "taxable_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "vat_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "total_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.code": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.description": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.quantity": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit_price": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.total": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.vat_rate": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "scores": {
+        "exact_match": 1.0
+      },
+      "prompts": [],
+      "latency_s": 0.0005943329997535329,
+      "error": null
+    },
+    {
+      "case_id": "chain-0023",
+      "counts": {
+        "number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "date": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "order_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ddt_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "taxable_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "vat_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "total_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.code": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.description": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.quantity": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit_price": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.total": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.vat_rate": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "scores": {
+        "exact_match": 1.0
+      },
+      "prompts": [],
+      "latency_s": 0.0005729349995817756,
+      "error": null
+    },
+    {
+      "case_id": "chain-0024",
+      "counts": {
+        "number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "date": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "order_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ddt_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "taxable_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "vat_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "total_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.code": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.description": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.quantity": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit_price": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.total": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.vat_rate": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "scores": {
+        "exact_match": 1.0
+      },
+      "prompts": [],
+      "latency_s": 0.00040394800089416094,
+      "error": null
+    },
+    {
+      "case_id": "chain-0025",
+      "counts": {
+        "number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "date": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "order_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ddt_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "taxable_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "vat_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "total_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.code": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.description": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.quantity": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit_price": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.total": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.vat_rate": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "scores": {
+        "exact_match": 1.0
+      },
+      "prompts": [],
+      "latency_s": 0.00044126499960839283,
+      "error": null
+    },
+    {
+      "case_id": "chain-0026",
+      "counts": {
+        "number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "date": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "order_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ddt_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "taxable_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "vat_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "total_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.code": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.description": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.quantity": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit_price": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.total": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.vat_rate": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "scores": {
+        "exact_match": 1.0
+      },
+      "prompts": [],
+      "latency_s": 0.0003171230000589276,
+      "error": null
+    },
+    {
+      "case_id": "chain-0027",
+      "counts": {
+        "number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "date": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "order_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ddt_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "taxable_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "vat_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "total_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.code": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.description": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.quantity": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit_price": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.total": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.vat_rate": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "scores": {
+        "exact_match": 1.0
+      },
+      "prompts": [],
+      "latency_s": 0.0005081680010334821,
+      "error": null
+    },
+    {
+      "case_id": "chain-0028",
+      "counts": {
+        "number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "date": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "order_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ddt_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "taxable_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "vat_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "total_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.code": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.description": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.quantity": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit_price": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.total": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.vat_rate": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "scores": {
+        "exact_match": 1.0
+      },
+      "prompts": [],
+      "latency_s": 0.0005346430007193703,
+      "error": null
+    },
+    {
+      "case_id": "chain-0029",
+      "counts": {
+        "number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "date": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "supplier.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "customer.vat_number": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "order_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ddt_refs": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "taxable_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "vat_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "total_amount": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.code": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.description": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.quantity": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.unit_price": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.total": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 0
+        },
+        "line.vat_rate": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "scores": {
+        "exact_match": 1.0
+      },
+      "prompts": [],
+      "latency_s": 0.0006061879994376795,
+      "error": null
+    }
+  ]
+}

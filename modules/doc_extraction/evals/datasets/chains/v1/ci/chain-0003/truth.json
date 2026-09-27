@@ -1,0 +1,255 @@
+{
+  "chain": {
+    "chain_id": "chain-0003",
+    "order": {
+      "kind": "order",
+      "number": "4/2026",
+      "date": "2026-03-09",
+      "supplier": {
+        "name": "Elettro Bianchi S.a.s.",
+        "vat_number": "82488840917",
+        "address": "Via Garibaldi, 47",
+        "postal_code": "65121",
+        "city": "Pescara",
+        "province": "PE"
+      },
+      "customer": {
+        "name": "Impianti Ferri S.n.c.",
+        "vat_number": "15241350568",
+        "address": "Via Emilia, 150",
+        "postal_code": "36100",
+        "city": "Vicenza",
+        "province": "VI"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "CA-A4",
+          "description": "Carta per fotocopie A4 80 g/m² risma 500 fogli",
+          "quantity": "29",
+          "unit": "pz",
+          "unit_price": "4.05",
+          "total": "117.45",
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "GU-NIT",
+          "description": "Guanti da lavoro in nitrile taglia L",
+          "quantity": "6",
+          "unit": "conf",
+          "unit_price": "4.93",
+          "total": "29.58",
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "MN-TEC",
+          "description": "Manuale tecnico impianti elettrici civili",
+          "quantity": "25",
+          "unit": "pz",
+          "unit_price": "31.57",
+          "total": "789.25",
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "TS-F6",
+          "description": "Tassello in nylon 6 mm",
+          "quantity": "8",
+          "unit": "conf",
+          "unit_price": "2.25",
+          "total": "18.00",
+          "vat_rate": null
+        },
+        {
+          "line_number": 5,
+          "code": "NR-CEI",
+          "description": "Guida alle norme CEI 64-8 edizione 2026",
+          "quantity": "33",
+          "unit": "pz",
+          "unit_price": "58.91",
+          "total": "1944.03",
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": "2898.31",
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "ddt": {
+      "kind": "ddt",
+      "number": "B00004",
+      "date": "2026-03-11",
+      "supplier": {
+        "name": "Elettro Bianchi S.a.s.",
+        "vat_number": "82488840917",
+        "address": "Via Garibaldi, 47",
+        "postal_code": "65121",
+        "city": "Pescara",
+        "province": "PE"
+      },
+      "customer": {
+        "name": "Impianti Ferri S.n.c.",
+        "vat_number": "15241350568",
+        "address": "Via Emilia, 150",
+        "postal_code": "36100",
+        "city": "Vicenza",
+        "province": "VI"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "CA-A4",
+          "description": "Carta per fotocopie A4 80 g/m² risma 500 fogli",
+          "quantity": "29",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "MN-TEC",
+          "description": "Manuale tecnico impianti elettrici civili",
+          "quantity": "25",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "TS-F6",
+          "description": "Tassello in nylon 6 mm",
+          "quantity": "8",
+          "unit": "conf",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "NR-CEI",
+          "description": "Guida alle norme CEI 64-8 edizione 2026",
+          "quantity": "33",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [
+        "4/2026"
+      ],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": null,
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "invoice": {
+      "kind": "invoice",
+      "number": "2026/4",
+      "date": "2026-03-16",
+      "supplier": {
+        "name": "Elettro Bianchi S.a.s.",
+        "vat_number": "82488840917",
+        "address": "Via Garibaldi, 47",
+        "postal_code": "65121",
+        "city": "Pescara",
+        "province": "PE"
+      },
+      "customer": {
+        "name": "Impianti Ferri S.n.c.",
+        "vat_number": "15241350568",
+        "address": "Via Emilia, 150",
+        "postal_code": "36100",
+        "city": "Vicenza",
+        "province": "VI"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "CA-A4",
+          "description": "Carta per fotocopie A4 80 g/m² risma 500 fogli",
+          "quantity": "29",
+          "unit": "pz",
+          "unit_price": "4.05",
+          "total": "117.45",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 2,
+          "code": "MN-TEC",
+          "description": "Manuale tecnico impianti elettrici civili",
+          "quantity": "25",
+          "unit": "pz",
+          "unit_price": "31.57",
+          "total": "789.25",
+          "vat_rate": "4"
+        },
+        {
+          "line_number": 3,
+          "code": "TS-F6",
+          "description": "Tassello in nylon 6 mm",
+          "quantity": "7",
+          "unit": "conf",
+          "unit_price": "2.25",
+          "total": "15.75",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 4,
+          "code": "NR-CEI",
+          "description": "Guida alle norme CEI 64-8 edizione 2026",
+          "quantity": "33",
+          "unit": "pz",
+          "unit_price": "58.91",
+          "total": "1944.03",
+          "vat_rate": "4"
+        }
+      ],
+      "order_refs": [
+        "4/2026"
+      ],
+      "ddt_refs": [
+        "B00004"
+      ],
+      "vat_summary": [
+        {
+          "vat_rate": "22",
+          "taxable_amount": "133.20",
+          "vat_amount": "29.30"
+        },
+        {
+          "vat_rate": "4",
+          "taxable_amount": "2733.28",
+          "vat_amount": "109.33"
+        }
+      ],
+      "taxable_amount": "2866.48",
+      "vat_amount": "138.63",
+      "total_amount": "3005.11"
+    },
+    "discrepancies": [
+      {
+        "type": "qty_mismatch",
+        "item_code": "TS-F6",
+        "expected": "8",
+        "actual": "7"
+      },
+      {
+        "type": "missing_line",
+        "item_code": "GU-NIT",
+        "expected": "6",
+        "actual": null
+      }
+    ]
+  },
+  "layout_variant": 1,
+  "scan_level": "clean"
+}

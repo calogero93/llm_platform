@@ -1,0 +1,190 @@
+{
+  "chain": {
+    "chain_id": "chain-0018",
+    "order": {
+      "kind": "order",
+      "number": "ORD-119",
+      "date": "2026-05-11",
+      "supplier": {
+        "name": "Impianti Galli S.n.c.",
+        "vat_number": "57387780877",
+        "address": "Via dei Mille, 105",
+        "postal_code": "20121",
+        "city": "Milano",
+        "province": "MI"
+      },
+      "customer": {
+        "name": "Forniture Tirrena S.a.s.",
+        "vat_number": "31944670061",
+        "address": "Via Mazzini, 72",
+        "postal_code": "41121",
+        "city": "Modena",
+        "province": "MO"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "NS-CAV",
+          "description": "Nastro isolante PVC 19 mm x 25 m nero",
+          "quantity": "32",
+          "unit": "pz",
+          "unit_price": "1.08",
+          "total": "34.56",
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "TS-F6",
+          "description": "Tassello in nylon 6 mm",
+          "quantity": "4",
+          "unit": "conf",
+          "unit_price": "3.29",
+          "total": "13.16",
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": "47.72",
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "ddt": {
+      "kind": "ddt",
+      "number": "B00019",
+      "date": "2026-05-16",
+      "supplier": {
+        "name": "Impianti Galli S.n.c.",
+        "vat_number": "57387780877",
+        "address": "Via dei Mille, 105",
+        "postal_code": "20121",
+        "city": "Milano",
+        "province": "MI"
+      },
+      "customer": {
+        "name": "Forniture Tirrena S.a.s.",
+        "vat_number": "31944670061",
+        "address": "Via Mazzini, 72",
+        "postal_code": "41121",
+        "city": "Modena",
+        "province": "MO"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "NS-CAV",
+          "description": "Nastro isolante PVC 19 mm x 25 m nero",
+          "quantity": "32",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "TS-F6",
+          "description": "Tassello in nylon 6 mm",
+          "quantity": "4",
+          "unit": "conf",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [
+        "ORD-119"
+      ],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": null,
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "invoice": {
+      "kind": "invoice",
+      "number": "51/A",
+      "date": "2026-05-31",
+      "supplier": {
+        "name": "Impianti Galli S.n.c.",
+        "vat_number": "57387780877",
+        "address": "Via dei Mille, 105",
+        "postal_code": "20121",
+        "city": "Milano",
+        "province": "MI"
+      },
+      "customer": {
+        "name": "Forniture Tirrena S.a.s.",
+        "vat_number": "31944670061",
+        "address": "Via Mazzini, 72",
+        "postal_code": "41121",
+        "city": "Modena",
+        "province": "MO"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "NS-CAV",
+          "description": "Nastro isolante PVC 19 mm x 25 m nero",
+          "quantity": "32",
+          "unit": "pz",
+          "unit_price": "1.08",
+          "total": "34.56",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 2,
+          "code": "TS-F6",
+          "description": "Tassello in nylon 6 mm",
+          "quantity": "4",
+          "unit": "conf",
+          "unit_price": "3.13",
+          "total": "12.52",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 3,
+          "code": "PR-S10",
+          "description": "Presa schuko 10/16A bianca serie civile",
+          "quantity": "14",
+          "unit": "pz",
+          "unit_price": "2.66",
+          "total": "37.24",
+          "vat_rate": "22"
+        }
+      ],
+      "order_refs": [
+        "ORD-119"
+      ],
+      "ddt_refs": [
+        "B00019"
+      ],
+      "vat_summary": [
+        {
+          "vat_rate": "22",
+          "taxable_amount": "84.32",
+          "vat_amount": "18.55"
+        }
+      ],
+      "taxable_amount": "84.32",
+      "vat_amount": "18.55",
+      "total_amount": "102.87"
+    },
+    "discrepancies": [
+      {
+        "type": "extra_line",
+        "item_code": "PR-S10",
+        "expected": null,
+        "actual": "14"
+      },
+      {
+        "type": "price_mismatch",
+        "item_code": "TS-F6",
+        "expected": "3.29",
+        "actual": "3.13"
+      }
+    ]
+  },
+  "layout_variant": 0,
+  "scan_level": "clean"
+}

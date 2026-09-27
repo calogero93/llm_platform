@@ -1,0 +1,257 @@
+{
+  "chain": {
+    "chain_id": "chain-0023",
+    "order": {
+      "kind": "order",
+      "number": "ORD-124",
+      "date": "2026-04-27",
+      "supplier": {
+        "name": "Idro Adriatica S.p.A.",
+        "vat_number": "31231790101",
+        "address": "Corso Italia, 16",
+        "postal_code": "24122",
+        "city": "Bergamo",
+        "province": "BG"
+      },
+      "customer": {
+        "name": "Impianti Sud S.a.s.",
+        "vat_number": "19777310459",
+        "address": "Via dell'Artigianato, 48",
+        "postal_code": "25121",
+        "city": "Brescia",
+        "province": "BS"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "CV-315",
+          "description": "Cavo elettrico FS17 1x1,5 mm² blu",
+          "quantity": "25",
+          "unit": "m",
+          "unit_price": "0.3",
+          "total": "7.50",
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "MR-TP",
+          "description": "Morsetto a leva 3 poli 0,2-4 mm²",
+          "quantity": "3",
+          "unit": "conf",
+          "unit_price": "7.87",
+          "total": "23.61",
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "NS-CAV",
+          "description": "Nastro isolante PVC 19 mm x 25 m nero",
+          "quantity": "1",
+          "unit": "pz",
+          "unit_price": "1.19",
+          "total": "1.19",
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "SC-503",
+          "description": "Scatola da incasso 503 per 3 moduli",
+          "quantity": "15",
+          "unit": "pz",
+          "unit_price": "0.64",
+          "total": "9.60",
+          "vat_rate": null
+        },
+        {
+          "line_number": 5,
+          "code": "CV-325",
+          "description": "Cavo elettrico FG16OR16 3x2,5 mm²",
+          "quantity": "150",
+          "unit": "m",
+          "unit_price": "1.57",
+          "total": "235.50",
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": "277.40",
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "ddt": {
+      "kind": "ddt",
+      "number": "B00024",
+      "date": "2026-05-06",
+      "supplier": {
+        "name": "Idro Adriatica S.p.A.",
+        "vat_number": "31231790101",
+        "address": "Corso Italia, 16",
+        "postal_code": "24122",
+        "city": "Bergamo",
+        "province": "BG"
+      },
+      "customer": {
+        "name": "Impianti Sud S.a.s.",
+        "vat_number": "19777310459",
+        "address": "Via dell'Artigianato, 48",
+        "postal_code": "25121",
+        "city": "Brescia",
+        "province": "BS"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "CV-315",
+          "description": "Cavo elettrico FS17 1x1,5 mm² blu",
+          "quantity": "25",
+          "unit": "m",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "MR-TP",
+          "description": "Morsetto a leva 3 poli 0,2-4 mm²",
+          "quantity": "3",
+          "unit": "conf",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "NS-CAV",
+          "description": "Nastro isolante PVC 19 mm x 25 m nero",
+          "quantity": "1",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "SC-503",
+          "description": "Scatola da incasso 503 per 3 moduli",
+          "quantity": "15",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 5,
+          "code": "CV-325",
+          "description": "Cavo elettrico FG16OR16 3x2,5 mm²",
+          "quantity": "150",
+          "unit": "m",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [
+        "ORD-124"
+      ],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": null,
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "invoice": {
+      "kind": "invoice",
+      "number": "2026/24",
+      "date": "2026-05-12",
+      "supplier": {
+        "name": "Idro Adriatica S.p.A.",
+        "vat_number": "31231790101",
+        "address": "Corso Italia, 16",
+        "postal_code": "24122",
+        "city": "Bergamo",
+        "province": "BG"
+      },
+      "customer": {
+        "name": "Impianti Sud S.a.s.",
+        "vat_number": "19777310459",
+        "address": "Via dell'Artigianato, 48",
+        "postal_code": "25121",
+        "city": "Brescia",
+        "province": "BS"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "CV-315",
+          "description": "Cavo elettrico FS17 1x1,5 mm² blu",
+          "quantity": "25",
+          "unit": "m",
+          "unit_price": "0.3",
+          "total": "7.50",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 2,
+          "code": "MR-TP",
+          "description": "Morsetto a leva 3 poli 0,2-4 mm²",
+          "quantity": "3",
+          "unit": "conf",
+          "unit_price": "7.87",
+          "total": "23.61",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 3,
+          "code": "NS-CAV",
+          "description": "Nastro isolante PVC 19 mm x 25 m nero",
+          "quantity": "1",
+          "unit": "pz",
+          "unit_price": "1.19",
+          "total": "1.19",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 4,
+          "code": "SC-503",
+          "description": "Scatola da incasso 503 per 3 moduli",
+          "quantity": "15",
+          "unit": "pz",
+          "unit_price": "0.64",
+          "total": "9.60",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 5,
+          "code": "CV-325",
+          "description": "Cavo elettrico FG16OR16 3x2,5 mm²",
+          "quantity": "150",
+          "unit": "m",
+          "unit_price": "1.57",
+          "total": "235.50",
+          "vat_rate": "22"
+        }
+      ],
+      "order_refs": [
+        "ORD-124"
+      ],
+      "ddt_refs": [
+        "B00024"
+      ],
+      "vat_summary": [
+        {
+          "vat_rate": "22",
+          "taxable_amount": "277.40",
+          "vat_amount": "61.03"
+        }
+      ],
+      "taxable_amount": "277.40",
+      "vat_amount": "61.03",
+      "total_amount": "338.43"
+    },
+    "discrepancies": []
+  },
+  "layout_variant": 1,
+  "scan_level": "heavy"
+}

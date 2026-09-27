@@ -1,0 +1,232 @@
+{
+  "chain": {
+    "chain_id": "chain-0027",
+    "order": {
+      "kind": "order",
+      "number": "OA/2026/0028",
+      "date": "2026-04-22",
+      "supplier": {
+        "name": "Forniture Padana S.a.s.",
+        "vat_number": "03662990187",
+        "address": "Via dei Mille, 46",
+        "postal_code": "50123",
+        "city": "Firenze",
+        "province": "FI"
+      },
+      "customer": {
+        "name": "Forniture Rossi S.n.c.",
+        "vat_number": "34653860824",
+        "address": "Via Nazionale, 39",
+        "postal_code": "36100",
+        "city": "Vicenza",
+        "province": "VI"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "ZU-1KG",
+          "description": "Zucchero semolato 1 kg",
+          "quantity": "7",
+          "unit": "pz",
+          "unit_price": "1.22",
+          "total": "8.54",
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "CV-325",
+          "description": "Cavo elettrico FG16OR16 3x2,5 mm²",
+          "quantity": "25",
+          "unit": "m",
+          "unit_price": "1.46",
+          "total": "36.50",
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "QD-12M",
+          "description": "Quadro elettrico da parete 12 moduli IP40",
+          "quantity": "7",
+          "unit": "pz",
+          "unit_price": "25.22",
+          "total": "176.54",
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "LD-18W",
+          "description": "Plafoniera LED 18W 4000K IP65",
+          "quantity": "5",
+          "unit": "pz",
+          "unit_price": "21.56",
+          "total": "107.80",
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": "329.38",
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "ddt": {
+      "kind": "ddt",
+      "number": "DDT-528",
+      "date": "2026-04-25",
+      "supplier": {
+        "name": "Forniture Padana S.a.s.",
+        "vat_number": "03662990187",
+        "address": "Via dei Mille, 46",
+        "postal_code": "50123",
+        "city": "Firenze",
+        "province": "FI"
+      },
+      "customer": {
+        "name": "Forniture Rossi S.n.c.",
+        "vat_number": "34653860824",
+        "address": "Via Nazionale, 39",
+        "postal_code": "36100",
+        "city": "Vicenza",
+        "province": "VI"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "ZU-1KG",
+          "description": "Zucchero semolato 1 kg",
+          "quantity": "7",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "CV-325",
+          "description": "Cavo elettrico FG16OR16 3x2,5 mm²",
+          "quantity": "25",
+          "unit": "m",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "QD-12M",
+          "description": "Quadro elettrico da parete 12 moduli IP40",
+          "quantity": "7",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "LD-18W",
+          "description": "Plafoniera LED 18W 4000K IP65",
+          "quantity": "5",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [
+        "OA/2026/0028"
+      ],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": null,
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "invoice": {
+      "kind": "invoice",
+      "number": "60/A",
+      "date": "2026-05-07",
+      "supplier": {
+        "name": "Forniture Padana S.a.s.",
+        "vat_number": "03662990187",
+        "address": "Via dei Mille, 46",
+        "postal_code": "50123",
+        "city": "Firenze",
+        "province": "FI"
+      },
+      "customer": {
+        "name": "Forniture Rossi S.n.c.",
+        "vat_number": "34653860824",
+        "address": "Via Nazionale, 39",
+        "postal_code": "36100",
+        "city": "Vicenza",
+        "province": "VI"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "ZU-1KG",
+          "description": "Zucchero semolato 1 kg",
+          "quantity": "7",
+          "unit": "pz",
+          "unit_price": "1.22",
+          "total": "8.54",
+          "vat_rate": "10"
+        },
+        {
+          "line_number": 2,
+          "code": "CV-325",
+          "description": "Cavo elettrico FG16OR16 3x2,5 mm²",
+          "quantity": "25",
+          "unit": "m",
+          "unit_price": "1.46",
+          "total": "36.50",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 3,
+          "code": "QD-12M",
+          "description": "Quadro elettrico da parete 12 moduli IP40",
+          "quantity": "7",
+          "unit": "pz",
+          "unit_price": "25.22",
+          "total": "176.54",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 4,
+          "code": "LD-18W",
+          "description": "Plafoniera LED 18W 4000K IP65",
+          "quantity": "5",
+          "unit": "pz",
+          "unit_price": "21.56",
+          "total": "107.80",
+          "vat_rate": "22"
+        }
+      ],
+      "order_refs": [
+        "OA/2026/0028"
+      ],
+      "ddt_refs": [
+        "DDT-528"
+      ],
+      "vat_summary": [
+        {
+          "vat_rate": "22",
+          "taxable_amount": "320.84",
+          "vat_amount": "70.58"
+        },
+        {
+          "vat_rate": "10",
+          "taxable_amount": "8.54",
+          "vat_amount": "0.85"
+        }
+      ],
+      "taxable_amount": "329.38",
+      "vat_amount": "71.43",
+      "total_amount": "400.81"
+    },
+    "discrepancies": []
+  },
+  "layout_variant": 1,
+  "scan_level": "clean"
+}

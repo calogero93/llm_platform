@@ -1,0 +1,297 @@
+{
+  "chain": {
+    "chain_id": "chain-0010",
+    "order": {
+      "kind": "order",
+      "number": "11/2026",
+      "date": "2026-08-25",
+      "supplier": {
+        "name": "Commerciale Rossi S.r.l.s.",
+        "vat_number": "08418780758",
+        "address": "Corso Italia, 45",
+        "postal_code": "31100",
+        "city": "Treviso",
+        "province": "TV"
+      },
+      "customer": {
+        "name": "Ferramenta Nord Est S.r.l.",
+        "vat_number": "57498520097",
+        "address": "Via dell'Artigianato, 30",
+        "postal_code": "70121",
+        "city": "Bari",
+        "province": "BA"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "CA-A4",
+          "description": "Carta per fotocopie A4 80 g/m² risma 500 fogli",
+          "quantity": "2",
+          "unit": "pz",
+          "unit_price": "5.11",
+          "total": "10.22",
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "MN-TEC",
+          "description": "Manuale tecnico impianti elettrici civili",
+          "quantity": "21",
+          "unit": "pz",
+          "unit_price": "29.99",
+          "total": "629.79",
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "TS-F6",
+          "description": "Tassello in nylon 6 mm",
+          "quantity": "9",
+          "unit": "conf",
+          "unit_price": "3.99",
+          "total": "35.91",
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "PR-S10",
+          "description": "Presa schuko 10/16A bianca serie civile",
+          "quantity": "31",
+          "unit": "pz",
+          "unit_price": "3.65",
+          "total": "113.15",
+          "vat_rate": null
+        },
+        {
+          "line_number": 5,
+          "code": "BS-1KG",
+          "description": "Biscotti frollini confezione 1 kg",
+          "quantity": "7",
+          "unit": "conf",
+          "unit_price": "5.2",
+          "total": "36.40",
+          "vat_rate": null
+        },
+        {
+          "line_number": 6,
+          "code": "LD-E27",
+          "description": "Lampadina LED E27 10W luce calda",
+          "quantity": "11",
+          "unit": "pz",
+          "unit_price": "2.42",
+          "total": "26.62",
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": "852.09",
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "ddt": {
+      "kind": "ddt",
+      "number": "B00011",
+      "date": "2026-09-03",
+      "supplier": {
+        "name": "Commerciale Rossi S.r.l.s.",
+        "vat_number": "08418780758",
+        "address": "Corso Italia, 45",
+        "postal_code": "31100",
+        "city": "Treviso",
+        "province": "TV"
+      },
+      "customer": {
+        "name": "Ferramenta Nord Est S.r.l.",
+        "vat_number": "57498520097",
+        "address": "Via dell'Artigianato, 30",
+        "postal_code": "70121",
+        "city": "Bari",
+        "province": "BA"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "CA-A4",
+          "description": "Carta per fotocopie A4 80 g/m² risma 500 fogli",
+          "quantity": "2",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "MN-TEC",
+          "description": "Manuale tecnico impianti elettrici civili",
+          "quantity": "21",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "TS-F6",
+          "description": "Tassello in nylon 6 mm",
+          "quantity": "9",
+          "unit": "conf",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "PR-S10",
+          "description": "Presa schuko 10/16A bianca serie civile",
+          "quantity": "31",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 5,
+          "code": "BS-1KG",
+          "description": "Biscotti frollini confezione 1 kg",
+          "quantity": "7",
+          "unit": "conf",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 6,
+          "code": "LD-E27",
+          "description": "Lampadina LED E27 10W luce calda",
+          "quantity": "11",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [
+        "11/2026"
+      ],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": null,
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "invoice": {
+      "kind": "invoice",
+      "number": "2026/11",
+      "date": "2026-09-08",
+      "supplier": {
+        "name": "Commerciale Rossi S.r.l.s.",
+        "vat_number": "08418780758",
+        "address": "Corso Italia, 45",
+        "postal_code": "31100",
+        "city": "Treviso",
+        "province": "TV"
+      },
+      "customer": {
+        "name": "Ferramenta Nord Est S.r.l.",
+        "vat_number": "57498520097",
+        "address": "Via dell'Artigianato, 30",
+        "postal_code": "70121",
+        "city": "Bari",
+        "province": "BA"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "CA-A4",
+          "description": "Carta per fotocopie A4 80 g/m² risma 500 fogli",
+          "quantity": "2",
+          "unit": "pz",
+          "unit_price": "5.11",
+          "total": "10.22",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 2,
+          "code": "MN-TEC",
+          "description": "Manuale tecnico impianti elettrici civili",
+          "quantity": "21",
+          "unit": "pz",
+          "unit_price": "29.99",
+          "total": "629.79",
+          "vat_rate": "4"
+        },
+        {
+          "line_number": 3,
+          "code": "TS-F6",
+          "description": "Tassello in nylon 6 mm",
+          "quantity": "9",
+          "unit": "conf",
+          "unit_price": "3.99",
+          "total": "35.91",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 4,
+          "code": "PR-S10",
+          "description": "Presa schuko 10/16A bianca serie civile",
+          "quantity": "31",
+          "unit": "pz",
+          "unit_price": "3.65",
+          "total": "113.15",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 5,
+          "code": "BS-1KG",
+          "description": "Biscotti frollini confezione 1 kg",
+          "quantity": "7",
+          "unit": "conf",
+          "unit_price": "5.2",
+          "total": "36.40",
+          "vat_rate": "10"
+        },
+        {
+          "line_number": 6,
+          "code": "LD-E27",
+          "description": "Lampadina LED E27 10W luce calda",
+          "quantity": "11",
+          "unit": "pz",
+          "unit_price": "2.42",
+          "total": "26.62",
+          "vat_rate": "22"
+        }
+      ],
+      "order_refs": [
+        "11/2026"
+      ],
+      "ddt_refs": [
+        "B00011"
+      ],
+      "vat_summary": [
+        {
+          "vat_rate": "22",
+          "taxable_amount": "185.90",
+          "vat_amount": "40.90"
+        },
+        {
+          "vat_rate": "10",
+          "taxable_amount": "36.40",
+          "vat_amount": "3.64"
+        },
+        {
+          "vat_rate": "4",
+          "taxable_amount": "629.79",
+          "vat_amount": "25.19"
+        }
+      ],
+      "taxable_amount": "852.09",
+      "vat_amount": "69.73",
+      "total_amount": "921.82"
+    },
+    "discrepancies": []
+  },
+  "layout_variant": 0,
+  "scan_level": "light"
+}

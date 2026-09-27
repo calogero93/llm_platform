@@ -1,0 +1,339 @@
+{
+  "chain": {
+    "chain_id": "chain-0000",
+    "order": {
+      "kind": "order",
+      "number": "1/2026",
+      "date": "2026-04-17",
+      "supplier": {
+        "name": "Distribuzione Adriatica S.n.c.",
+        "vat_number": "76168950491",
+        "address": "Via Dante Alighieri, 160",
+        "postal_code": "40121",
+        "city": "Bologna",
+        "province": "BO"
+      },
+      "customer": {
+        "name": "Idro Nord Est S.a.s.",
+        "vat_number": "57845010206",
+        "address": "Via Dante Alighieri, 180",
+        "postal_code": "60121",
+        "city": "Ancona",
+        "province": "AN"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "GU-NIT",
+          "description": "Guanti da lavoro in nitrile taglia L",
+          "quantity": "9",
+          "unit": "conf",
+          "unit_price": "8.84",
+          "total": "79.56",
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "TS-F6",
+          "description": "Tassello in nylon 6 mm",
+          "quantity": "11",
+          "unit": "conf",
+          "unit_price": "4.11",
+          "total": "45.21",
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "CV-315",
+          "description": "Cavo elettrico FS17 1x1,5 mm² blu",
+          "quantity": "100",
+          "unit": "m",
+          "unit_price": "0.29",
+          "total": "29.00",
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "PR-S10",
+          "description": "Presa schuko 10/16A bianca serie civile",
+          "quantity": "22",
+          "unit": "pz",
+          "unit_price": "4.09",
+          "total": "89.98",
+          "vat_rate": null
+        },
+        {
+          "line_number": 5,
+          "code": "MN-TEC",
+          "description": "Manuale tecnico impianti elettrici civili",
+          "quantity": "15",
+          "unit": "pz",
+          "unit_price": "30.67",
+          "total": "460.05",
+          "vat_rate": null
+        },
+        {
+          "line_number": 6,
+          "code": "NR-CEI",
+          "description": "Guida alle norme CEI 64-8 edizione 2026",
+          "quantity": "3",
+          "unit": "pz",
+          "unit_price": "57.46",
+          "total": "172.38",
+          "vat_rate": null
+        },
+        {
+          "line_number": 7,
+          "code": "QD-12M",
+          "description": "Quadro elettrico da parete 12 moduli IP40",
+          "quantity": "12",
+          "unit": "pz",
+          "unit_price": "29.05",
+          "total": "348.60",
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": "1224.78",
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "ddt": {
+      "kind": "ddt",
+      "number": "DDT-501",
+      "date": "2026-04-25",
+      "supplier": {
+        "name": "Distribuzione Adriatica S.n.c.",
+        "vat_number": "76168950491",
+        "address": "Via Dante Alighieri, 160",
+        "postal_code": "40121",
+        "city": "Bologna",
+        "province": "BO"
+      },
+      "customer": {
+        "name": "Idro Nord Est S.a.s.",
+        "vat_number": "57845010206",
+        "address": "Via Dante Alighieri, 180",
+        "postal_code": "60121",
+        "city": "Ancona",
+        "province": "AN"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "GU-NIT",
+          "description": "Guanti da lavoro in nitrile taglia L",
+          "quantity": "9",
+          "unit": "conf",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "TS-F6",
+          "description": "Tassello in nylon 6 mm",
+          "quantity": "11",
+          "unit": "conf",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "CV-315",
+          "description": "Cavo elettrico FS17 1x1,5 mm² blu",
+          "quantity": "100",
+          "unit": "m",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "PR-S10",
+          "description": "Presa schuko 10/16A bianca serie civile",
+          "quantity": "22",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 5,
+          "code": "MN-TEC",
+          "description": "Manuale tecnico impianti elettrici civili",
+          "quantity": "15",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 6,
+          "code": "NR-CEI",
+          "description": "Guida alle norme CEI 64-8 edizione 2026",
+          "quantity": "3",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 7,
+          "code": "QD-12M",
+          "description": "Quadro elettrico da parete 12 moduli IP40",
+          "quantity": "12",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [
+        "1/2026"
+      ],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": null,
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "invoice": {
+      "kind": "invoice",
+      "number": "FT2026-00001",
+      "date": "2026-05-04",
+      "supplier": {
+        "name": "Distribuzione Adriatica S.n.c.",
+        "vat_number": "76168950491",
+        "address": "Via Dante Alighieri, 160",
+        "postal_code": "40121",
+        "city": "Bologna",
+        "province": "BO"
+      },
+      "customer": {
+        "name": "Idro Nord Est S.a.s.",
+        "vat_number": "57845010206",
+        "address": "Via Dante Alighieri, 180",
+        "postal_code": "60121",
+        "city": "Ancona",
+        "province": "AN"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "GU-NIT",
+          "description": "Guanti da lavoro in nitrile taglia L",
+          "quantity": "9",
+          "unit": "conf",
+          "unit_price": "8.84",
+          "total": "79.56",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 2,
+          "code": "TS-F6",
+          "description": "Tassello in nylon 6 mm",
+          "quantity": "11",
+          "unit": "conf",
+          "unit_price": "4.11",
+          "total": "45.21",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 3,
+          "code": "CV-315",
+          "description": "Cavo elettrico FS17 1x1,5 mm² blu",
+          "quantity": "100",
+          "unit": "m",
+          "unit_price": "0.29",
+          "total": "29.00",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 4,
+          "code": "PR-S10",
+          "description": "Presa schuko 10/16A bianca serie civile",
+          "quantity": "22",
+          "unit": "pz",
+          "unit_price": "4.09",
+          "total": "89.98",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 5,
+          "code": "MN-TEC",
+          "description": "Manuale tecnico impianti elettrici civili",
+          "quantity": "15",
+          "unit": "pz",
+          "unit_price": "30.67",
+          "total": "460.05",
+          "vat_rate": "4"
+        },
+        {
+          "line_number": 6,
+          "code": "NR-CEI",
+          "description": "Guida alle norme CEI 64-8 edizione 2026",
+          "quantity": "3",
+          "unit": "pz",
+          "unit_price": "57.46",
+          "total": "172.38",
+          "vat_rate": "4"
+        },
+        {
+          "line_number": 7,
+          "code": "QD-12M",
+          "description": "Quadro elettrico da parete 12 moduli IP40",
+          "quantity": "12",
+          "unit": "pz",
+          "unit_price": "29.05",
+          "total": "348.60",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 8,
+          "code": "LD-18W",
+          "description": "Plafoniera LED 18W 4000K IP65",
+          "quantity": "31",
+          "unit": "pz",
+          "unit_price": "19.69",
+          "total": "610.39",
+          "vat_rate": "22"
+        }
+      ],
+      "order_refs": [
+        "1/2026"
+      ],
+      "ddt_refs": [
+        "DDT-501"
+      ],
+      "vat_summary": [
+        {
+          "vat_rate": "22",
+          "taxable_amount": "1202.74",
+          "vat_amount": "264.60"
+        },
+        {
+          "vat_rate": "4",
+          "taxable_amount": "632.43",
+          "vat_amount": "25.30"
+        }
+      ],
+      "taxable_amount": "1835.17",
+      "vat_amount": "289.90",
+      "total_amount": "2125.07"
+    },
+    "discrepancies": [
+      {
+        "type": "extra_line",
+        "item_code": "LD-18W",
+        "expected": null,
+        "actual": "31"
+      }
+    ]
+  },
+  "layout_variant": 0,
+  "scan_level": "clean"
+}

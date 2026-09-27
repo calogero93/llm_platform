@@ -1,0 +1,232 @@
+{
+  "chain": {
+    "chain_id": "chain-0002",
+    "order": {
+      "kind": "order",
+      "number": "OA/2026/0003",
+      "date": "2026-02-11",
+      "supplier": {
+        "name": "Edil Adriatica S.p.A.",
+        "vat_number": "80521770174",
+        "address": "Via Garibaldi, 142",
+        "postal_code": "24122",
+        "city": "Bergamo",
+        "province": "BG"
+      },
+      "customer": {
+        "name": "Tecno Adriatica S.r.l.s.",
+        "vat_number": "51352530557",
+        "address": "Piazza Cavour, 112",
+        "postal_code": "41121",
+        "city": "Modena",
+        "province": "MO"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "IN-16A",
+          "description": "Interruttore magnetotermico 1P+N 16A 4,5kA",
+          "quantity": "37",
+          "unit": "pz",
+          "unit_price": "11.58",
+          "total": "428.46",
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "CV-315",
+          "description": "Cavo elettrico FS17 1x1,5 mm² blu",
+          "quantity": "150",
+          "unit": "m",
+          "unit_price": "0.34",
+          "total": "51.00",
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "ZU-1KG",
+          "description": "Zucchero semolato 1 kg",
+          "quantity": "18",
+          "unit": "pz",
+          "unit_price": "1.01",
+          "total": "18.18",
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "VT-4X40",
+          "description": "Viti autofilettanti 4x40 zincate",
+          "quantity": "3",
+          "unit": "conf",
+          "unit_price": "3.43",
+          "total": "10.29",
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": "507.93",
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "ddt": {
+      "kind": "ddt",
+      "number": "19/2026",
+      "date": "2026-02-17",
+      "supplier": {
+        "name": "Edil Adriatica S.p.A.",
+        "vat_number": "80521770174",
+        "address": "Via Garibaldi, 142",
+        "postal_code": "24122",
+        "city": "Bergamo",
+        "province": "BG"
+      },
+      "customer": {
+        "name": "Tecno Adriatica S.r.l.s.",
+        "vat_number": "51352530557",
+        "address": "Piazza Cavour, 112",
+        "postal_code": "41121",
+        "city": "Modena",
+        "province": "MO"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "IN-16A",
+          "description": "Interruttore magnetotermico 1P+N 16A 4,5kA",
+          "quantity": "37",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "CV-315",
+          "description": "Cavo elettrico FS17 1x1,5 mm² blu",
+          "quantity": "150",
+          "unit": "m",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "ZU-1KG",
+          "description": "Zucchero semolato 1 kg",
+          "quantity": "18",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "VT-4X40",
+          "description": "Viti autofilettanti 4x40 zincate",
+          "quantity": "3",
+          "unit": "conf",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [
+        "OA/2026/0003"
+      ],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": null,
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "invoice": {
+      "kind": "invoice",
+      "number": "2026/3",
+      "date": "2026-02-18",
+      "supplier": {
+        "name": "Edil Adriatica S.p.A.",
+        "vat_number": "80521770174",
+        "address": "Via Garibaldi, 142",
+        "postal_code": "24122",
+        "city": "Bergamo",
+        "province": "BG"
+      },
+      "customer": {
+        "name": "Tecno Adriatica S.r.l.s.",
+        "vat_number": "51352530557",
+        "address": "Piazza Cavour, 112",
+        "postal_code": "41121",
+        "city": "Modena",
+        "province": "MO"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "IN-16A",
+          "description": "Interruttore magnetotermico 1P+N 16A 4,5kA",
+          "quantity": "37",
+          "unit": "pz",
+          "unit_price": "11.58",
+          "total": "428.46",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 2,
+          "code": "CV-315",
+          "description": "Cavo elettrico FS17 1x1,5 mm² blu",
+          "quantity": "150",
+          "unit": "m",
+          "unit_price": "0.34",
+          "total": "51.00",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 3,
+          "code": "ZU-1KG",
+          "description": "Zucchero semolato 1 kg",
+          "quantity": "18",
+          "unit": "pz",
+          "unit_price": "1.01",
+          "total": "18.18",
+          "vat_rate": "10"
+        },
+        {
+          "line_number": 4,
+          "code": "VT-4X40",
+          "description": "Viti autofilettanti 4x40 zincate",
+          "quantity": "3",
+          "unit": "conf",
+          "unit_price": "3.43",
+          "total": "10.29",
+          "vat_rate": "22"
+        }
+      ],
+      "order_refs": [
+        "OA/2026/0003"
+      ],
+      "ddt_refs": [
+        "19/2026"
+      ],
+      "vat_summary": [
+        {
+          "vat_rate": "22",
+          "taxable_amount": "489.75",
+          "vat_amount": "107.75"
+        },
+        {
+          "vat_rate": "10",
+          "taxable_amount": "18.18",
+          "vat_amount": "1.82"
+        }
+      ],
+      "taxable_amount": "507.93",
+      "vat_amount": "109.57",
+      "total_amount": "617.50"
+    },
+    "discrepancies": []
+  },
+  "layout_variant": 0,
+  "scan_level": "heavy"
+}

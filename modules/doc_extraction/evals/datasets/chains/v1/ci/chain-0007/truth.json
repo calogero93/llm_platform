@@ -1,0 +1,285 @@
+{
+  "chain": {
+    "chain_id": "chain-0007",
+    "order": {
+      "kind": "order",
+      "number": "8/2026",
+      "date": "2026-05-11",
+      "supplier": {
+        "name": "Edil Ferri S.p.A.",
+        "vat_number": "40682240995",
+        "address": "Via Emilia, 36",
+        "postal_code": "06121",
+        "city": "Perugia",
+        "province": "PG"
+      },
+      "customer": {
+        "name": "Idro Sud S.n.c.",
+        "vat_number": "08867160932",
+        "address": "Piazza Cavour, 90",
+        "postal_code": "70121",
+        "city": "Bari",
+        "province": "BA"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "CV-325",
+          "description": "Cavo elettrico FG16OR16 3x2,5 mm²",
+          "quantity": "25",
+          "unit": "m",
+          "unit_price": "1.12",
+          "total": "28.00",
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "CV-315",
+          "description": "Cavo elettrico FS17 1x1,5 mm² blu",
+          "quantity": "500",
+          "unit": "m",
+          "unit_price": "0.25",
+          "total": "125.00",
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "CA-A4",
+          "description": "Carta per fotocopie A4 80 g/m² risma 500 fogli",
+          "quantity": "23",
+          "unit": "pz",
+          "unit_price": "4.57",
+          "total": "105.11",
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "LD-18W",
+          "description": "Plafoniera LED 18W 4000K IP65",
+          "quantity": "26",
+          "unit": "pz",
+          "unit_price": "18.08",
+          "total": "470.08",
+          "vat_rate": null
+        },
+        {
+          "line_number": 5,
+          "code": "ZU-1KG",
+          "description": "Zucchero semolato 1 kg",
+          "quantity": "12",
+          "unit": "pz",
+          "unit_price": "1.39",
+          "total": "16.68",
+          "vat_rate": null
+        },
+        {
+          "line_number": 6,
+          "code": "TB-20",
+          "description": "Tubo corrugato flessibile diametro 20 mm",
+          "quantity": "500",
+          "unit": "m",
+          "unit_price": "0.22",
+          "total": "110.00",
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": "854.87",
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "ddt": {
+      "kind": "ddt",
+      "number": "24/2026",
+      "date": "2026-05-15",
+      "supplier": {
+        "name": "Edil Ferri S.p.A.",
+        "vat_number": "40682240995",
+        "address": "Via Emilia, 36",
+        "postal_code": "06121",
+        "city": "Perugia",
+        "province": "PG"
+      },
+      "customer": {
+        "name": "Idro Sud S.n.c.",
+        "vat_number": "08867160932",
+        "address": "Piazza Cavour, 90",
+        "postal_code": "70121",
+        "city": "Bari",
+        "province": "BA"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "CV-315",
+          "description": "Cavo elettrico FS17 1x1,5 mm² blu",
+          "quantity": "500",
+          "unit": "m",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "CA-A4",
+          "description": "Carta per fotocopie A4 80 g/m² risma 500 fogli",
+          "quantity": "23",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "LD-18W",
+          "description": "Plafoniera LED 18W 4000K IP65",
+          "quantity": "26",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "ZU-1KG",
+          "description": "Zucchero semolato 1 kg",
+          "quantity": "12",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 5,
+          "code": "TB-20",
+          "description": "Tubo corrugato flessibile diametro 20 mm",
+          "quantity": "500",
+          "unit": "m",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [
+        "8/2026"
+      ],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": null,
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "invoice": {
+      "kind": "invoice",
+      "number": "FT2026-00008",
+      "date": "2026-05-18",
+      "supplier": {
+        "name": "Edil Ferri S.p.A.",
+        "vat_number": "40682240995",
+        "address": "Via Emilia, 36",
+        "postal_code": "06121",
+        "city": "Perugia",
+        "province": "PG"
+      },
+      "customer": {
+        "name": "Idro Sud S.n.c.",
+        "vat_number": "08867160932",
+        "address": "Piazza Cavour, 90",
+        "postal_code": "70121",
+        "city": "Bari",
+        "province": "BA"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "CV-315",
+          "description": "Cavo elettrico FS17 1x1,5 mm² blu",
+          "quantity": "500",
+          "unit": "m",
+          "unit_price": "0.25",
+          "total": "125.00",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 2,
+          "code": "CA-A4",
+          "description": "Carta per fotocopie A4 80 g/m² risma 500 fogli",
+          "quantity": "23",
+          "unit": "pz",
+          "unit_price": "4.57",
+          "total": "105.11",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 3,
+          "code": "LD-18W",
+          "description": "Plafoniera LED 18W 4000K IP65",
+          "quantity": "23",
+          "unit": "pz",
+          "unit_price": "18.08",
+          "total": "415.84",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 4,
+          "code": "ZU-1KG",
+          "description": "Zucchero semolato 1 kg",
+          "quantity": "12",
+          "unit": "pz",
+          "unit_price": "1.39",
+          "total": "16.68",
+          "vat_rate": "10"
+        },
+        {
+          "line_number": 5,
+          "code": "TB-20",
+          "description": "Tubo corrugato flessibile diametro 20 mm",
+          "quantity": "500",
+          "unit": "m",
+          "unit_price": "0.22",
+          "total": "110.00",
+          "vat_rate": "22"
+        }
+      ],
+      "order_refs": [
+        "8/2026"
+      ],
+      "ddt_refs": [
+        "24/2026"
+      ],
+      "vat_summary": [
+        {
+          "vat_rate": "22",
+          "taxable_amount": "755.95",
+          "vat_amount": "166.31"
+        },
+        {
+          "vat_rate": "10",
+          "taxable_amount": "16.68",
+          "vat_amount": "1.67"
+        }
+      ],
+      "taxable_amount": "772.63",
+      "vat_amount": "167.98",
+      "total_amount": "940.61"
+    },
+    "discrepancies": [
+      {
+        "type": "missing_line",
+        "item_code": "CV-325",
+        "expected": "25",
+        "actual": null
+      },
+      {
+        "type": "qty_mismatch",
+        "item_code": "LD-18W",
+        "expected": "26",
+        "actual": "23"
+      }
+    ]
+  },
+  "layout_variant": 1,
+  "scan_level": "light"
+}

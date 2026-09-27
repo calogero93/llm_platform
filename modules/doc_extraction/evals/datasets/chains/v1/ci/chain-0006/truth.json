@@ -1,0 +1,232 @@
+{
+  "chain": {
+    "chain_id": "chain-0006",
+    "order": {
+      "kind": "order",
+      "number": "7/2026",
+      "date": "2026-07-12",
+      "supplier": {
+        "name": "Commerciale Centro Italia S.r.l.s.",
+        "vat_number": "58871680177",
+        "address": "Via Dante Alighieri, 77",
+        "postal_code": "16121",
+        "city": "Genova",
+        "province": "GE"
+      },
+      "customer": {
+        "name": "Ferramenta Tirrena S.p.A.",
+        "vat_number": "27627570016",
+        "address": "Via Nazionale, 80",
+        "postal_code": "60121",
+        "city": "Ancona",
+        "province": "AN"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "IN-16A",
+          "description": "Interruttore magnetotermico 1P+N 16A 4,5kA",
+          "quantity": "28",
+          "unit": "pz",
+          "unit_price": "9.91",
+          "total": "277.48",
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "SC-503",
+          "description": "Scatola da incasso 503 per 3 moduli",
+          "quantity": "26",
+          "unit": "pz",
+          "unit_price": "0.62",
+          "total": "16.12",
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "LD-18W",
+          "description": "Plafoniera LED 18W 4000K IP65",
+          "quantity": "29",
+          "unit": "pz",
+          "unit_price": "17.2",
+          "total": "498.80",
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "ZU-1KG",
+          "description": "Zucchero semolato 1 kg",
+          "quantity": "24",
+          "unit": "pz",
+          "unit_price": "1.09",
+          "total": "26.16",
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": "818.56",
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "ddt": {
+      "kind": "ddt",
+      "number": "B00007",
+      "date": "2026-07-22",
+      "supplier": {
+        "name": "Commerciale Centro Italia S.r.l.s.",
+        "vat_number": "58871680177",
+        "address": "Via Dante Alighieri, 77",
+        "postal_code": "16121",
+        "city": "Genova",
+        "province": "GE"
+      },
+      "customer": {
+        "name": "Ferramenta Tirrena S.p.A.",
+        "vat_number": "27627570016",
+        "address": "Via Nazionale, 80",
+        "postal_code": "60121",
+        "city": "Ancona",
+        "province": "AN"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "IN-16A",
+          "description": "Interruttore magnetotermico 1P+N 16A 4,5kA",
+          "quantity": "28",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "SC-503",
+          "description": "Scatola da incasso 503 per 3 moduli",
+          "quantity": "26",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "LD-18W",
+          "description": "Plafoniera LED 18W 4000K IP65",
+          "quantity": "29",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "ZU-1KG",
+          "description": "Zucchero semolato 1 kg",
+          "quantity": "24",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [
+        "7/2026"
+      ],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": null,
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "invoice": {
+      "kind": "invoice",
+      "number": "39/A",
+      "date": "2026-08-06",
+      "supplier": {
+        "name": "Commerciale Centro Italia S.r.l.s.",
+        "vat_number": "58871680177",
+        "address": "Via Dante Alighieri, 77",
+        "postal_code": "16121",
+        "city": "Genova",
+        "province": "GE"
+      },
+      "customer": {
+        "name": "Ferramenta Tirrena S.p.A.",
+        "vat_number": "27627570016",
+        "address": "Via Nazionale, 80",
+        "postal_code": "60121",
+        "city": "Ancona",
+        "province": "AN"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "IN-16A",
+          "description": "Interruttore magnetotermico 1P+N 16A 4,5kA",
+          "quantity": "28",
+          "unit": "pz",
+          "unit_price": "9.91",
+          "total": "277.48",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 2,
+          "code": "SC-503",
+          "description": "Scatola da incasso 503 per 3 moduli",
+          "quantity": "26",
+          "unit": "pz",
+          "unit_price": "0.62",
+          "total": "16.12",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 3,
+          "code": "LD-18W",
+          "description": "Plafoniera LED 18W 4000K IP65",
+          "quantity": "29",
+          "unit": "pz",
+          "unit_price": "17.2",
+          "total": "498.80",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 4,
+          "code": "ZU-1KG",
+          "description": "Zucchero semolato 1 kg",
+          "quantity": "24",
+          "unit": "pz",
+          "unit_price": "1.09",
+          "total": "26.16",
+          "vat_rate": "10"
+        }
+      ],
+      "order_refs": [
+        "7/2026"
+      ],
+      "ddt_refs": [
+        "B00007"
+      ],
+      "vat_summary": [
+        {
+          "vat_rate": "22",
+          "taxable_amount": "792.40",
+          "vat_amount": "174.33"
+        },
+        {
+          "vat_rate": "10",
+          "taxable_amount": "26.16",
+          "vat_amount": "2.62"
+        }
+      ],
+      "taxable_amount": "818.56",
+      "vat_amount": "176.95",
+      "total_amount": "995.51"
+    },
+    "discrepancies": []
+  },
+  "layout_variant": 0,
+  "scan_level": "clean"
+}

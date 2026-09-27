@@ -1,0 +1,304 @@
+{
+  "chain": {
+    "chain_id": "chain-0028",
+    "order": {
+      "kind": "order",
+      "number": "OA/2026/0029",
+      "date": "2026-03-06",
+      "supplier": {
+        "name": "Impianti Padana S.p.A.",
+        "vat_number": "46081840707",
+        "address": "Via Roma, 157",
+        "postal_code": "43121",
+        "city": "Parma",
+        "province": "PR"
+      },
+      "customer": {
+        "name": "Impianti Ferri S.p.A.",
+        "vat_number": "63721840393",
+        "address": "Via Mazzini, 120",
+        "postal_code": "35122",
+        "city": "Padova",
+        "province": "PD"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "NR-CEI",
+          "description": "Guida alle norme CEI 64-8 edizione 2026",
+          "quantity": "19",
+          "unit": "pz",
+          "unit_price": "61.32",
+          "total": "1165.08",
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "TB-20",
+          "description": "Tubo corrugato flessibile diametro 20 mm",
+          "quantity": "200",
+          "unit": "m",
+          "unit_price": "0.35",
+          "total": "70.00",
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "TS-F6",
+          "description": "Tassello in nylon 6 mm",
+          "quantity": "10",
+          "unit": "conf",
+          "unit_price": "2.67",
+          "total": "26.70",
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "CA-A4",
+          "description": "Carta per fotocopie A4 80 g/m² risma 500 fogli",
+          "quantity": "6",
+          "unit": "pz",
+          "unit_price": "5.14",
+          "total": "30.84",
+          "vat_rate": null
+        },
+        {
+          "line_number": 5,
+          "code": "QD-12M",
+          "description": "Quadro elettrico da parete 12 moduli IP40",
+          "quantity": "40",
+          "unit": "pz",
+          "unit_price": "21.71",
+          "total": "868.40",
+          "vat_rate": null
+        },
+        {
+          "line_number": 6,
+          "code": "BS-1KG",
+          "description": "Biscotti frollini confezione 1 kg",
+          "quantity": "9",
+          "unit": "conf",
+          "unit_price": "5.39",
+          "total": "48.51",
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": "2209.53",
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "ddt": {
+      "kind": "ddt",
+      "number": "45/2026",
+      "date": "2026-03-09",
+      "supplier": {
+        "name": "Impianti Padana S.p.A.",
+        "vat_number": "46081840707",
+        "address": "Via Roma, 157",
+        "postal_code": "43121",
+        "city": "Parma",
+        "province": "PR"
+      },
+      "customer": {
+        "name": "Impianti Ferri S.p.A.",
+        "vat_number": "63721840393",
+        "address": "Via Mazzini, 120",
+        "postal_code": "35122",
+        "city": "Padova",
+        "province": "PD"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "NR-CEI",
+          "description": "Guida alle norme CEI 64-8 edizione 2026",
+          "quantity": "19",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "TB-20",
+          "description": "Tubo corrugato flessibile diametro 20 mm",
+          "quantity": "200",
+          "unit": "m",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "TS-F6",
+          "description": "Tassello in nylon 6 mm",
+          "quantity": "10",
+          "unit": "conf",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "CA-A4",
+          "description": "Carta per fotocopie A4 80 g/m² risma 500 fogli",
+          "quantity": "6",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 5,
+          "code": "QD-12M",
+          "description": "Quadro elettrico da parete 12 moduli IP40",
+          "quantity": "40",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 6,
+          "code": "BS-1KG",
+          "description": "Biscotti frollini confezione 1 kg",
+          "quantity": "9",
+          "unit": "conf",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [
+        "OA/2026/0029"
+      ],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": null,
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "invoice": {
+      "kind": "invoice",
+      "number": "FT2026-00029",
+      "date": "2026-03-10",
+      "supplier": {
+        "name": "Impianti Padana S.p.A.",
+        "vat_number": "46081840707",
+        "address": "Via Roma, 157",
+        "postal_code": "43121",
+        "city": "Parma",
+        "province": "PR"
+      },
+      "customer": {
+        "name": "Impianti Ferri S.p.A.",
+        "vat_number": "63721840393",
+        "address": "Via Mazzini, 120",
+        "postal_code": "35122",
+        "city": "Padova",
+        "province": "PD"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "NR-CEI",
+          "description": "Guida alle norme CEI 64-8 edizione 2026",
+          "quantity": "21",
+          "unit": "pz",
+          "unit_price": "61.32",
+          "total": "1287.72",
+          "vat_rate": "4"
+        },
+        {
+          "line_number": 2,
+          "code": "TB-20",
+          "description": "Tubo corrugato flessibile diametro 20 mm",
+          "quantity": "200",
+          "unit": "m",
+          "unit_price": "0.35",
+          "total": "70.00",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 3,
+          "code": "TS-F6",
+          "description": "Tassello in nylon 6 mm",
+          "quantity": "10",
+          "unit": "conf",
+          "unit_price": "2.67",
+          "total": "26.70",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 4,
+          "code": "CA-A4",
+          "description": "Carta per fotocopie A4 80 g/m² risma 500 fogli",
+          "quantity": "6",
+          "unit": "pz",
+          "unit_price": "5.14",
+          "total": "30.84",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 5,
+          "code": "QD-12M",
+          "description": "Quadro elettrico da parete 12 moduli IP40",
+          "quantity": "40",
+          "unit": "pz",
+          "unit_price": "21.71",
+          "total": "868.40",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 6,
+          "code": "BS-1KG",
+          "description": "Biscotti frollini confezione 1 kg",
+          "quantity": "9",
+          "unit": "conf",
+          "unit_price": "5.39",
+          "total": "48.51",
+          "vat_rate": "10"
+        }
+      ],
+      "order_refs": [
+        "OA/2026/0029"
+      ],
+      "ddt_refs": [
+        "45/2026"
+      ],
+      "vat_summary": [
+        {
+          "vat_rate": "22",
+          "taxable_amount": "995.94",
+          "vat_amount": "219.11"
+        },
+        {
+          "vat_rate": "10",
+          "taxable_amount": "48.51",
+          "vat_amount": "4.85"
+        },
+        {
+          "vat_rate": "4",
+          "taxable_amount": "1287.72",
+          "vat_amount": "51.51"
+        }
+      ],
+      "taxable_amount": "2332.17",
+      "vat_amount": "275.47",
+      "total_amount": "2607.64"
+    },
+    "discrepancies": [
+      {
+        "type": "qty_mismatch",
+        "item_code": "NR-CEI",
+        "expected": "19",
+        "actual": "21"
+      }
+    ]
+  },
+  "layout_variant": 0,
+  "scan_level": "light"
+}

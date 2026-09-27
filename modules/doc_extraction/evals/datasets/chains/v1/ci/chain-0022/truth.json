@@ -1,0 +1,287 @@
+{
+  "chain": {
+    "chain_id": "chain-0022",
+    "order": {
+      "kind": "order",
+      "number": "OA/2026/0023",
+      "date": "2026-02-20",
+      "supplier": {
+        "name": "Impianti Tirrena S.p.A.",
+        "vat_number": "29171491003",
+        "address": "Via Garibaldi, 96",
+        "postal_code": "06121",
+        "city": "Perugia",
+        "province": "PG"
+      },
+      "customer": {
+        "name": "Impianti Lombarda S.p.A.",
+        "vat_number": "34644410580",
+        "address": "Via Garibaldi, 20",
+        "postal_code": "24122",
+        "city": "Bergamo",
+        "province": "BG"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "CA-A4",
+          "description": "Carta per fotocopie A4 80 g/m² risma 500 fogli",
+          "quantity": "36",
+          "unit": "pz",
+          "unit_price": "3.6",
+          "total": "129.60",
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "VT-4X40",
+          "description": "Viti autofilettanti 4x40 zincate",
+          "quantity": "12",
+          "unit": "conf",
+          "unit_price": "5.3",
+          "total": "63.60",
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "DF-25",
+          "description": "Interruttore differenziale puro 2P 25A 30mA",
+          "quantity": "10",
+          "unit": "pz",
+          "unit_price": "37.04",
+          "total": "370.40",
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "TS-F6",
+          "description": "Tassello in nylon 6 mm",
+          "quantity": "1",
+          "unit": "conf",
+          "unit_price": "3.29",
+          "total": "3.29",
+          "vat_rate": null
+        },
+        {
+          "line_number": 5,
+          "code": "CV-315",
+          "description": "Cavo elettrico FS17 1x1,5 mm² blu",
+          "quantity": "100",
+          "unit": "m",
+          "unit_price": "0.23",
+          "total": "23.00",
+          "vat_rate": null
+        },
+        {
+          "line_number": 6,
+          "code": "MR-TP",
+          "description": "Morsetto a leva 3 poli 0,2-4 mm²",
+          "quantity": "9",
+          "unit": "conf",
+          "unit_price": "7.59",
+          "total": "68.31",
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": "658.20",
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "ddt": {
+      "kind": "ddt",
+      "number": "B00023",
+      "date": "2026-02-25",
+      "supplier": {
+        "name": "Impianti Tirrena S.p.A.",
+        "vat_number": "29171491003",
+        "address": "Via Garibaldi, 96",
+        "postal_code": "06121",
+        "city": "Perugia",
+        "province": "PG"
+      },
+      "customer": {
+        "name": "Impianti Lombarda S.p.A.",
+        "vat_number": "34644410580",
+        "address": "Via Garibaldi, 20",
+        "postal_code": "24122",
+        "city": "Bergamo",
+        "province": "BG"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "CA-A4",
+          "description": "Carta per fotocopie A4 80 g/m² risma 500 fogli",
+          "quantity": "36",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "VT-4X40",
+          "description": "Viti autofilettanti 4x40 zincate",
+          "quantity": "12",
+          "unit": "conf",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "DF-25",
+          "description": "Interruttore differenziale puro 2P 25A 30mA",
+          "quantity": "10",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "TS-F6",
+          "description": "Tassello in nylon 6 mm",
+          "quantity": "1",
+          "unit": "conf",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 5,
+          "code": "CV-315",
+          "description": "Cavo elettrico FS17 1x1,5 mm² blu",
+          "quantity": "100",
+          "unit": "m",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 6,
+          "code": "MR-TP",
+          "description": "Morsetto a leva 3 poli 0,2-4 mm²",
+          "quantity": "9",
+          "unit": "conf",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [
+        "OA/2026/0023"
+      ],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": null,
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "invoice": {
+      "kind": "invoice",
+      "number": "2026/23",
+      "date": "2026-03-13",
+      "supplier": {
+        "name": "Impianti Tirrena S.p.A.",
+        "vat_number": "29171491003",
+        "address": "Via Garibaldi, 96",
+        "postal_code": "06121",
+        "city": "Perugia",
+        "province": "PG"
+      },
+      "customer": {
+        "name": "Impianti Lombarda S.p.A.",
+        "vat_number": "34644410580",
+        "address": "Via Garibaldi, 20",
+        "postal_code": "24122",
+        "city": "Bergamo",
+        "province": "BG"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "CA-A4",
+          "description": "Carta per fotocopie A4 80 g/m² risma 500 fogli",
+          "quantity": "36",
+          "unit": "pz",
+          "unit_price": "3.6",
+          "total": "129.60",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 2,
+          "code": "VT-4X40",
+          "description": "Viti autofilettanti 4x40 zincate",
+          "quantity": "12",
+          "unit": "conf",
+          "unit_price": "5.3",
+          "total": "63.60",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 3,
+          "code": "DF-25",
+          "description": "Interruttore differenziale puro 2P 25A 30mA",
+          "quantity": "10",
+          "unit": "pz",
+          "unit_price": "37.04",
+          "total": "370.40",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 4,
+          "code": "TS-F6",
+          "description": "Tassello in nylon 6 mm",
+          "quantity": "1",
+          "unit": "conf",
+          "unit_price": "3.29",
+          "total": "3.29",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 5,
+          "code": "CV-315",
+          "description": "Cavo elettrico FS17 1x1,5 mm² blu",
+          "quantity": "100",
+          "unit": "m",
+          "unit_price": "0.23",
+          "total": "23.00",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 6,
+          "code": "MR-TP",
+          "description": "Morsetto a leva 3 poli 0,2-4 mm²",
+          "quantity": "9",
+          "unit": "conf",
+          "unit_price": "7.59",
+          "total": "68.31",
+          "vat_rate": "22"
+        }
+      ],
+      "order_refs": [
+        "OA/2026/0023"
+      ],
+      "ddt_refs": [
+        "B00023"
+      ],
+      "vat_summary": [
+        {
+          "vat_rate": "22",
+          "taxable_amount": "658.20",
+          "vat_amount": "144.80"
+        }
+      ],
+      "taxable_amount": "658.20",
+      "vat_amount": "144.80",
+      "total_amount": "803.00"
+    },
+    "discrepancies": []
+  },
+  "layout_variant": 0,
+  "scan_level": "light"
+}

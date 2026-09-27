@@ -1,0 +1,262 @@
+{
+  "chain": {
+    "chain_id": "chain-0020",
+    "order": {
+      "kind": "order",
+      "number": "ORD-121",
+      "date": "2026-05-31",
+      "supplier": {
+        "name": "Elettro Padana S.r.l.s.",
+        "vat_number": "11140760254",
+        "address": "Via Roma, 35",
+        "postal_code": "50123",
+        "city": "Firenze",
+        "province": "FI"
+      },
+      "customer": {
+        "name": "Idro Nord Est S.p.A.",
+        "vat_number": "65647480915",
+        "address": "Via Nazionale, 26",
+        "postal_code": "06121",
+        "city": "Perugia",
+        "province": "PG"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "CA-A4",
+          "description": "Carta per fotocopie A4 80 g/m² risma 500 fogli",
+          "quantity": "30",
+          "unit": "pz",
+          "unit_price": "5.1",
+          "total": "153.00",
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "TB-20",
+          "description": "Tubo corrugato flessibile diametro 20 mm",
+          "quantity": "150",
+          "unit": "m",
+          "unit_price": "0.32",
+          "total": "48.00",
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "CV-315",
+          "description": "Cavo elettrico FS17 1x1,5 mm² blu",
+          "quantity": "50",
+          "unit": "m",
+          "unit_price": "0.18",
+          "total": "9.00",
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "SC-503",
+          "description": "Scatola da incasso 503 per 3 moduli",
+          "quantity": "32",
+          "unit": "pz",
+          "unit_price": "0.51",
+          "total": "16.32",
+          "vat_rate": null
+        },
+        {
+          "line_number": 5,
+          "code": "BS-1KG",
+          "description": "Biscotti frollini confezione 1 kg",
+          "quantity": "6",
+          "unit": "conf",
+          "unit_price": "5.16",
+          "total": "30.96",
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": "257.28",
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "ddt": {
+      "kind": "ddt",
+      "number": "B00021",
+      "date": "2026-06-08",
+      "supplier": {
+        "name": "Elettro Padana S.r.l.s.",
+        "vat_number": "11140760254",
+        "address": "Via Roma, 35",
+        "postal_code": "50123",
+        "city": "Firenze",
+        "province": "FI"
+      },
+      "customer": {
+        "name": "Idro Nord Est S.p.A.",
+        "vat_number": "65647480915",
+        "address": "Via Nazionale, 26",
+        "postal_code": "06121",
+        "city": "Perugia",
+        "province": "PG"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "CA-A4",
+          "description": "Carta per fotocopie A4 80 g/m² risma 500 fogli",
+          "quantity": "30",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "TB-20",
+          "description": "Tubo corrugato flessibile diametro 20 mm",
+          "quantity": "150",
+          "unit": "m",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 3,
+          "code": "CV-315",
+          "description": "Cavo elettrico FS17 1x1,5 mm² blu",
+          "quantity": "50",
+          "unit": "m",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 4,
+          "code": "SC-503",
+          "description": "Scatola da incasso 503 per 3 moduli",
+          "quantity": "32",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 5,
+          "code": "BS-1KG",
+          "description": "Biscotti frollini confezione 1 kg",
+          "quantity": "6",
+          "unit": "conf",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [
+        "ORD-121"
+      ],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": null,
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "invoice": {
+      "kind": "invoice",
+      "number": "FT2026-00021",
+      "date": "2026-06-09",
+      "supplier": {
+        "name": "Elettro Padana S.r.l.s.",
+        "vat_number": "11140760254",
+        "address": "Via Roma, 35",
+        "postal_code": "50123",
+        "city": "Firenze",
+        "province": "FI"
+      },
+      "customer": {
+        "name": "Idro Nord Est S.p.A.",
+        "vat_number": "65647480915",
+        "address": "Via Nazionale, 26",
+        "postal_code": "06121",
+        "city": "Perugia",
+        "province": "PG"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "CA-A4",
+          "description": "Carta per fotocopie A4 80 g/m² risma 500 fogli",
+          "quantity": "30",
+          "unit": "pz",
+          "unit_price": "5.1",
+          "total": "153.00",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 2,
+          "code": "TB-20",
+          "description": "Tubo corrugato flessibile diametro 20 mm",
+          "quantity": "150",
+          "unit": "m",
+          "unit_price": "0.32",
+          "total": "48.00",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 3,
+          "code": "CV-315",
+          "description": "Cavo elettrico FS17 1x1,5 mm² blu",
+          "quantity": "50",
+          "unit": "m",
+          "unit_price": "0.18",
+          "total": "9.00",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 4,
+          "code": "SC-503",
+          "description": "Scatola da incasso 503 per 3 moduli",
+          "quantity": "32",
+          "unit": "pz",
+          "unit_price": "0.51",
+          "total": "16.32",
+          "vat_rate": "22"
+        },
+        {
+          "line_number": 5,
+          "code": "BS-1KG",
+          "description": "Biscotti frollini confezione 1 kg",
+          "quantity": "6",
+          "unit": "conf",
+          "unit_price": "5.16",
+          "total": "30.96",
+          "vat_rate": "10"
+        }
+      ],
+      "order_refs": [
+        "ORD-121"
+      ],
+      "ddt_refs": [
+        "B00021"
+      ],
+      "vat_summary": [
+        {
+          "vat_rate": "22",
+          "taxable_amount": "226.32",
+          "vat_amount": "49.79"
+        },
+        {
+          "vat_rate": "10",
+          "taxable_amount": "30.96",
+          "vat_amount": "3.10"
+        }
+      ],
+      "taxable_amount": "257.28",
+      "vat_amount": "52.89",
+      "total_amount": "310.17"
+    },
+    "discrepancies": []
+  },
+  "layout_variant": 0,
+  "scan_level": "heavy"
+}

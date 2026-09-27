@@ -1,0 +1,172 @@
+{
+  "chain": {
+    "chain_id": "chain-0008",
+    "order": {
+      "kind": "order",
+      "number": "OA/2026/0009",
+      "date": "2026-07-14",
+      "supplier": {
+        "name": "Edil Nord Est S.r.l.",
+        "vat_number": "81740430517",
+        "address": "Via Mazzini, 173",
+        "postal_code": "31100",
+        "city": "Treviso",
+        "province": "TV"
+      },
+      "customer": {
+        "name": "Elettro Ferri S.n.c.",
+        "vat_number": "25683880691",
+        "address": "Via Emilia, 86",
+        "postal_code": "60121",
+        "city": "Ancona",
+        "province": "AN"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "NR-CEI",
+          "description": "Guida alle norme CEI 64-8 edizione 2026",
+          "quantity": "6",
+          "unit": "pz",
+          "unit_price": "48",
+          "total": "288.00",
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "TS-F6",
+          "description": "Tassello in nylon 6 mm",
+          "quantity": "12",
+          "unit": "conf",
+          "unit_price": "3.45",
+          "total": "41.40",
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": "329.40",
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "ddt": {
+      "kind": "ddt",
+      "number": "DDT-509",
+      "date": "2026-07-17",
+      "supplier": {
+        "name": "Edil Nord Est S.r.l.",
+        "vat_number": "81740430517",
+        "address": "Via Mazzini, 173",
+        "postal_code": "31100",
+        "city": "Treviso",
+        "province": "TV"
+      },
+      "customer": {
+        "name": "Elettro Ferri S.n.c.",
+        "vat_number": "25683880691",
+        "address": "Via Emilia, 86",
+        "postal_code": "60121",
+        "city": "Ancona",
+        "province": "AN"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "NR-CEI",
+          "description": "Guida alle norme CEI 64-8 edizione 2026",
+          "quantity": "6",
+          "unit": "pz",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        },
+        {
+          "line_number": 2,
+          "code": "TS-F6",
+          "description": "Tassello in nylon 6 mm",
+          "quantity": "12",
+          "unit": "conf",
+          "unit_price": null,
+          "total": null,
+          "vat_rate": null
+        }
+      ],
+      "order_refs": [
+        "OA/2026/0009"
+      ],
+      "ddt_refs": [],
+      "vat_summary": [],
+      "taxable_amount": null,
+      "vat_amount": null,
+      "total_amount": null
+    },
+    "invoice": {
+      "kind": "invoice",
+      "number": "41/A",
+      "date": "2026-07-25",
+      "supplier": {
+        "name": "Edil Nord Est S.r.l.",
+        "vat_number": "81740430517",
+        "address": "Via Mazzini, 173",
+        "postal_code": "31100",
+        "city": "Treviso",
+        "province": "TV"
+      },
+      "customer": {
+        "name": "Elettro Ferri S.n.c.",
+        "vat_number": "25683880691",
+        "address": "Via Emilia, 86",
+        "postal_code": "60121",
+        "city": "Ancona",
+        "province": "AN"
+      },
+      "lines": [
+        {
+          "line_number": 1,
+          "code": "NR-CEI",
+          "description": "Guida alle norme CEI 64-8 edizione 2026",
+          "quantity": "6",
+          "unit": "pz",
+          "unit_price": "48",
+          "total": "288.00",
+          "vat_rate": "4"
+        },
+        {
+          "line_number": 2,
+          "code": "TS-F6",
+          "description": "Tassello in nylon 6 mm",
+          "quantity": "12",
+          "unit": "conf",
+          "unit_price": "3.45",
+          "total": "41.40",
+          "vat_rate": "22"
+        }
+      ],
+      "order_refs": [
+        "OA/2026/0009"
+      ],
+      "ddt_refs": [
+        "DDT-509"
+      ],
+      "vat_summary": [
+        {
+          "vat_rate": "22",
+          "taxable_amount": "41.40",
+          "vat_amount": "9.11"
+        },
+        {
+          "vat_rate": "4",
+          "taxable_amount": "288.00",
+          "vat_amount": "11.52"
+        }
+      ],
+      "taxable_amount": "329.40",
+      "vat_amount": "20.63",
+      "total_amount": "350.03"
+    },
+    "discrepancies": []
+  },
+  "layout_variant": 0,
+  "scan_level": "heavy"
+}

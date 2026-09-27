@@ -4,8 +4,16 @@ TESTS := packages/platform/tests modules/doc_extraction/tests
 MODELS_DIR ?= models
 VLLM_PRESET ?= qwen3.5-4b-awq
 ALL_PROFILES := --profile gpu --profile observability
+DATASET := modules/doc_extraction/evals/datasets/chains/v1
+SYNTH_SPLITS ?= ci full
+SUITE ?= doc_extraction.invoice_xml
+SPLIT ?= ci
+BASELINE ?= modules/doc_extraction/evals/baselines/$(SUITE).json
+# Evals run against the mock LLM unless told otherwise (LLMP_LLM_BACKEND=vllm).
+export LLMP_LLM_BACKEND ?= mock
 
-.PHONY: install fmt lint typecheck imports test check up up-dev down smoke check-egress models
+.PHONY: install fmt lint typecheck imports test check up up-dev down smoke check-egress models \
+	synth synth-check eval eval-gate eval-baseline eval-compare
 
 install:
 	uv sync --all-packages
@@ -56,3 +64,30 @@ models:
 		uvx --from 'huggingface_hub==2.0.0' hf download "$$repo" --revision "$$rev" \
 			--local-dir "$(MODELS_DIR)/$$name" || exit 1; \
 	done
+
+# Synthetic datasets: regenerate documents (deterministic) + ground truth + manifests.
+synth:
+	for split in $(SYNTH_SPLITS); do \
+		uv run python -m doc_extraction.synth build --root $(DATASET) --split $$split || exit 1; \
+	done
+	uv run python -m doc_extraction.synth contact-sheet --root $(DATASET)
+
+# Regenerate the ci split in memory and compare with the committed manifest hashes.
+synth-check:
+	uv run python -m doc_extraction.synth check --root $(DATASET) --split ci
+
+eval:
+	uv run python -m llmp.eval run $(SUITE) --split $(SPLIT)
+
+# Run the suite and fail if a gated metric regressed against the committed baseline.
+eval-gate:
+	report=$$(uv run python -m llmp.eval run $(SUITE) --split $(SPLIT) | tail -1) && \
+	uv run python -m llmp.eval gate $$report $(BASELINE)
+
+# Promote a new run to baseline (review the diff before committing it).
+eval-baseline:
+	report=$$(uv run python -m llmp.eval run $(SUITE) --split $(SPLIT) | tail -1) && \
+	mkdir -p $(dir $(BASELINE)) && cp $$report $(BASELINE)
+
+eval-compare:
+	uv run python -m llmp.eval compare $(A) $(B)

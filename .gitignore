@@ -9,3 +9,9 @@ __pycache__/
 dist/
 .claude/settings.local.json
 models/
+# Synthetic datasets: commit ground truth + manifests only; documents are regenerated (make synth).
+modules/*/evals/datasets/**/*.pdf
+modules/*/evals/datasets/**/*.xml
+modules/*/evals/datasets/**/full/chain-*/
+# Eval run outputs (promote chosen ones to evals/baselines/)
+evals/runs/

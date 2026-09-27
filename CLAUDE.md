@@ -18,6 +18,8 @@ before changing anything non-trivial.
   `docs/ARCHITECTURE.md` §4 with a reason. If a stdlib solution is < ~50 lines, use stdlib.
 - **No secrets in the repo.** Config via env / `.env` (gitignored); update `.env.example`.
 - **No real customer data** anywhere. All test/eval data comes from the synthetic generator.
+- **Datasets are immutable per version.** If a generator change alters any output byte, create a
+  new dataset version directory instead of overwriting (CI enforces it via manifest hashes).
 - **Every LLM call goes through `LLMClient`** (so it is traced) and uses a prompt from the
   prompt store (so it is versioned). No inline prompt strings in pipeline code.
 - **Prompts are immutable once used in a committed baseline.** Change = new `vN+1.md` file.
@@ -45,8 +47,15 @@ before changing anything non-trivial.
 
 Phoenix UI: `http://127.0.0.1:${PHOENIX_PORT:-6006}`. vLLM presets: `deploy/vllm/presets/*.yaml`.
 
-Targets planned in `docs/ROADMAP.md` (`synth`, `eval`, `eval-record`, `eval-compare`,
-`loadtest`) are added in the phase that introduces them; keep this table in sync.
+| `make synth` | regenerate synthetic datasets (`SYNTH_SPLITS=ci full`) + contact sheet |
+| `make synth-check` | regenerate `ci` in memory and compare with manifest hashes |
+| `make eval` | run an eval suite (`SUITE`, `SPLIT`; mock LLM unless `LLMP_LLM_BACKEND=vllm`) |
+| `make eval-gate` | run the suite and fail if a gated metric regressed vs the committed baseline |
+| `make eval-baseline` | promote a fresh run to `modules/<m>/evals/baselines/<suite>.json` |
+| `make eval-compare A=… B=…` | markdown diff of two eval reports |
+
+Targets planned in `docs/ROADMAP.md` (`eval-record`, `loadtest`) are added in the phase that
+introduces them; keep this table in sync.
 
 ## Conventions
 
