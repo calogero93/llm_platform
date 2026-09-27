@@ -1,0 +1,57 @@
+[project]
+name = "llm-platform"
+version = "0.1.0"
+description = "On-premise LLM platform for Italian SMEs (workspace root)"
+requires-python = ">=3.12"
+dependencies = ["llmp", "doc-extraction"]
+
+[dependency-groups]
+dev = [
+    "import-linter>=2.15",
+    "mypy>=2.3.1",
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
+    "ruff>=0.16.9",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.workspace]
+members = ["packages/*", "modules/*"]
+
+[tool.uv.sources]
+llmp = { workspace = true }
+doc-extraction = { workspace = true }
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM", "RUF", "ASYNC", "S", "PT"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["llmp", "doc_extraction"]
+
+[tool.ruff.lint.per-file-ignores]
+"**/tests/**" = ["S101"]
+
+[tool.mypy]
+strict = true
+plugins = ["pydantic.mypy"]
+
+[tool.pytest.ini_options]
+testpaths = ["packages/platform/tests", "modules/doc_extraction/tests"]
+addopts = "--import-mode=importlib"
+asyncio_mode = "auto"
+markers = ["gpu: requires a running vLLM on a GPU (skipped in CI)"]
+
+[tool.importlinter]
+root_packages = ["llmp", "doc_extraction"]
+
+[[tool.importlinter.contracts]]
+name = "Platform must not import modules"
+type = "forbidden"
+source_modules = ["llmp"]
+forbidden_modules = ["doc_extraction"]

@@ -1,0 +1,18 @@
+name: llm-platform
+
+services:
+  api:
+    build:
+      context: ..
+      dockerfile: deploy/api.Dockerfile
+    environment:
+      LLMP_LLM_BACKEND: ${LLMP_LLM_BACKEND:-mock}
+      LLMP_LLM_MODEL: ${LLMP_LLM_MODEL:-default}
+      LLMP_LOG_LEVEL: ${LLMP_LOG_LEVEL:-INFO}
+    ports:
+      - "127.0.0.1:${LLMP_API_PORT:-8080}:8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
