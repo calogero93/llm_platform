@@ -3,6 +3,7 @@ from fastapi import APIRouter
 from pydantic import BaseModel
 
 import llmp.modules
+from llmp.eval import EvalSuite
 from llmp.modules import ModuleLoadError, PlatformContext, discover_modules
 
 
@@ -12,6 +13,9 @@ class FakeModule:
 
     def router(self, ctx: PlatformContext) -> APIRouter:
         return APIRouter()
+
+    def eval_suites(self) -> list[EvalSuite]:
+        return []
 
 
 class FakeEntryPoint(BaseModel):

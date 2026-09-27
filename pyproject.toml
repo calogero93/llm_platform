@@ -8,10 +8,12 @@ dependencies = ["llmp", "doc-extraction"]
 [dependency-groups]
 dev = [
     "import-linter>=2.15",
+    "lxml-stubs>=0.5.1",
     "mypy>=2.3.1",
     "pytest>=9.1.1",
     "pytest-asyncio>=1.4.0",
     "ruff>=0.16.9",
+    "types-reportlab>=5.0.0.20260911",
 ]
 
 [tool.uv]
@@ -35,7 +37,9 @@ select = ["E", "F", "W", "I", "B", "UP", "SIM", "RUF", "ASYNC", "S", "PT"]
 known-first-party = ["llmp", "doc_extraction"]
 
 [tool.ruff.lint.per-file-ignores]
-"**/tests/**" = ["S101"]
+"**/tests/**" = ["S101", "S311"]
+# Synthetic data generation: pseudo-randomness is the point, nothing cryptographic.
+"modules/*/src/*/synth/**" = ["S311"]
 
 [tool.mypy]
 strict = true
@@ -55,3 +59,8 @@ name = "Platform must not import modules"
 type = "forbidden"
 source_modules = ["llmp"]
 forbidden_modules = ["doc_extraction"]
+
+[[tool.mypy.overrides]]
+# No type stubs or py.typed marker published for pypdfium2.
+module = ["pypdfium2", "pypdfium2.*"]
+ignore_missing_imports = true

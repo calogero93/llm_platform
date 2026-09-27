@@ -11,6 +11,7 @@ from fastapi import APIRouter
 from pydantic import BaseModel, ConfigDict
 
 from llmp.config import Settings
+from llmp.eval.suite import EvalSuite
 from llmp.llm.base import LLMClient
 
 ENTRY_POINT_GROUP = "llmp.modules"
@@ -31,6 +32,8 @@ class Module(Protocol):
     name: str
 
     def router(self, ctx: PlatformContext) -> APIRouter: ...
+
+    def eval_suites(self) -> list[EvalSuite]: ...
 
 
 class ModuleLoadError(Exception):

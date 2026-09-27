@@ -10,6 +10,7 @@ from opentelemetry.sdk.trace.export.in_memory_span_exporter import InMemorySpanE
 import llmp.api.app
 from llmp.api.app import create_app
 from llmp.config import Settings
+from llmp.eval import EvalSuite
 from llmp.llm import LLMRequest, Message, PromptRef
 from llmp.llm.mock import MockLLMClient
 from llmp.logs import JsonFormatter
@@ -69,6 +70,9 @@ class LlmModule:
             return {"text": (await ctx.llm.complete(REQUEST)).text}
 
         return router
+
+    def eval_suites(self) -> list[EvalSuite]:
+        return []
 
 
 @pytest.fixture

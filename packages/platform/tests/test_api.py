@@ -7,6 +7,7 @@ from fastapi.testclient import TestClient
 import llmp.api.app
 from llmp.api.app import create_app
 from llmp.config import Settings
+from llmp.eval import EvalSuite
 from llmp.logs import JsonFormatter
 from llmp.modules import Module, PlatformContext
 
@@ -22,6 +23,9 @@ class PingModule:
             return {"backend": ctx.settings.llm_backend}
 
         return router
+
+    def eval_suites(self) -> list[EvalSuite]:
+        return []
 
 
 @pytest.fixture
