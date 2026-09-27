@@ -10,7 +10,7 @@ from pydantic import BaseModel, Field
 from llmp.llm import LLMRequest, LLMResponse, Message, PromptRef, Usage
 from llmp.llm.mock import CassetteMissError, CassetteStore, MockLLMClient, cassette_key
 
-PROMPT = PromptRef("test", 1, "abc")
+PROMPT = PromptRef(id="test", version=1, hash="abc")
 
 
 class Kind(StrEnum):
@@ -36,7 +36,7 @@ class Doc(BaseModel):
 
 def request(content: str = "extract", output_model: type[BaseModel] | None = Doc) -> LLMRequest:
     return LLMRequest(
-        messages=(Message("user", content),), prompt=PROMPT, output_model=output_model
+        messages=(Message(role="user", content=content),), prompt=PROMPT, output_model=output_model
     )
 
 
@@ -67,7 +67,12 @@ async def test_schema_mode_rejects_unsupported_pattern() -> None:
 
 async def test_replay_returns_recorded_response(tmp_path: Path) -> None:
     store = CassetteStore(tmp_path)
-    recorded = LLMResponse('{"a": 1}', "m", Usage(10, 5), 0.42)
+    recorded = LLMResponse(
+        text='{"a": 1}',
+        model="m",
+        usage=Usage(prompt_tokens=10, completion_tokens=5),
+        latency_s=0.42,
+    )
     store.save(cassette_key(request(), "m"), request(), recorded)
 
     client = MockLLMClient("replay", model="m", cassettes=store)

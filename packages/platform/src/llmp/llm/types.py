@@ -1,11 +1,13 @@
-from dataclasses import dataclass
 from typing import Literal
 
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 
 
-@dataclass(frozen=True)
-class PromptRef:
+class _Frozen(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+
+class PromptRef(_Frozen):
     """Identifies the prompt template a request was built from (recorded in traces and evals)."""
 
     id: str
@@ -13,30 +15,26 @@ class PromptRef:
     hash: str
 
 
-@dataclass(frozen=True)
-class Message:
+class Message(_Frozen):
     role: Literal["system", "user", "assistant"]
     content: str
 
 
-@dataclass(frozen=True)
-class LLMRequest:
+class LLMRequest(_Frozen):
     messages: tuple[Message, ...]
     prompt: PromptRef
+    # When set, generation is constrained to this model's JSON schema.
     output_model: type[BaseModel] | None = None
-    """When set, generation is constrained to this model's JSON schema."""
     temperature: float = 0.0
     max_tokens: int = 1024
 
 
-@dataclass(frozen=True)
-class Usage:
+class Usage(_Frozen):
     prompt_tokens: int
     completion_tokens: int
 
 
-@dataclass(frozen=True)
-class LLMResponse:
+class LLMResponse(_Frozen):
     text: str
     model: str
     usage: Usage

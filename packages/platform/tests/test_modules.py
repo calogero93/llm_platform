@@ -1,7 +1,6 @@
-from dataclasses import dataclass
-
 import pytest
 from fastapi import APIRouter
+from pydantic import BaseModel
 
 import llmp.modules
 from llmp.modules import ModuleLoadError, PlatformContext, discover_modules
@@ -15,8 +14,7 @@ class FakeModule:
         return APIRouter()
 
 
-@dataclass
-class FakeEntryPoint:
+class FakeEntryPoint(BaseModel):
     value: str
     obj: object
 
@@ -25,7 +23,7 @@ class FakeEntryPoint:
 
 
 def patch_entry_points(monkeypatch: pytest.MonkeyPatch, *objs: object) -> None:
-    eps = [FakeEntryPoint(f"pkg:obj{i}", o) for i, o in enumerate(objs)]
+    eps = [FakeEntryPoint(value=f"pkg:obj{i}", obj=o) for i, o in enumerate(objs)]
     monkeypatch.setattr(llmp.modules, "entry_points", lambda group: eps)
 
 

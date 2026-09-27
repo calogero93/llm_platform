@@ -8,8 +8,8 @@ install:
 	uv sync --all-packages
 
 fmt:
-	uv run ruff check --fix .
 	uv run ruff format .
+	uv run ruff check --fix .
 
 lint:
 	uv run ruff check .

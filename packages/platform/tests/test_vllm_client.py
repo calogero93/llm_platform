@@ -14,8 +14,8 @@ class Answer(BaseModel):
 
 
 REQUEST = LLMRequest(
-    messages=(Message("system", "be terse"), Message("user", "2+2?")),
-    prompt=PromptRef("math", 1, "abc"),
+    messages=(Message(role="system", content="be terse"), Message(role="user", content="2+2?")),
+    prompt=PromptRef(id="math", version=1, hash="abc"),
     output_model=Answer,
     max_tokens=16,
 )

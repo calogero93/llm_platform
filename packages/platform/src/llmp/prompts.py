@@ -5,21 +5,23 @@ it has been used in a committed eval baseline: behaviour changes go in a new ver
 """
 
 import hashlib
-from dataclasses import dataclass
 from pathlib import Path
 from string import Template
+
+from pydantic import BaseModel, ConfigDict
 
 from llmp.llm.types import PromptRef
 
 
-@dataclass(frozen=True)
-class Prompt:
+class Prompt(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
     ref: PromptRef
-    template: Template
+    text: str
 
     def render(self, **values: str) -> str:
         """Substitute all placeholders; a missing value raises `KeyError`."""
-        return self.template.substitute(values)
+        return Template(self.text).substitute(values)
 
 
 class PromptNotFoundError(LookupError):
@@ -36,4 +38,4 @@ class PromptStore:
             raise PromptNotFoundError(f"prompt {prompt_id!r} v{version} not found at {path}")
         text = path.read_text(encoding="utf-8")
         digest = hashlib.sha256(text.encode()).hexdigest()[:12]
-        return Prompt(ref=PromptRef(prompt_id, version, digest), template=Template(text))
+        return Prompt(ref=PromptRef(id=prompt_id, version=version, hash=digest), text=text)

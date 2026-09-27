@@ -44,7 +44,8 @@ Targets planned in `docs/ROADMAP.md` (`models`, `up`, `smoke`, `synth`, `eval`, 
 ## Conventions
 
 - Python 3.12, uv workspace. Import names: `llmp` (platform), `doc_extraction` (module).
-- Types everywhere; mypy strict must pass. Pydantic v2 models for all I/O boundaries.
+- Types everywhere; mypy strict must pass. All structured data types are Pydantic v2 models
+  (frozen where immutable) — no dataclasses, NamedTuples or TypedDicts.
 - Async for I/O paths (HTTP, LLM). CPU-heavy parsing (Docling) runs in a thread/process pool,
   never blocking the event loop.
 - Money is `Decimal`, never float. Dates are `datetime.date`. P.IVA stored without `IT` prefix.

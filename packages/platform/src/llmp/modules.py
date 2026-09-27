@@ -4,11 +4,11 @@ A module is an installed distribution exposing an object under the `llmp.modules
 group. The platform discovers modules at startup; it never imports them by name.
 """
 
-from dataclasses import dataclass
 from importlib.metadata import entry_points
 from typing import Protocol, runtime_checkable
 
 from fastapi import APIRouter
+from pydantic import BaseModel, ConfigDict
 
 from llmp.config import Settings
 from llmp.llm.base import LLMClient
@@ -16,9 +16,11 @@ from llmp.llm.base import LLMClient
 ENTRY_POINT_GROUP = "llmp.modules"
 
 
-@dataclass(frozen=True)
-class PlatformContext:
+class PlatformContext(BaseModel):
     """Services the platform hands to modules. Modules must not build these themselves."""
+
+    # LLMClient is a runtime-checkable Protocol: validated with isinstance.
+    model_config = ConfigDict(frozen=True, arbitrary_types_allowed=True)
 
     settings: Settings
     llm: LLMClient

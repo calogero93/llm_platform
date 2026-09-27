@@ -48,28 +48,11 @@ class CassetteStore:
                 f"No cassette {path}. The request changed (prompt, schema or params) since the "
                 "last recording: re-record against a real vLLM."
             )
-        data = json.loads(path.read_text(encoding="utf-8"))["response"]
-        return LLMResponse(
-            text=data["text"],
-            model=data["model"],
-            usage=Usage(**data["usage"]),
-            latency_s=data["latency_s"],
-        )
+        return LLMResponse.model_validate(json.loads(path.read_text(encoding="utf-8"))["response"])
 
     def save(self, key: str, request: LLMRequest, response: LLMResponse) -> None:
         self._root.mkdir(parents=True, exist_ok=True)
-        record = {
-            "prompt": {"id": request.prompt.id, "version": request.prompt.version},
-            "response": {
-                "text": response.text,
-                "model": response.model,
-                "usage": {
-                    "prompt_tokens": response.usage.prompt_tokens,
-                    "completion_tokens": response.usage.completion_tokens,
-                },
-                "latency_s": response.latency_s,
-            },
-        }
+        record = {"prompt": request.prompt.model_dump(), "response": response.model_dump()}
         self.path(key).write_text(
             json.dumps(record, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
         )
@@ -94,7 +77,12 @@ class MockLLMClient:
             schema = request.output_model.model_json_schema()
             instance = _instance(schema, schema.get("$defs", {}))
             text = request.output_model.model_validate(instance).model_dump_json()
-        return LLMResponse(text=text, model=self._model, usage=Usage(0, 0), latency_s=0.0)
+        return LLMResponse(
+            text=text,
+            model=self._model,
+            usage=Usage(prompt_tokens=0, completion_tokens=0),
+            latency_s=0.0,
+        )
 
     async def aclose(self) -> None:
         return None
